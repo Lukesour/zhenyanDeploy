@@ -1,0 +1,108 @@
+{
+  "description": "IELTS Task 2四项评分标准详解",
+  "task_response": {
+    "description": "任务回应 - 评估是否充分回应题目要求",
+    "requirements": {
+      "基本结构正确": "合理的分段和段落内容组成",
+      "回应所有核心要素": "对题目的双重维度回应",
+      "展开充分": "展开段的写作要求",
+      "充足字数": "至少250词"
+    },
+    "evaluation_points": [
+      "是否明确回应题目指令",
+      "观点是否清晰一致",
+      "论证是否充分展开",
+      "是否涵盖题目所有要求"
+    ]
+  },
+  "coherence_cohesion": {
+    "description": "连贯与衔接 - 评估文章的逻辑性和连接性",
+    "coherence": "思想的逻辑连贯性",
+    "cohesion": "语言的衔接手段",
+    "requirements": [
+      "清晰的段落结构",
+      "恰当的逻辑连接词",
+      "段落间的逻辑关系",
+      "句子间的自然衔接"
+    ],
+    "logical_relationships": {
+      "因果关系": [
+        "because",
+        "since",
+        "as a result",
+        "therefore",
+        "consequently"
+      ],
+      "对比关系": [
+        "however",
+        "while",
+        "whereas",
+        "in contrast",
+        "on the other hand"
+      ],
+      "递进关系": [
+        "furthermore",
+        "moreover",
+        "in addition",
+        "additionally"
+      ],
+      "举例关系": [
+        "for example",
+        "for instance",
+        "such as",
+        "like"
+      ],
+      "总结关系": [
+        "in conclusion",
+        "to summarize",
+        "overall",
+        "in general"
+      ],
+      "让步关系": [
+        "although",
+        "despite",
+        "even though",
+        "nevertheless"
+      ],
+      "条件关系": [
+        "if",
+        "unless",
+        "provided that",
+        "as long as"
+      ],
+      "时间关系": [
+        "meanwhile",
+        "subsequently",
+        "previously",
+        "simultaneously"
+      ]
+    }
+  },
+  "lexical_resource": {
+    "description": "词汇资源 - 评估词汇的丰富性和准确性",
+    "requirements": [
+      "词汇的丰富性和多样性",
+      "词汇使用的准确性",
+      "词汇的恰当性和地道性"
+    ],
+    "improvement_methods": {
+      "同义词替换": "使用不同词汇表达相同概念",
+      "词性转换": "名词、动词、形容词间的灵活转换",
+      "搭配使用": "使用地道的词汇搭配"
+    }
+  },
+  "grammatical_range_accuracy": {
+    "description": "语法广度与准确性 - 评估句型多样性和语法正确性",
+    "requirements": {
+      "句型多样性": "使用不同类型和长度的句子",
+      "语法正确性": "避免语法错误",
+      "标点使用": "正确使用英文标点符号"
+    },
+    "sentence_variety": [
+      "简单句 (Simple sentences)",
+      "并列句 (Compound sentences)",
+      "复合句 (Complex sentences)",
+      "并列复合句 (Compound-complex sentences)"
+    ]
+  }
+}

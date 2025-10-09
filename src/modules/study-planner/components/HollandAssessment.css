@@ -1,0 +1,323 @@
+/* 霍兰德评估组件样式 */
+
+.holland-assessment {
+  padding: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.holland-assessment .ant-card {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.holland-assessment .ant-card-head {
+  border-bottom: 2px solid #e0e7ff;
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  color: white;
+  border-radius: 12px 12px 0 0;
+}
+
+.holland-assessment .ant-card-head-title {
+  color: white;
+  font-weight: 600;
+}
+
+/* 问卷标题样式 */
+.holland-title {
+  text-align: center;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 指导语样式 */
+.holland-instructions {
+  margin-bottom: 24px;
+}
+
+.holland-instructions .ant-alert {
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+}
+
+/* 评分标准样式 */
+.holland-scale-item {
+  text-align: center;
+  padding: 8px 4px;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  font-size: 12px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.holland-scale-item:hover {
+  border-color: #4f46e5;
+  box-shadow: 0 2px 4px rgba(24, 144, 255, 0.2);
+}
+
+.holland-scale-score {
+  font-weight: bold;
+  color: #4f46e5;
+}
+
+/* 进度条样式 */
+.holland-progress {
+  margin-bottom: 16px;
+}
+
+.holland-progress .ant-progress-text {
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+/* 问题样式 */
+.holland-question {
+  margin-bottom: 24px;
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e7ff;
+  transition: all 0.3s ease;
+}
+
+.holland-question:hover {
+  border-color: #4f46e5;
+  box-shadow: 0 2px 8px rgba(24, 144, 255, 0.1);
+}
+
+.holland-question-text {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #262626;
+}
+
+.holland-question-answered {
+  border-color: #52c41a;
+  background: #f6ffed;
+}
+
+/* 选项样式 */
+.holland-option {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border: 2px solid #e0e7ff;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.holland-option:hover {
+  border-color: #4f46e5;
+  background: #f0f8ff;
+}
+
+.holland-option-selected {
+  border-color: #4f46e5;
+  background: #f0f8ff;
+  box-shadow: 0 2px 8px rgba(24, 144, 255, 0.2);
+}
+
+.holland-option-content {
+  margin-left: 8px;
+  flex: 1;
+}
+
+.holland-option-score {
+  font-weight: bold;
+  font-size: 14px;
+  color: #4f46e5;
+}
+
+.holland-option-label {
+  font-size: 12px;
+  color: #666;
+  margin-top: 2px;
+}
+
+/* 提交按钮样式 */
+.holland-submit-button {
+  min-width: 200px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  border: none;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  transition: all 0.3s ease;
+}
+
+.holland-submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.5);
+}
+
+.holland-submit-button:disabled {
+  background: #f5f5f5;
+  color: #bfbfbf;
+  box-shadow: none;
+  transform: none;
+}
+
+/* 结果页面样式 */
+.holland-results {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.holland-code-display {
+  text-align: center;
+  padding: 32px;
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  color: white;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+.holland-code-text {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 16px 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.holland-type-tag {
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin: 4px;
+  font-weight: 500;
+}
+
+/* 得分详情样式 */
+.holland-score-item {
+  text-align: center;
+  padding: 16px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e0e7ff;
+  transition: all 0.3s ease;
+}
+
+.holland-score-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.holland-score-type {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.holland-score-name {
+  margin-bottom: 8px;
+  color: #666;
+}
+
+.holland-score-percentage {
+  font-size: 12px;
+  color: #999;
+  margin-top: 8px;
+}
+
+/* 解析卡片样式 */
+.holland-interpretation-card {
+  height: 100%;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.holland-interpretation-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.holland-interpretation-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.holland-interpretation-rank {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+.holland-interpretation-title {
+  flex: 1;
+}
+
+.holland-interpretation-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.holland-interpretation-nickname {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.holland-career-tag {
+  margin: 2px;
+  border-radius: 4px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .holland-assessment {
+    padding: 16px;
+  }
+  
+  .holland-code-text {
+    font-size: 36px;
+  }
+  
+  .holland-option {
+    padding: 8px;
+  }
+  
+  .holland-submit-button {
+    min-width: 160px;
+    height: 44px;
+    font-size: 14px;
+  }
+  
+  .holland-interpretation-name {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .holland-code-text {
+    font-size: 28px;
+  }
+  
+  .holland-type-tag {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}

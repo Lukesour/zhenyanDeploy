@@ -1,0 +1,288 @@
+{
+  "description": "详细的错误模式数据库 - 用于精确识别和修正各类写作错误",
+  "grammar_error_patterns": {
+    "subject_verb_agreement": {
+      "pattern_id": "SVA",
+      "common_errors": [
+        {
+          "error_id": "SVA_001",
+          "pattern": "one of the \\w+s (are|have|do)",
+          "correct_pattern": "one of the \\w+s (is|has|does)",
+          "explanation": "'one of'结构中主语是'one'，动词用单数",
+          "examples": {
+            "incorrect": ["One of the students are absent", "One of the books have been lost"],
+            "correct": ["One of the students is absent", "One of the books has been lost"]
+          },
+          "frequency": "very_high",
+          "band_impact": "0.5-1.0"
+        },
+        {
+          "error_id": "SVA_002",
+          "pattern": "(everyone|everybody|someone|somebody|anyone|anybody|no one|nobody)\\s+\\w*\\s*(are|have|do)",
+          "correct_pattern": "(everyone|everybody|someone|somebody|anyone|anybody|no one|nobody)\\s+\\w*\\s*(is|has|does)",
+          "explanation": "不定代词作主语时动词用单数",
+          "examples": {
+            "incorrect": ["Everyone are responsible", "Nobody have arrived"],
+            "correct": ["Everyone is responsible", "Nobody has arrived"]
+          },
+          "frequency": "high",
+          "band_impact": "0.25-0.5"
+        },
+        {
+          "error_id": "SVA_003",
+          "pattern": "there (is|was)\\s+\\w*\\s*\\w+s",
+          "correct_pattern": "there (are|were)\\s+\\w*\\s*\\w+s",
+          "explanation": "there be句型中be动词要与后面的名词保持一致",
+          "examples": {
+            "incorrect": ["There is many problems", "There was several issues"],
+            "correct": ["There are many problems", "There were several issues"]
+          },
+          "frequency": "medium",
+          "band_impact": "0.25-0.5"
+        }
+      ]
+    },
+    "article_errors": {
+      "pattern_id": "ART",
+      "common_errors": [
+        {
+          "error_id": "ART_001",
+          "pattern": "\\b(is|was|has)\\s+([a-z]+(?:tion|sion|ment|ness|ity|ty|cy|ry|ly|al|ic|ous|ive|able|ible))\\b",
+          "explanation": "可数名词单数前通常需要冠词",
+          "detection_method": "check if countable singular noun lacks article",
+          "examples": {
+            "incorrect": ["This is solution", "He made decision"],
+            "correct": ["This is a solution", "He made a decision", "This is the solution"]
+          },
+          "frequency": "very_high",
+          "band_impact": "0.25-0.5"
+        },
+        {
+          "error_id": "ART_002",
+          "pattern": "\\bthe\\s+(\\w+s)\\s+in general",
+          "correct_pattern": "\\1 in general",
+          "explanation": "泛指复数名词前不用定冠词",
+          "examples": {
+            "incorrect": ["The students in general prefer online learning"],
+            "correct": ["Students in general prefer online learning"]
+          },
+          "frequency": "medium",
+          "band_impact": "0.25"
+        }
+      ]
+    },
+    "preposition_errors": {
+      "pattern_id": "PREP",
+      "common_errors": [
+        {
+          "error_id": "PREP_001",
+          "pattern": "depend of",
+          "correct_pattern": "depend on",
+          "explanation": "固定搭配错误",
+          "examples": {
+            "incorrect": ["Success depends of hard work"],
+            "correct": ["Success depends on hard work"]
+          },
+          "frequency": "high",
+          "band_impact": "0.25"
+        },
+        {
+          "error_id": "PREP_002",
+          "pattern": "different than",
+          "correct_pattern": "different from",
+          "explanation": "介词搭配错误",
+          "examples": {
+            "incorrect": ["This is different than that"],
+            "correct": ["This is different from that"]
+          },
+          "frequency": "medium",
+          "band_impact": "0.25"
+        }
+      ]
+    }
+  },
+  "vocabulary_error_patterns": {
+    "word_choice_errors": {
+      "pattern_id": "WC",
+      "common_errors": [
+        {
+          "error_id": "WC_001",
+          "incorrect_usage": "make research",
+          "correct_usage": "conduct research",
+          "error_type": "collocation_error",
+          "explanation": "动词搭配错误",
+          "examples": {
+            "incorrect": ["Scientists make research on climate change"],
+            "correct": ["Scientists conduct research on climate change"]
+          },
+          "frequency": "high",
+          "band_impact": "0.25-0.5"
+        },
+        {
+          "error_id": "WC_002",
+          "incorrect_usage": "do a decision",
+          "correct_usage": "make a decision",
+          "error_type": "collocation_error",
+          "explanation": "动词搭配错误",
+          "examples": {
+            "incorrect": ["We need to do a decision quickly"],
+            "correct": ["We need to make a decision quickly"]
+          },
+          "frequency": "medium",
+          "band_impact": "0.25"
+        }
+      ]
+    },
+    "register_errors": {
+      "pattern_id": "REG",
+      "common_errors": [
+        {
+          "error_id": "REG_001",
+          "informal_expression": "a lot of",
+          "formal_alternatives": ["numerous", "a significant number of", "substantial", "considerable"],
+          "context": "academic_writing",
+          "explanation": "过于口语化，不适合学术写作",
+          "examples": {
+            "informal": ["A lot of students struggle with writing"],
+            "formal": ["Numerous students struggle with writing", "A significant number of students struggle with writing"]
+          },
+          "frequency": "very_high",
+          "band_impact": "0.25-0.5"
+        },
+        {
+          "error_id": "REG_002",
+          "informal_expression": "I think",
+          "formal_alternatives": ["It can be argued that", "Evidence suggests that", "It appears that"],
+          "context": "academic_writing",
+          "explanation": "过于主观，不符合学术写作客观性要求",
+          "examples": {
+            "informal": ["I think technology is beneficial"],
+            "formal": ["It can be argued that technology is beneficial", "Evidence suggests that technology is beneficial"]
+          },
+          "frequency": "high",
+          "band_impact": "0.25-0.5"
+        }
+      ]
+    }
+  },
+  "structure_error_patterns": {
+    "sentence_structure_errors": {
+      "pattern_id": "SS",
+      "common_errors": [
+        {
+          "error_id": "SS_001",
+          "error_type": "run_on_sentence",
+          "detection_criteria": "sentence_length > 40 words AND comma_count > 4",
+          "explanation": "句子过长，影响可读性",
+          "correction_strategy": "split_into_shorter_sentences",
+          "examples": {
+            "problematic": ["Technology has revolutionized the way we communicate, work, and learn, and it has brought numerous benefits to society, but it has also created new challenges and problems that we need to address carefully and thoughtfully."],
+            "improved": ["Technology has revolutionized the way we communicate, work, and learn. It has brought numerous benefits to society. However, it has also created new challenges and problems that we need to address carefully."]
+          },
+          "frequency": "medium",
+          "band_impact": "0.25-0.5"
+        },
+        {
+          "error_id": "SS_002",
+          "error_type": "sentence_fragment",
+          "detection_criteria": "lacks_main_verb OR lacks_subject",
+          "explanation": "句子不完整，缺少主语或谓语",
+          "correction_strategy": "add_missing_components",
+          "examples": {
+            "problematic": ["Because technology is important.", "The benefits of education."],
+            "improved": ["Because technology is important, we should embrace it.", "The benefits of education are numerous."]
+          },
+          "frequency": "low",
+          "band_impact": "0.5-1.0"
+        }
+      ]
+    },
+    "paragraph_structure_errors": {
+      "pattern_id": "PS",
+      "common_errors": [
+        {
+          "error_id": "PS_001",
+          "error_type": "lack_of_topic_sentence",
+          "detection_criteria": "paragraph_lacks_clear_main_idea",
+          "explanation": "段落缺少明确的主题句",
+          "correction_strategy": "add_topic_sentence_at_beginning",
+          "frequency": "high",
+          "band_impact": "0.25-0.5"
+        },
+        {
+          "error_id": "PS_002",
+          "error_type": "poor_transitions",
+          "detection_criteria": "lacks_connecting_words_between_paragraphs",
+          "explanation": "段落间缺少适当的过渡",
+          "correction_strategy": "add_transitional_phrases",
+          "frequency": "medium",
+          "band_impact": "0.25-0.5"
+        }
+      ]
+    }
+  },
+  "content_error_patterns": {
+    "task_response_errors": {
+      "pattern_id": "TR",
+      "common_errors": [
+        {
+          "error_id": "TR_001",
+          "error_type": "incomplete_task_response",
+          "detection_criteria": "missing_required_elements",
+          "explanation": "未完全回应题目要求",
+          "correction_strategy": "address_all_parts_of_question",
+          "frequency": "high",
+          "band_impact": "1.0-2.0"
+        },
+        {
+          "error_id": "TR_002",
+          "error_type": "unclear_position",
+          "detection_criteria": "ambiguous_stance",
+          "explanation": "立场不够明确",
+          "correction_strategy": "clearly_state_position",
+          "frequency": "medium",
+          "band_impact": "0.5-1.0"
+        }
+      ]
+    }
+  },
+  "error_severity_levels": {
+    "critical": {
+      "description": "严重影响理解和分数的错误",
+      "band_impact": "1.0-2.0",
+      "examples": ["主要语法错误", "任务回应不完整", "逻辑混乱"]
+    },
+    "high": {
+      "description": "明显的错误，需要优先修正",
+      "band_impact": "0.5-1.0",
+      "examples": ["主谓不一致", "冠词误用", "词汇选择错误"]
+    },
+    "medium": {
+      "description": "影响表达质量的错误",
+      "band_impact": "0.25-0.5",
+      "examples": ["介词搭配错误", "句式单一", "连接词使用不当"]
+    },
+    "low": {
+      "description": "细节性错误，对整体影响较小",
+      "band_impact": "0.1-0.25",
+      "examples": ["标点符号错误", "拼写错误", "细微的表达问题"]
+    }
+  },
+  "correction_priorities": {
+    "immediate_attention": [
+      "语法基础错误",
+      "任务回应问题",
+      "严重的词汇错误"
+    ],
+    "short_term_improvement": [
+      "句式复杂度",
+      "词汇多样性",
+      "连贯性问题"
+    ],
+    "long_term_development": [
+      "高级语法结构",
+      "学术写作风格",
+      "表达精确性"
+    ]
+  }
+}

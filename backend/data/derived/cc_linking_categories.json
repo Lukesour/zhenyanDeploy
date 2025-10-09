@@ -1,0 +1,34 @@
+{
+  "addition": [
+    "besides",
+    "furthermore",
+    "in addition",
+    "moreover"
+  ],
+  "contrast": [
+    "however",
+    "in contrast",
+    "nevertheless",
+    "on the other hand"
+  ],
+  "cause_effect": [
+    "as a result",
+    "consequently",
+    "therefore",
+    "thus"
+  ],
+  "example": [
+    "for example",
+    "for instance",
+    "such as",
+    "to illustrate"
+  ],
+  "sequence": [
+    "finally",
+    "first",
+    "in conclusion",
+    "in summary",
+    "overall",
+    "second"
+  ]
+}

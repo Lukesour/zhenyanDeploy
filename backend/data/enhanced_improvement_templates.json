@@ -1,0 +1,252 @@
+{
+  "description": "增强的改进建议模板库 - 提供更具体、更详细的改进建议模板",
+  "sentence_improvement_templates": {
+    "grammar_corrections": {
+      "subject_verb_agreement": {
+        "patterns": [
+          {
+            "error_pattern": "one of the \\w+s (are|have|do)",
+            "correction_template": "one of the {noun}s {singular_verb}",
+            "explanation": "'one of'结构中，主语是'one'，动词必须用单数形式",
+            "examples": [
+              "错误: One of the students are absent.",
+              "正确: One of the students is absent."
+            ]
+          },
+          {
+            "error_pattern": "(everyone|everybody|someone|somebody|anyone|anybody|no one|nobody)\\s+\\w*\\s*(are|have|do)",
+            "correction_template": "{pronoun} {singular_verb}",
+            "explanation": "不定代词作主语时，动词用单数形式",
+            "examples": [
+              "错误: Everyone are responsible.",
+              "正确: Everyone is responsible."
+            ]
+          }
+        ]
+      },
+      "article_usage": {
+        "patterns": [
+          {
+            "error_pattern": "\\b(is|was|has)\\s+([a-z]+(?:tion|sion|ment|ness|ity|ty|cy|ry|ly|al|ic|ous|ive|able|ible))\\b",
+            "correction_template": "{verb} {article} {noun}",
+            "explanation": "可数名词单数通常需要冠词",
+            "examples": [
+              "可能错误: This is solution.",
+              "正确: This is a solution. / This is the solution."
+            ]
+          }
+        ]
+      }
+    },
+    "vocabulary_enhancements": {
+      "basic_word_upgrades": {
+        "good": {
+          "academic_alternatives": [
+            {"word": "beneficial", "context": "对健康、环境等有益", "example": "Regular exercise has beneficial effects on mental health."},
+            {"word": "advantageous", "context": "在竞争或比较中有优势", "example": "A bilingual education is advantageous in the global job market."},
+            {"word": "effective", "context": "能够产生预期结果", "example": "This teaching method is highly effective for language learning."},
+            {"word": "constructive", "context": "建设性的，有助于改进", "example": "Constructive criticism helps students improve their writing."},
+            {"word": "positive", "context": "积极的影响或结果", "example": "The new policy had a positive impact on student performance."}
+          ]
+        },
+        "bad": {
+          "academic_alternatives": [
+            {"word": "detrimental", "context": "有害的，造成损害", "example": "Excessive screen time is detrimental to children's development."},
+            {"word": "adverse", "context": "不利的，负面的", "example": "The medication may have adverse side effects."},
+            {"word": "harmful", "context": "造成伤害或损害", "example": "Air pollution is harmful to human health."},
+            {"word": "negative", "context": "消极的，负面的", "example": "The economic crisis had negative consequences for employment."},
+            {"word": "problematic", "context": "有问题的，引起困难", "example": "The current education system is problematic in several ways."}
+          ]
+        },
+        "very": {
+          "academic_alternatives": [
+            {"word": "extremely", "context": "程度非常高", "example": "The results were extremely encouraging."},
+            {"word": "significantly", "context": "显著地，重要地", "example": "Test scores improved significantly after the intervention."},
+            {"word": "considerably", "context": "相当地，大量地", "example": "The new method reduced costs considerably."},
+            {"word": "remarkably", "context": "显著地，值得注意地", "example": "The students showed remarkably rapid progress."},
+            {"word": "substantially", "context": "大幅度地，实质性地", "example": "Investment in education increased substantially."}
+          ]
+        }
+      },
+      "precision_enhancements": {
+        "vague_expressions": {
+          "things": {
+            "specific_alternatives": [
+              {"context": "抽象概念", "replacements": ["factors", "elements", "aspects", "issues", "matters"]},
+              {"context": "具体物品", "replacements": ["items", "objects", "materials", "products", "resources"]},
+              {"context": "情况或事件", "replacements": ["circumstances", "situations", "events", "occurrences", "phenomena"]}
+            ]
+          },
+          "people": {
+            "specific_alternatives": [
+              {"context": "专业人士", "replacements": ["experts", "professionals", "specialists", "practitioners", "researchers"]},
+              {"context": "普通民众", "replacements": ["individuals", "citizens", "members of society", "the general public", "community members"]},
+              {"context": "特定群体", "replacements": ["students", "employees", "consumers", "participants", "stakeholders"]}
+            ]
+          }
+        }
+      }
+    },
+    "structure_improvements": {
+      "sentence_complexity": {
+        "simple_to_complex": [
+          {
+            "pattern": "简单句 + 简单句",
+            "improvement": "使用从属连词连接",
+            "template": "{main_clause} because/although/while {subordinate_clause}",
+            "example": {
+              "original": "Technology is useful. It can be dangerous.",
+              "improved": "Although technology is useful, it can be dangerous."
+            }
+          },
+          {
+            "pattern": "缺少关系从句",
+            "improvement": "添加定语从句",
+            "template": "{noun} which/that/who {relative_clause}",
+            "example": {
+              "original": "Students need support. They struggle with writing.",
+              "improved": "Students who struggle with writing need support."
+            }
+          }
+        ]
+      },
+      "paragraph_transitions": {
+        "introduction_to_body": [
+          "To begin with,",
+          "First and foremost,",
+          "Initially,",
+          "The primary consideration is that"
+        ],
+        "between_arguments": [
+          "Furthermore,",
+          "In addition to this,",
+          "Moreover,",
+          "Another significant factor is that"
+        ],
+        "contrasting_ideas": [
+          "However,",
+          "Nevertheless,",
+          "On the contrary,",
+          "Conversely,"
+        ],
+        "conclusion": [
+          "In conclusion,",
+          "To summarize,",
+          "Overall,",
+          "Taking everything into consideration,"
+        ]
+      }
+    },
+    "academic_writing_standards": {
+      "formality_improvements": {
+        "informal_to_formal": {
+          "I think": {
+            "formal_alternatives": [
+              "It can be argued that",
+              "It is reasonable to suggest that",
+              "Evidence suggests that",
+              "It appears that"
+            ]
+          },
+          "I believe": {
+            "formal_alternatives": [
+              "It is evident that",
+              "Research indicates that",
+              "It is widely accepted that",
+              "Studies demonstrate that"
+            ]
+          },
+          "you": {
+            "formal_alternatives": [
+              "individuals",
+              "people",
+              "one",
+              "students/citizens/consumers (specific group)"
+            ]
+          }
+        }
+      },
+      "objectivity_enhancements": {
+        "subjective_to_objective": [
+          {
+            "subjective": "I feel that this is wrong",
+            "objective": "This approach appears to be problematic",
+            "explanation": "避免个人感受，使用客观表述"
+          },
+          {
+            "subjective": "Everyone knows that",
+            "objective": "It is widely recognized that",
+            "explanation": "避免绝对化表述，使用更谨慎的语言"
+          }
+        ]
+      }
+    }
+  },
+  "improvement_prioritization": {
+    "high_priority": [
+      "语法错误修正",
+      "基础词汇升级",
+      "句子清晰度改进"
+    ],
+    "medium_priority": [
+      "句式复杂度提升",
+      "学术语调调整",
+      "连贯性增强"
+    ],
+    "low_priority": [
+      "高级词汇替换",
+      "风格细节优化",
+      "表达多样性"
+    ]
+  },
+  "learning_resources": {
+    "grammar": [
+      "《剑桥英语语法》第3-5章：主谓一致和冠词用法",
+      "在线练习：语法错误识别与修正",
+      "雅思写作语法专项训练"
+    ],
+    "vocabulary": [
+      "《学术词汇表》(Academic Word List)",
+      "《雅思写作词汇升级指南》",
+      "主题词汇分类学习资源"
+    ],
+    "structure": [
+      "《英语写作句型大全》",
+      "复杂句型构建练习",
+      "段落结构和连贯性训练"
+    ],
+    "academic_writing": [
+      "《学术写作规范指南》",
+      "正式语言表达训练",
+      "客观性写作技巧"
+    ]
+  },
+  "practice_exercises": {
+    "daily_practice": [
+      {
+        "skill": "语法修正",
+        "exercise": "每日识别和修正5个语法错误",
+        "time": "15分钟",
+        "resources": ["语法错误数据库", "修正练习题"]
+      },
+      {
+        "skill": "词汇升级",
+        "exercise": "每日学习10个高级词汇替换",
+        "time": "20分钟",
+        "resources": ["词汇升级列表", "语境练习"]
+      }
+    ],
+    "weekly_focus": [
+      {
+        "week": 1,
+        "focus": "主谓一致和冠词用法",
+        "exercises": ["专项语法练习", "错误识别训练", "修正练习"]
+      },
+      {
+        "week": 2,
+        "focus": "基础词汇升级",
+        "exercises": ["词汇替换练习", "语境应用", "写作应用"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+"description": "高分（Band 7+）所需的复杂句型库。提供句型功能、构建模式和范例，用于为用户生成“提升版”范例和具体的学习建议。",
+"entries": [
+    {
+    "structure_id": "GRA_STRUCT_01",
+    "structure_name": "Relative Clause",
+    "structure_name_cn": "定语从句",
+    "band_potential": "7.0+",
+    "function_cn": "用于修饰名词或代词，通过提供额外信息来增加句子的信息密度和复杂度，是构成复杂句的基础。",
+    "construction_pattern_cn": "先行词 + 关系代词 (who, whom, which, that, whose) / 关系副词 (where, when, why) + 从句",
+    "examples": [
+        {
+        "type": "限定性",
+        "sentence": "The policy that the government implemented last year has proven to be highly effective.",
+        "note_cn": "用于明确指出是哪一个政策。"
+        },
+        {
+        "type": "非限定性",
+        "sentence": "The internet, which has become an indispensable part of modern life, offers both opportunities and challenges.",
+        "note_cn": "作为补充说明，前后用逗号隔开。"
+        }
+    ],
+    "common_mistakes_cn": ["关系代词'who'和'whom'的混淆。", "滥用'that'，尤其是在非限定性从句中（应用'which'）。", "非限定性从句前后忘记加逗号。"]
+    },
+    {
+    "structure_id": "GRA_STRUCT_02",
+    "structure_name": "Inversion",
+    "structure_name_cn": "倒装句",
+    "band_potential": "8.0+",
+    "function_cn": "用于强调句子的某一部分，使语言更具文采和正式感，是高级语法的标志。",
+    "construction_pattern_cn": "否定/限定副词置于句首 + 助动词/情态动词 + 主语 + 动词原形...",
+    "examples": [
+        {
+        "type": "否定副词在句首",
+        "sentence": "Not only does this approach save money, but it also enhances efficiency.",
+        "note_cn": "由 'Not only' 开头，主句 'this approach saves' 变为 'does this approach save'。"
+        },
+        {
+        "type": "虚拟条件句省略if",
+        "sentence": "Should this policy be implemented, it would trigger a public debate.",
+        "note_cn": "原句是 'If this policy should be implemented...'，省略if后将'should'提前。"
+        }
+    ],
+    "common_mistakes_cn": ["忘记将助动词提前。", "将整个动词提前而不是只提前助动词。"]
+    },
+    {
+    "structure_id": "GRA_STRUCT_03",
+    "structure_name": "Passive Voice",
+    "structure_name_cn": "被动语态",
+    "band_potential": "7.0+",
+    "function_cn": "用于强调动作的接受者，或在动作的执行者不重要/不明确时使用，使文章语气更客观、更学术。",
+    "construction_pattern_cn": "主语（动作接受者） + be动词 + 动词过去分词 (V-ed)",
+    "examples": [
+        {
+        "type": "强调客观事实",
+        "sentence": "It is widely believed that education is the key to a country's development.",
+        "note_cn": "比 'Many people believe that...' 更为客观正式。"
+        },
+        {
+        "type": "描述流程/过程 (Task 1)",
+        "sentence": "First, the raw materials are transported to the factory, where they are sorted.",
+        "note_cn": "流程图或工序图的描述中非常常用。"
+        }
+    ],
+    "common_mistakes_cn": ["be动词形式与主语或时态不匹配。", "滥用被动语态导致句子晦涩难懂。"]
+    }
+  ]
+}

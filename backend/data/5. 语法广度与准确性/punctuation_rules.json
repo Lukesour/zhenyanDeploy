@@ -1,0 +1,284 @@
+{
+    "description": "标点符号是语法准确性的一部分，对句子清晰度至关重要。这里列出最关键的规则。",
+    "entries": [
+        {
+            "rule_name": "Comma Splice",
+            "rule_name_cn": "逗号拼接",
+            "rule_cn": "不要只用一个逗号来连接两个独立的句子（即两个可以各自独立成句的分句）。这是非常严重的语法错误。",
+            "example_incorrect": "The internet is a powerful tool, it has changed our lives.",
+            "solutions_cn": [
+                {"method": "使用句号", "example": "The internet is a powerful tool. It has changed our lives."},
+                {"method": "使用分号", "example": "The internet is a powerful tool; it has changed our lives."},
+                {"method": "使用连词", "example": "The internet is a powerful tool, and it has changed our lives."}
+            ]
+        },
+        {
+            "rule_name": "Run-on Sentence (Fused Sentence)",
+            "rule_name_cn": "长句（或合句）错误",
+            "rule_cn": "将两个或多个独立的句子合并在一起，中间没有任何标点或连词。这会让读者难以理解句子的边界。",
+            "example_incorrect": "She loves to read he loves to play video games.",
+            "solutions_cn": [
+                {"method": "使用句号", "example": "She loves to read. He loves to play video games."},
+                {"method": "使用分号", "example": "She loves to read; he loves to play video games."},
+                {"method": "使用逗号和连词", "example": "She loves to read, but he loves to play video games."}
+            ]
+        },
+        {
+            "rule_name": "Sentence Fragment",
+            "rule_name_cn": "句子片段",
+            "rule_cn": "一个不完整的句子，因为它缺少主语、谓语，或者是一个无法独立存在的从句。",
+            "example_incorrect": "Because she studied hard for the exam.",
+            "solutions_cn": [
+                {"method": "连接到主句", "example": "She passed the test because she studied hard for the exam."},
+                {"method": "移除从属连词，使其独立", "example": "She studied hard for the exam."}
+            ]
+        },
+        {
+            "rule_name": "Apostrophe Misuse (Possessives and Contractions)",
+            "rule_name_cn": "撇号误用（所有格与缩写）",
+            "rule_cn": "撇号主要用于表示所有格（如 a student's book）和缩写（如 it's = it is）。常见错误是混淆 'its'（它的）和 'it's'（它是）。",
+            "example_incorrect": "The dog wagged it's tail because its a happy dog.",
+            "solutions_cn": [
+                {"method": "修正所有格和缩写", "example": "The dog wagged its tail because it's a happy dog."}
+            ]
+        },
+        {
+            "rule_name": "Comma with Introductory Clause/Phrase",
+            "rule_name_cn": "引导性分句/短语后的逗号",
+            "rule_cn": "在一个句子的主句开始之前，如果有一个引导性的单词、短语或从句，其后通常需要跟一个逗号。",
+            "example_incorrect": "After the rain stopped we went for a walk.",
+            "solutions_cn": [
+                {"method": "在引导性短语后添加逗号", "example": "After the rain stopped, we went for a walk."}
+            ]
+        },
+        {
+            "rule_name": "The Oxford (Serial) Comma",
+            "rule_name_cn": "牛津逗号（系列逗号）",
+            "rule_cn": "在列举三个或更多项的列表中，在'and'或'or'之前的最后一项后面加上逗号。这可以避免歧义，使句子更清晰（此规则在不同文体指南中可能要求不同，但通常推荐使用）。",
+            "example_incorrect": "I would like to thank my parents, Steve Jobs and God.",
+            "solutions_cn": [
+                {"method": "使用牛津逗号避免歧义", "example": "I would like to thank my parents, Steve Jobs, and God."}
+            ]
+        },
+        {
+            "rule_name": "Colon to Introduce a List",
+            "rule_name_cn": "使用冒号引出列表",
+            "rule_cn": "当一个完整的独立子句后面跟着一个列表、解释或引言时，应使用冒号。不要在动词或介词后直接加冒号。",
+            "example_incorrect": "The required items are: a notebook, a pen, and a calculator.",
+            "solutions_cn": [
+                {"method": "移除不必要的冒号", "example": "The required items are a notebook, a pen, and a calculator."},
+                {"method": "将冒号前改为独立子句", "example": "Please bring the following items: a notebook, a pen, and a calculator."}
+            ]
+        },
+        {
+            "rule_name": "Semicolon in a Complex List",
+            "rule_name_cn": "在复杂列表中使用分号",
+            "rule_cn": "如果列表中的项目本身包含逗号，为了避免混淆，应该使用分号来分隔这些项目。",
+            "example_incorrect": "The team includes members from Shanghai, China, Tokyo, Japan, and Seoul, South Korea.",
+            "solutions_cn": [
+                {"method": "使用分号分隔列表项", "example": "The team includes members from Shanghai, China; Tokyo, Japan; and Seoul, South Korea."}
+            ]
+        },
+        {
+            "rule_name": "Hyphen in Compound Adjectives",
+            "rule_name_cn": "复合形容词中的连字符",
+            "rule_cn": "当两个或多个词共同作为一个形容词修饰其后的名词时，这些词之间通常需要使用连字符。",
+            "example_incorrect": "She is a well known author.",
+            "solutions_cn": [
+                {"method": "在名词前的复合形容词中添加连字符", "example": "She is a well-known author."},
+                {"method": "当复合词在名词后时则不使用", "example": "As an author, she is well known."}
+            ]
+        },
+        {
+            "rule_name": "Quotation Marks with Other Punctuation",
+            "rule_name_cn": "引号与其他标点的并用",
+            "rule_cn": "在美式英语中，句号和逗号通常放在结束引号的内部。问号和感叹号则根据它们是属于引文还是整个句子来决定位置。",
+            "example_incorrect": "She said, \"I am ready\".",
+            "solutions_cn": [
+                {"method": "将句号置于引号内（美式）", "example": "She said, \"I am ready.\""},
+                {"method": "问号属于引文", "example": "He asked, \"Are you coming?\""},
+                {"method": "问号属于整个句子", "example": "Did she just say, \"I quit\"?"}
+            ]
+        },
+                {
+            "rule_name": "Dashes (Em Dash vs. En Dash)",
+            "rule_name_cn": "破折号（Em Dash vs. En Dash）",
+            "rule_cn": "Em dash (—) 用于强调、解释或句意的突然转变，通常比逗号更强烈，比括号更正式。En dash (–) 主要用于表示范围（如日期、数字）。它们不同于普通的连字符 (-)。提示：在您的 MacBook 上，En dash 可通过 `Option + -` 输入，Em dash 可通过 `Option + Shift + -` 输入。",
+            "example_incorrect": "The years 2020-2022 were challenging- a period of great change.",
+            "solutions_cn": [
+                {"method": "使用 En Dash (–) 表示范围", "example": "The years 2020–2022 were challenging."},
+                {"method": "使用 Em Dash (—) 表示解释或强调", "example": "The experience was challenging—a period of great change I'll never forget."}
+            ]
+        },
+        {
+            "rule_name": "Parentheses vs. Brackets",
+            "rule_name_cn": "圆括号 vs. 方括号",
+            "rule_cn": "圆括号 () 用于包含补充性、非必要的信息。方括号 [] 主要用于在引文中插入编者注或澄清文字，以表明这些词句并非出自原文。",
+            "example_incorrect": "The witness stated, \"He (the manager) left the building at 9 p.m.\"",
+            "solutions_cn": [
+                {"method": "在引文中插入解释时使用方括号", "example": "The witness stated, \"He [the manager] left the building at 9 p.m.\""},
+                {"method": "使用圆括号提供句外补充信息", "example": "The manager (who was hired last month) left the building at 9 p.m."}
+            ]
+        },
+        {
+            "rule_name": "Ellipsis Usage",
+            "rule_name_cn": "省略号的用法",
+            "rule_cn": "省略号 (...) 主要有两个功能：一是在引文中表示有文字被省略；二是表示说话的停顿、犹豫或思绪的中断。",
+            "example_incorrect": "He said 'I know what to do but I'm not sure.'",
+            "solutions_cn": [
+                {"method": "表示停顿或犹豫", "example": "He said, \"I know what to do... but I'm not sure.\""},
+                {"method": "在引文中表示省略", "example": "The original text reads, 'We the People... do ordain and establish this Constitution.'"}
+            ]
+        },
+        {
+            "rule_name": "Comma with Non-restrictive Clauses",
+            "rule_name_cn": "非限制性从句与逗号",
+            "rule_cn": "非限制性从句提供额外信息，如果删除，句子的核心意思不变。这类从句前后必须用逗号隔开，通常由 'which' 引导。相反，限制性从句是句子核心意义所必需的，不能用逗号隔开，通常由 'that' 引导。",
+            "example_incorrect": "My laptop which is a MacBook Air is very fast.",
+            "solutions_cn": [
+                {"method": "为非限制性从句添加逗号", "example": "My laptop, which is a MacBook Air, is very fast."},
+                {"method": "限制性从句（无逗号）作对比", "example": "The laptop that I use for work is faster than my personal one."}
+            ]
+        },
+        {
+            "rule_name": "Parallel Structure (Parallelism)",
+            "rule_name_cn": "平行结构",
+            "rule_cn": "这是一个文体规则，但与标点符号密切相关。当使用连词（如 and, but, or）连接一系列项目时，这些项目应具有相同的语法形式（例如，全是名词、全是动名词或全是不定式）。",
+            "example_incorrect": "He is responsible for writing reports, manage the team, and customer communication.",
+            "solutions_cn": [
+                {"method": "统一使用动名词 (Gerunds)", "example": "He is responsible for writing reports, managing the team, and communicating with customers."},
+                {"method": "统一使用动词原形 (Bare Infinitives)", "example": "His duties are to write reports, manage the team, and communicate with customers."}
+            ]
+        },
+        {
+            "rule_name": "Title Capitalization",
+            "rule_name_cn": "标题大小写",
+            "rule_cn": "标题大小写有多种风格，但通用规则是：标题的第一个和最后一个词大写；所有主要词汇（名词、代词、动词、形容词、副词）大写；短的介词（如 of, in, on, at）、冠词（a, an, the）和连词（and, but, for）通常小写，除非它们是第一个或最后一个词。",
+            "example_incorrect": "A Tale Of Two Cities",
+            "solutions_cn": [
+                {"method": "遵循标题大小写规则", "example": "A Tale of Two Cities"},
+                {"method": "另一个例子", "example": "The Lord of the Rings"}
+            ]
+        },
+                {
+            "rule_name": "Misplaced or Dangling Modifier",
+            "rule_name_cn": "修饰语错位或悬垂",
+            "rule_cn": "修饰语（单词、短语或从句）应紧邻其所描述的对象。如果位置不当，会产生逻辑混乱或可笑的句子。悬垂修饰语所描述的对象甚至没有出现在句子中。",
+            "example_incorrect": "Walking through the forest, a bear suddenly appeared.",
+            "solutions_cn": [
+                {"method": "为修饰语提供明确的主语", "example": "While I was walking through the forest, a bear suddenly appeared."},
+                {"method": "重构句子，将被修饰对象置于句首", "example": "A bear suddenly appeared as I was walking through the forest."}
+            ]
+        },
+        {
+            "rule_name": "Punctuating Dialogue Tags",
+            "rule_name_cn": "对话标签的标点符号",
+            "rule_cn": "对话标签（如 she said, he asked）的标点有特定规则。在美式英语中，如果标签在引文后，陈述句引文的结尾用逗号代替句号，并置于引号内。问号和感叹号则保留。",
+            "example_incorrect": "This is important.\" he whispered.",
+            "solutions_cn": [
+                {"method": "陈述句后用逗号，标签首字母小写", "example": "\"This is important,\" he whispered."},
+                {"method": "保留引文原有的问号或感叹号", "example": "\"Can we go now?\" she asked."},
+                {"method": "当标签插入句子中间时", "example": "\"I think,\" he paused, \"that this is the right way.\""}
+            ]
+        },
+        {
+            "rule_name": "Hyphenating Compound Numbers and Fractions",
+            "rule_name_cn": "复合数字与分数的连字符",
+            "rule_cn": "在英文写作中，从 twenty-one 到 ninety-nine 的复合数字需要使用连字符。当分数作为形容词修饰名词时，也需要加连字符。",
+            "example_incorrect": "The test has forty five questions and requires a two thirds majority to pass.",
+            "solutions_cn": [
+                {"method": "连接二十一至九十九的复合数字", "example": "The test has forty-five questions."},
+                {"method": "连接作形容词的分数", "example": "It requires a two-thirds majority to pass."},
+                {"method": "分数作名词时通常不连接", "example": "He was supported by two thirds of the voters."}
+            ]
+        },
+        {
+            "rule_name": "Commas with Coordinate Adjectives",
+            "rule_name_cn": "并列形容词之间的逗号",
+            "rule_cn": "当两个或多个形容词独立地修饰同一个名词时（即“并列形容词”），它们之间需要用逗号隔开。检验方法：如果可以在形容词之间加上 'and'，或者调换它们的顺序而不影响意思，就需要加逗号。",
+            "example_incorrect": "It was a dark stormy night.",
+            "solutions_cn": [
+                {"method": "用逗号分隔可互换的并列形容词", "example": "It was a dark, stormy night. (可以说 'dark and stormy')"},
+                {"method": "非并列形容词间则不使用逗号", "example": "She bought a beautiful red dress. (不能说 'beautiful and red dress')"}
+            ]
+        },
+        {
+            "rule_name": "Subject-Verb Agreement with Interrupting Phrases",
+            "rule_name_cn": "受插入语影响的主谓一致",
+            "rule_cn": "动词的形式必须与其主语的单复数保持一致。当主语和动词之间被一个短语或从句（尤其是由 as well as, along with, including 等引导）隔开时，容易产生错误。动词应始终与真正的主语匹配。",
+            "example_incorrect": "The list of new regulations, in addition to the old ones, are very confusing.",
+            "solutions_cn": [
+                {"method": "使动词与主语 'list' (单数) 保持一致", "example": "The list of new regulations, in addition to the old ones, is very confusing."}
+            ]
+        },
+        {
+            "rule_name": "That vs. Which",
+            "rule_name_cn": "That 与 Which 的区别",
+            "rule_cn": "这是 '非限制性从句' 规则的延伸。'That' 用于引导限制性从句（对句子意义至关重要，无逗号）。'Which' 用于引导非限制性从句（提供额外信息，前后有逗号）。正确使用它们能显著提升文章的精确性。",
+            "example_incorrect": "The phone which I bought yesterday is already broken.",
+            "solutions_cn": [
+                {"method": "使用 'that' 引导限制性从句（无逗号）", "example": "The phone that I bought yesterday is already broken. (暗示我有多部手机，特指昨天买的那部)"},
+                {"method": "使用 'which' 引导非限制性从句（有逗号）", "example": "My phone, which I bought yesterday, is already broken. (暗示我只有一部手机，顺便提一下购买时间)"}
+            ]
+        },
+                {
+            "rule_name": "Active vs. Passive Voice",
+            "rule_name_cn": "主动语态 vs. 被动语态",
+            "rule_cn": "主动语态中，主语执行动作（The dog chased the cat.）；被动语态中，主语接受动作（The cat was chased by the dog.）。通常推荐使用主动语态，因为它更直接、简洁、有力。被动语态在行为执行者未知或不重要，或者想强调动作接受者时使用。",
+            "example_incorrect": "The decision was made by the committee. (语法正确，但不够直接)",
+            "solutions_cn": [
+                {"method": "优先使用主动语态以增强清晰度和力量", "example": "The committee made the decision."},
+                {"method": "在需要强调接受者或行为者未知时使用被动语态", "example": "The new bridge was finally completed last week."}
+            ]
+        },
+        {
+            "rule_name": "Subjunctive Mood",
+            "rule_name_cn": "虚拟语气",
+            "rule_cn": "虚拟语气用于表达与事实相反的假设、愿望、建议或要求。最常见的标志是在条件句中，无论主语是谁，都使用 'were' 而不是 'was'；以及在表示建议或要求的从句中，动词使用原形。",
+            "example_incorrect": "If I was you, I would accept the offer. / I suggest that he goes immediately.",
+            "solutions_cn": [
+                {"method": "在与事实相反的假设中使用 'were'", "example": "If I were you, I would accept the offer."},
+                {"method": "在建议、要求、命令的从句中使用动词原形", "example": "I suggest that he go immediately."}
+            ]
+        },
+        {
+            "rule_name": "Punctuation with i.e. and e.g.",
+            "rule_name_cn": "i.e. 与 e.g. 的标点符号",
+            "rule_cn": "e.g. (exempli gratia) 意为“例如”(for example)，用于列举一个或多个例子。i.e. (id est) 意为“也就是/换言之”(that is)，用于澄清或重述。在美式英语中，它们后面通常紧跟一个逗号。它们所引出的短语常被置于括号内，或由逗号、分号或破折号与主句隔开。",
+            "example_incorrect": "You should bring hydration e.g. water.",
+            "solutions_cn": [
+                {"method": "正确使用 e.g. (举例)", "example": "You should bring hydration—e.g., water or a sports drink."},
+                {"method": "正确使用 i.e. (澄清)", "example": "He was a polymath; i.e., a person of wide-ranging knowledge."}
+            ]
+        },
+        {
+            "rule_name": "British vs. American Punctuation (Logical Punctuation)",
+            "rule_name_cn": "英式 vs. 美式标点符号（逻辑标点）",
+            "rule_cn": "两者最显著的区别在于引号的用法。美式英语习惯将句号和逗号放在引号内部。而英式英语（及其他一些地区）采用“逻辑标点法”，即只有当标点本身是引文的一部分时，才将其放入引号内。此外，英式英语中使用牛津逗号的频率低于美式英语。",
+            "example_incorrect": "The sign read \"Closed\". (在美式英语中不规范)",
+            "solutions_cn": [
+                {"method": "美式风格（标点在内）", "example": "The sign read \"Closed.\""},
+                {"method": "英式风格（逻辑标点）", "example": "The sign read 'Closed'."}
+            ]
+        },
+        {
+            "rule_name": "Use of Slashes",
+            "rule_name_cn": "斜杠 (/) 的用法",
+            "rule_cn": "斜杠主要用于表示选择（相当于 'or'）、构成缩写（如 'w/o' 表示 without）、或在非正式写作中表示“和/或”。在引用诗歌时，用斜杠来表示换行。",
+            "example_incorrect": "Please bring your ID card and or your passport.",
+            "solutions_cn": [
+                {"method": "表示'或'/'和或'", "example": "Each guest must sign a waiver for himself/herself."},
+                {"method": "在诗歌引文中表示换行", "example": "The first lines are \"The woods are lovely, dark and deep, / But I have promises to keep.\""}
+            ]
+        },
+        {
+            "rule_name": "Consistency of Style",
+            "rule_name_cn": "风格一致性",
+            "rule_cn": "这是一个“元规则”。对于一些有争议或多种选择均可接受的规则（如是否使用牛津逗号、数字的拼写方式、标题大小写风格等），最重要的原则是在整篇文档中保持绝对的一致性。选择一种风格并坚持下去。",
+            "example_incorrect": "In the report, he lists apples, bananas, and pears. Later, he lists dogs, cats and mice.",
+            "solutions_cn": [
+                {"method": "在整篇文档中保持风格统一", "example": "Consistent use of the Oxford comma: \"...apples, bananas, and pears.\" and \"...dogs, cats, and mice.\" OR Consistent omission: \"...apples, bananas and pears.\" and \"...dogs, cats and mice.\""}
+            ]
+        }
+    ]
+}

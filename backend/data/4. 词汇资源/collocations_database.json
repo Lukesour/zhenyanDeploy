@@ -1,0 +1,791 @@
+{
+  "description": "存储常见的、能体现地道性的词语搭配，并指出常见错误，用于检查搭配准确性。涵盖动词、名词、形容词、副词等多种组合。",
+  "entries": [
+    {
+      "collocation": "to have an impact on",
+      "type": "verb + noun phrase",
+      "example": "The new law will have a significant impact on the economy.",
+      "common_mistake": "通常不说 'make an impact' 或 'bring an impact'，最地道的搭配是 'have an impact'。"
+    },
+    {
+      "collocation": "to solve a problem",
+      "type": "verb + noun",
+      "example": "International cooperation is required to solve the problem of climate change.",
+      "common_mistake": "不说 'resolve a problem' (resolve an issue/conflict 更常见)，不说 'fix a problem' (太口语化)。"
+    },
+    {
+      "collocation": "to play a role in",
+      "type": "verb + noun phrase",
+      "example": "Technology plays a crucial role in modern society.",
+      "common_mistake": "不说 'act a role'。"
+    },
+    {
+      "collocation": "a convincing argument",
+      "type": "adjective + noun",
+      "example": "The lawyer presented a convincing argument to the jury.",
+      "common_mistake": "不说 'a strong argument' (可以，但不如 convincing 地道)，不说 'a powerful argument'。"
+    },
+    {
+      "collocation": "to make a mistake",
+      "type": "verb + noun",
+      "example": "Everyone makes mistakes, so don't be too hard on yourself.",
+      "common_mistake": "这是一个非常常见的错误，不说 'do a mistake'。"
+    },
+    {
+      "collocation": "to take a photo/picture",
+      "type": "verb + noun",
+      "example": "Could you please take a photo for us?",
+      "common_mistake": "不说 'make a photo' 或 'shoot a photo' (shoot a film 更常见)。"
+    },
+    {
+      "collocation": "to raise awareness of/about",
+      "type": "verb + noun phrase",
+      "example": "The campaign aims to raise awareness of environmental issues.",
+      "common_mistake": "不说 'increase awareness' 或 'create awareness' (可以用，但 'raise' 是最地道的搭配)。"
+    },
+    {
+      "collocation": "to draw a conclusion",
+      "type": "verb + noun",
+      "example": "Based on the data, we can draw the conclusion that the market is recovering.",
+      "common_mistake": "在学术或正式语境中，'draw a conclusion' 比 'make a conclusion' 更地道。"
+    },
+    {
+      "collocation": "to pay attention",
+      "type": "verb + noun",
+      "example": "You need to pay close attention to the details.",
+      "common_mistake": "不说 'give attention'。"
+    },
+    {
+      "collocation": "heavy traffic",
+      "type": "adjective + noun",
+      "example": "We were stuck in heavy traffic for over an hour.",
+      "common_mistake": "形容交通拥堵用 'heavy'，而不是 'strong traffic' 或 'big traffic'。"
+    },
+    {
+      "collocation": "strong coffee",
+      "type": "adjective + noun",
+      "example": "I need a cup of strong coffee to wake me up.",
+      "common_mistake": "形容咖啡浓，用 'strong'，而不是 'heavy coffee' 或 'thick coffee'。"
+    },
+    {
+      "collocation": "a major issue",
+      "type": "adjective + noun",
+      "example": "Poverty remains a major issue in many parts of the world.",
+      "common_mistake": "'big issue' 也可以，但 'major issue' 在书面和正式场合更常用、更地道。"
+    },
+    {
+      "collocation": "fast food",
+      "type": "adjective + noun",
+      "example": "Many people rely on fast food for their daily meals.",
+      "common_mistake": "习惯搭配是 'fast food'，而不是 'quick food'。"
+    },
+    {
+      "collocation": "highly successful",
+      "type": "adverb + adjective",
+      "example": "She is a highly successful entrepreneur.",
+      "common_mistake": "可以用 'very successful'，但 'highly' 是一个更强、更地道的副词来修饰 'successful', 'recommended', 'unlikely' 等词。"
+    },
+    {
+      "collocation": "bitterly disappointed",
+      "type": "adverb + adjective",
+      "example": "He was bitterly disappointed when he failed the exam.",
+      "common_mistake": "表达“极其失望”的地道搭配，不说 'strongly disappointed' 或 'heavily disappointed'。"
+    },
+    {
+      "collocation": "fully aware",
+      "type": "adverb + adjective",
+      "example": "I am fully aware of the consequences of my actions.",
+      "common_mistake": "不说 'completely aware' (语法正确但不常用)，'fully aware' 是固定搭配，表示“完全清楚”。"
+    },
+    {
+      "collocation": "an opportunity arises",
+      "type": "noun + verb",
+      "example": "You should seize the chance when an opportunity arises.",
+      "common_mistake": "机会是“出现”，而不是 'an opportunity happens' 或 'an opportunity appears'。"
+    },
+    {
+      "collocation": "war breaks out",
+      "type": "noun + verb",
+      "example": "The war broke out unexpectedly in 1914.",
+      "common_mistake": "指战争“爆发”，这是最地道的说法，优于 'a war starts'。"
+    },
+    {
+      "collocation": "to congratulate someone on",
+      "type": "verb + preposition phrase",
+      "example": "I congratulated her on her promotion.",
+      "common_mistake": "祝贺某人某事，介词用 'on'，而不是 'for'。"
+    },
+    {
+      "collocation": "to be interested in",
+      "type": "verb + preposition phrase",
+      "example": "Are you interested in modern art?",
+      "common_mistake": "对……感兴趣，介词用 'in'，而不是 'on' 或 'about'。"
+    },
+    {
+    "collocation": "to conduct research/a study",
+    "type": "verb + noun phrase",
+    "example": "The team will conduct a study to investigate the effects of the new drug.",
+    "common_mistake": "在学术或正式语境中，'conduct' 是“进行”研究、调查、实验的首选动词。'do research' 也可以，但 'conduct' 更为正式、地道。"
+  },
+  {
+    "collocation": "to put forward a theory/argument",
+    "type": "verb + noun phrase",
+    "example": "In his latest paper, Professor Lee puts forward a new theory of consciousness.",
+    "common_mistake": "指“提出”理论或论点时，'put forward' 是非常地道的搭配。避免使用 'raise a theory' 或 'give an argument'。"
+  },
+  {
+    "collocation": "a pivotal role",
+    "type": "adjective + noun",
+    "example": "She played a pivotal role in the negotiations, leading to a successful agreement.",
+    "common_mistake": "比 'an important role' (一个重要的角色) 语气更强，指“关键性的、起决定性作用的”角色。'Pivotal' 显得更专业、更有力。"
+  },
+  {
+    "collocation": "to meet a deadline",
+    "type": "verb + noun",
+    "example": "We are working overtime to meet the project deadline.",
+    "common_mistake": "表示“赶上截止日期”，动词是 'meet'。常见的错误是 'reach the deadline' 或 'achieve the deadline'。"
+  },
+  {
+    "collocation": "a competitive edge",
+    "type": "adjective + noun",
+    "example": "Excellent customer service gives our company a competitive edge.",
+    "common_mistake": "指“竞争优势”，是一个非常常见的商业术语。'competing advantage' 是错误的说法，'competitive advantage' 也可以，但 'edge' 更强调微小但关键的优势。"
+  },
+  {
+    "collocation": "a sharp increase/fall",
+    "type": "adjective + noun",
+    "example": "There has been a sharp increase in the cost of living.",
+    "common_mistake": "描述数据“急剧”变化时，用 'sharp' 来修饰。不说 'a quick increase' 或 'a fast fall'。"
+  },
+  {
+    "collocation": "to remain stable/constant",
+    "type": "verb + adjective",
+    "example": "Despite the market fluctuations, our sales figures remained stable.",
+    "common_mistake": "表示数据“保持稳定”，动词用 'remain'。不说 'keep stable'。"
+  },
+  {
+    "collocation": "abundantly clear",
+    "type": "adverb + adjective",
+    "example": "After his explanation, the situation became abundantly clear to everyone.",
+    "common_mistake": "这是一个比 'very clear' 语气强得多的搭配，表示“一清二楚，显而易见”。"
+  },
+  {
+    "collocation": "to voice concern about",
+    "type": "verb + noun phrase",
+    "example": "Residents have voiced serious concerns about the new development plan.",
+    "common_mistake": "一个更正式、更书面化的“表达担忧”的方式。比 'say their concerns' 或 'express their worries' 更地道。"
+  },
+  {
+    "collocation": "to arrive at a decision/conclusion",
+    "type": "verb + noun phrase",
+    "example": "After hours of discussion, the committee finally arrived at a decision.",
+    "common_mistake": "强调经过一番过程（如讨论、思考）后“做出决定”或“得出结论”。比 'make a decision' 更能体现过程感。不说 'reach to a decision'。"
+  },
+  {
+    "collocation": "a conflict of interest",
+    "type": "noun + preposition + noun",
+    "example": "A judge must recuse himself from a case if there is a conflict of interest.",
+    "common_mistake": "指“利益冲突”，这是一个在法律、商业和政治领域非常重要的固定短语。不要自己创造说法，如 'an interest conflict'。"
+  },
+  {
+    "collocation": "to take precedence over",
+    "type": "verb + noun phrase",
+    "example": "In matters of safety, practical concerns must take precedence over financial ones.",
+    "common_mistake": "表示“优先于…，比…更重要”，是一个非常正式和高级的表达。不要说 'have priority on'。"
+  },
+  {
+    "collocation": "to be deeply moved",
+    "type": "adverb + past participle adjective",
+    "example": "I was deeply moved by his story of survival.",
+    "common_mistake": "表达“深受感动”，'deeply' 是比 'very' 强得多且更地道的副词。不说 'I was very moved' (语法正确但不够有力)。"
+  },
+  {
+    "collocation": "to be cautiously optimistic",
+    "type": "adverb + adjective",
+    "example": "Doctors are cautiously optimistic about his chances of recovery.",
+    "common_mistake": "这是一个非常精准的表达，指“审慎乐观”。它常用于商业、政治和医疗领域，表示希望与不确定性并存。自己组合的 'carefully hopeful' 等说法是不地道的。"
+  },
+  {
+    "collocation": "a sense of dread",
+    "type": "noun phrase",
+    "example": "As she walked down the dark alley, a sense of dread washed over her.",
+    "common_mistake": "指一种“对即将发生坏事的恐惧感、不祥之兆”。比单纯说 'a feeling of fear' 要具体和形象得多。"
+  },
+  {
+    "collocation": "to make ends meet",
+    "type": "idiomatic verb phrase",
+    "example": "With rising prices, many families are struggling to make ends meet.",
+    "common_mistake": "这是一个固定习语，指“收支相抵，勉强维持生计”。不要按字面意思翻译，或说成 'make income and spending equal'。"
+  },
+  {
+    "collocation": "to strike up a conversation",
+    "type": "verb + noun phrase",
+    "example": "He found it easy to strike up a conversation with strangers on the train.",
+    "common_mistake": "指“（与陌生人）开始攀谈、打开话匣子”。'start a conversation' 也可以，但 'strike up' 更加自然、生动。"
+  },
+  {
+    "collocation": "to extend an invitation",
+    "type": "verb + noun",
+    "example": "The university will extend a formal invitation to the guest speaker.",
+    "common_mistake": "一种比 'invite' 或 'give an invitation' 更正式、更礼貌的说法，常用于书面或正式场合。"
+  },
+  {
+    "collocation": "to hold the view that",
+    "type": "verb + noun phrase",
+    "example": "A significant number of scientists hold the view that climate change is irreversible.",
+    "common_mistake": "在学术或正式讨论中，这是“持有某种观点”的地道说法，比 'think that' 更具分量。不说 'have the view'。"
+  },
+  {
+    "collocation": "a valid point",
+    "type": "adjective + noun",
+    "example": "You've made a valid point; I hadn't considered that aspect before.",
+    "common_mistake": "用来承认对方的论点“有道理、站得住脚”。不说 'a right point' 或 'a correct point'，因为 'valid' 强调的是论点的逻辑性和合理性，而非绝对的对错。"
+  },
+  {
+    "collocation": "to cast doubt on",
+    "type": "verb + noun phrase",
+    "example": "The new evidence casts serious doubt on the defendant's alibi.",
+    "common_mistake": "指“让……受到怀疑，对……提出质疑”。这是一个固定搭配，动词是 'cast'，而不是 'throw doubt' 或 'put doubt'。"
+  },
+  {
+    "collocation": "a contributing factor",
+    "type": "adjective + noun",
+    "example": "Poor diet is a contributing factor to many health problems.",
+    "common_mistake": "指“一个促成因素”，强调只是众多原因之一，而非唯一或主要原因。比直接说 'a cause' 更加精确、严谨。"
+  },
+  {
+    "collocation": "mutually exclusive",
+    "type": "adverb + adjective",
+    "example": "His two goals—making a lot of money and working very little—are mutually exclusive.",
+    "common_mistake": "指两者“相互排斥，不能并存”。这是一个非常精确的术语，常用于逻辑和论证中。不要自己创造如 'cannot exist with each other' 等冗长的说法。"
+  },
+  {
+    "collocation": "to take measures",
+    "type": "verb + noun",
+    "example": "The government must take drastic measures to curb inflation.",
+    "common_mistake": "指“采取措施”，是非常正式的说法，常用于政府、机构的报告或新闻中。'take steps' 或 'take action' 意思相近，但 'take measures' 更强调具体、有计划的应对策略。不要说 'do measures'。"
+  },
+  {
+    "collocation": "to reach a compromise",
+    "type": "verb + noun phrase",
+    "example": "After a long negotiation, both sides were able to reach a compromise.",
+    "common_mistake": "指“达成妥协、折中”，强调双方努力后达成的结果。动词用 'reach' 或 'come to'。'make a compromise' 也可以，但 'reach' 更侧重于最终的“达成”。"
+  },
+  {
+    "collocation": "the root cause",
+    "type": "adjective + noun",
+    "example": "We need to identify the root cause of the problem, not just treat the symptoms.",
+    "common_mistake": "指“根本原因”，强调问题的最深层、最核心的来源。比 'the main reason' 更具分析性和深度。"
+  },
+  {
+    "collocation": "to come to fruition",
+    "type": "idiomatic verb phrase",
+    "example": "After years of hard work, his plans finally came to fruition.",
+    "common_mistake": "这是一个非常优美的比喻性说法，指计划、希望等“得以实现，结出果实”。比 'be realized' 或 'become successful' 更加生动、书面化。"
+  },
+  {
+    "collocation": "a resounding success",
+    "type": "adjective + noun",
+    "example": "The fundraising event was a resounding success, raising over a million dollars.",
+    "common_mistake": "形容“巨大的成功，辉煌的胜利”。'Resounding' (响亮的) 是一个非常有力的形容词，比 'a big success' 或 'a great success' 的感染力强得多。"
+  },
+  {
+    "collocation": "to fall short of expectations",
+    "type": "verb + prepositional phrase",
+    "example": "The movie's box office performance fell short of expectations.",
+    "common_mistake": "指“未能达到预期”。这是一个比直接说 'failed' 或 'was not as good as expected' 更委婉、更正式的说法。"
+  },
+  {
+    "collocation": "to brief someone on something",
+    "type": "verb + pronoun + preposition",
+    "example": "The manager will brief the team on the new project requirements.",
+    "common_mistake": "指“向某人简要介绍情况”，常见于工作场景。不要说 'introduce someone about something' 或 'short-tell someone'。"
+  },
+  {
+    "collocation": "a concerted effort",
+    "type": "adjective + noun",
+    "example": "It will take a concerted effort from the whole community to solve this issue.",
+    "common_mistake": "指“齐心协力的努力，协同一致的行动”。'Concerted' 强调的是所有参与方协调一致、目标明确。比 'a group effort' 更加正式，并强调了协调性。"
+  },
+  {
+    "collocation": "in due course",
+    "type": "prepositional phrase (idiom)",
+    "example": "Your application will be processed in due course. We will notify you of the result.",
+    "common_mistake": "一个正式的商业和法律用语，意思是“在适当的时候，到时候”。它是一种委婉的说法，表示“不要急，我们会处理的”。学习者通常不熟悉这个固定短语。"
+  },
+  {
+    "collocation": "to bend the rules",
+    "type": "verb + noun phrase",
+    "example": "Normally, we don't allow dogs in the office, but I'm willing to bend the rules for you today.",
+    "common_mistake": "指“（在特定情况下）通融一下，破例一次”。它与 'break the rules' (违反规则) 不同，'bend' 暗示的是非正式的、不那么严重的、有人情味的通融。"
+  },
+  {
+    "collocation": "to meet the criteria",
+    "type": "verb + noun",
+    "example": "Applicants must meet all the criteria to be considered for the scholarship.",
+    "common_mistake": "指“符合标准”。动词是 'meet' 或 'satisfy'。常见的错误是使用 'fit the criteria' 或 'match the criteria'。"
+  },
+  {
+    "collocation": "null and void",
+    "type": "adjective phrase (legal)",
+    "example": "If the contract is not signed by both parties, it will be considered null and void.",
+    "common_mistake": "这是一个法律术语，意思是“无效的”。它是一个固定搭配（法律二项式），顺序和用词都不能改变。不能说 'void and null' 或 'invalid and empty'。"
+  },
+  {
+    "collocation": "to enter into an agreement/contract",
+    "type": "verb + prepositional phrase",
+    "example": "The two companies entered into an agreement to share technology.",
+    "common_mistake": "指“签订，达成（协议或合同）”，是正式和法律文本中的标准用法。不说 'join an agreement' 或 'go into a contract'。"
+  },
+  {
+    "collocation": "to undergo a transformation",
+    "type": "verb + noun phrase",
+    "example": "The city has undergone a dramatic transformation over the last decade.",
+    "common_mistake": "指“经历，经受”某种彻底的改变。动词 'undergo' 强调了经历变化的过程。不说 'get a transformation' 或 'suffer a transformation' (suffer 带负面含义)。"
+  },
+  {
+    "collocation": "to stand the test of time",
+    "type": "idiomatic verb phrase",
+    "example": "A classic piece of literature is one that stands the test of time.",
+    "common_mistake": "指思想、作品等“经受住时间的考验”。这是一个固定习语，用来形容事物的持久价值和生命力。"
+  },
+  {
+    "collocation": "a paradigm shift",
+    "type": "noun phrase",
+    "example": "The discovery of DNA marked a paradigm shift in biology.",
+    "common_mistake": "指“范式转移，根本性的转变”，是一个高级词汇，用来描述在科学、哲学或社会领域中思维模式的根本性改变。比 'a big change' 要深刻和具体得多。"
+  },
+  {
+    "collocation": "without a shadow of a doubt",
+    "type": "idiomatic prepositional phrase",
+    "example": "She is, without a shadow of a doubt, the best candidate for the job.",
+    "common_mistake": "一个非常强烈的习语，表示“毫无疑问，千真万确”。比 'I am very sure' 或 'certainly' 的语气要强得多。"
+  },
+  {
+    "collocation": "it stands to reason that...",
+    "type": "fixed phrase",
+    "example": "It stands to reason that if you work harder, you will achieve better results.",
+    "common_mistake": "一个用于引出合乎逻辑的结论的句式，意思是“理应如此，按理说”。这是一个比 'it is logical that...' 更地道的说法。"
+  },
+  {
+    "collocation": "a foregone conclusion",
+    "type": "adjective + noun",
+    "example": "Given their team's strength, their victory was a foregone conclusion.",
+    "common_mistake": "指“早已预料到的结局，定局”。用来描述一个在发生之前结果就已经非常明显的事情。不要理解为“过去的结论”。"
+  },
+  {
+    "collocation": "to make a full recovery",
+    "type": "verb + noun phrase",
+    "example": "With proper care, we expect the patient to make a full recovery.",
+    "common_mistake": "指“完全康复”，是医疗领域的标准说法。动词是 'make'。不说 'get a full recovery' 或 'do a recovery'。"
+  },
+  {
+    "collocation": "a balanced diet",
+    "type": "adjective + noun",
+    "example": "A balanced diet and regular exercise are essential for good health.",
+    "common_mistake": "指“均衡饮食”，健康领域的固定术语。不说 'an equal diet' 或 'a harmonized diet'。"
+  },
+  {
+    "collocation": "terms and conditions",
+    "type": "noun phrase",
+    "example": "Please read the terms and conditions carefully before you sign the document.",
+    "common_mistake": "指合同或协议的“条款和条件”，是一个不可分割、顺序固定的词组。不说 'conditions and terms'。"
+  },
+  {
+    "collocation": "a calculated risk",
+    "type": "adjective + noun",
+    "example": "Investing in the new startup was a calculated risk, but one that paid off handsomely.",
+    "common_mistake": "指“经过计算（权衡）的风险”。它强调在行动前已经过深思熟虑，评估了潜在的得失。比 'a considered risk' 更地道。"
+  },
+  {
+    "collocation": "a contingency plan",
+    "type": "noun + noun",
+    "example": "Every project should have a contingency plan in case the main strategy fails.",
+    "common_mistake": "指“应急预案，后备计划”。'Contingency' 特指为“可能发生”的意外事件所做的准备。它比 'an emergency plan' (紧急情况下的计划) 更侧重于“预备”。"
+  },
+  {
+    "collocation": "to err on the side of caution",
+    "type": "idiomatic verb phrase",
+    "example": "We're not sure if the storm will be bad, but we're closing the office early to err on the side of caution.",
+    "common_mistake": "这是一个固定习语，意思是“宁可过于谨慎，以防万一”。用来解释为何选择更安全、风险更小的方案。"
+  },
+  {
+    "collocation": "to jog someone's memory",
+    "type": "idiomatic verb phrase",
+    "example": "Seeing his old school photo jogged my memory about our childhood adventures.",
+    "common_mistake": "指“唤起某人的记忆”。这是一个生动的习语，不要说 'run someone's memory' 或 'push someone's memory'。"
+  },
+  {
+    "collocation": "to lose one's train of thought",
+    "type": "idiomatic verb phrase",
+    "example": "The interruption made me lose my train of thought. Where was I?",
+    "common_mistake": "指“打断思路，忘了刚才在想什么或说什么”。这是一个非常常见的口语习语。不说 'lose my thinking line'。"
+  },
+  {
+    "collocation": "a vague recollection",
+    "type": "adjective + noun",
+    "example": "I have a vague recollection of meeting him once, but I can't remember the details.",
+    "common_mistake": "指“模糊的记忆”。'Vague' 是形容记忆不清晰时最地道的形容词之一。比 'an unclear memory' 更常用。"
+  },
+  {
+    "collocation": "a proven track record",
+    "type": "adjective + noun phrase",
+    "example": "We hired her because of her proven track record in turning failing companies around.",
+    "common_mistake": "指“得到证实的过往业绩/成就”。这是一个在招聘和商业评估中极其常见的短语。不说 'a proved history' 或 'a successful record' (不够具体)。"
+  },
+  {
+    "collocation": "to fall from grace",
+    "type": "idiomatic verb phrase",
+    "example": "The politician fell from grace after the corruption scandal was exposed.",
+    "common_mistake": "一个带有文学色彩的习语，指“失宠，失势，名誉扫地”。用来描述某人从受人尊敬或有权势的地位上跌落下来。"
+  },
+  {
+    "collocation": "to gain momentum",
+    "type": "verb + noun",
+    "example": "The protest movement started small but has been gaining momentum over the last few weeks.",
+    "common_mistake": "指事物（如项目、运动、趋势）“获得势头，发展加快”。动词是 'gain'。不说 'get momentum' 或 'obtain momentum'。"
+  },
+  {
+    "collocation": "at a snail's pace",
+    "type": "idiomatic prepositional phrase",
+    "example": "Due to the accident, traffic was moving at a snail's pace.",
+    "common_mistake": "一个生动的比喻，指“以蜗牛般的速度，极其缓慢地”。比 'very slowly' 更加形象。"
+  },
+  {
+    "collocation": "the margin of error",
+    "type": "noun phrase",
+    "example": "The poll has a margin of error of plus or minus three percentage points.",
+    "common_mistake": "指“误差幅度”，是一个在统计、科学和民意调查中非常重要的术语。不要自己组合词语，如 'the range of mistakes'。"
+  },
+  {
+    "collocation": "a bone of contention",
+    "type": "idiomatic noun phrase",
+    "example": "The ownership of the patent has been a major bone of contention between the two companies for years.",
+    "common_mistake": "一个生动的习语，指“争议的焦点，争论的起因”。不要从字面意思理解，也不要说 'a point of argument' (语法可以，但远不如这个习语地道)。"
+  },
+  {
+    "collocation": "to take issue with",
+    "type": "idiomatic verb phrase",
+    "example": "I take issue with your assertion that our efforts have been insufficient.",
+    "common_mistake": "一个非常正式的表达，指“不赞同，反对（某个观点或说法）”。比 'I disagree with' 语气更强，也更具辩论性。"
+  },
+  {
+    "collocation": "a heated debate/discussion",
+    "type": "adjective + noun",
+    "example": "The proposal led to a heated debate in parliament.",
+    "common_mistake": "形容“激烈的”辩论或讨论。'Heated' 是最地道的搭配，比 'an angry debate' 或 'a strong discussion' 更能准确传达那种充满激情和火药味的氛围。"
+  },
+  {
+    "collocation": "to wield power/influence",
+    "type": "verb + noun",
+    "example": "As the chairman of the board, he wields considerable power within the organization.",
+    "common_mistake": "指“行使，运用（权力或影响力）”。动词 'wield' (挥舞) 是一个非常强有力的词，暗示着使用者能熟练且有效地运用其权力。比 'use power' 更正式、更有力。"
+  },
+  {
+    "collocation": "to pull strings",
+    "type": "idiomatic verb phrase",
+    "example": "He had to pull a few strings to get his son into the exclusive private school.",
+    "common_mistake": "一个非正式习语，指“利用关系，走后门”。它常带有负面含义，暗示通过不正当的影响力来达成目的。"
+  },
+  {
+    "collocation": "a vested interest",
+    "type": "adjective + noun",
+    "example": "As a landlord, he has a vested interest in seeing property values increase.",
+    "common_mistake": "指“既得利益，个人利害关系”。强调某人因为某事能给自己带来好处（通常是经济上的），所以极力希望其发生。"
+  },
+  {
+    "collocation": "an uphill battle/struggle",
+    "type": "noun phrase (metaphor)",
+    "example": "For a small startup to compete with industry giants, it's always an uphill battle.",
+    "common_mistake": "一个常见的比喻，指“一场艰苦的战斗，艰难的斗争”，形容任务非常困难，需要付出巨大努力。比 'a very difficult task' 更形象。"
+  },
+  {
+    "collocation": "to go to great lengths",
+    "type": "idiomatic verb phrase",
+    "example": "She went to great lengths to ensure her guests felt comfortable and welcome.",
+    "common_mistake": "指“竭尽全力，费尽周折”。这个习语强调为了达成目标而不辞辛劳，付出了超乎寻常的努力。"
+  },
+  {
+    "collocation": "a steep learning curve",
+    "type": "adjective + noun phrase",
+    "example": "The new software has a steep learning curve, but it's very powerful once you master it.",
+    "common_mistake": "指在学习新事物的初期，需要投入大量精力且进步困难（但通常也很快）。这是一个描述学习难度的常用短语。"
+  },
+  {
+    "collocation": "to tighten one's belt",
+    "type": "idiomatic verb phrase",
+    "example": "During the economic downturn, many people were forced to tighten their belts.",
+    "common_mistake": "一个生动的习语，意思是“节衣缩食，省吃俭用”。"
+  },
+  {
+    "collocation": "disposable income",
+    "type": "adjective + noun",
+    "example": "An increase in taxes will reduce people's disposable income.",
+    "common_mistake": "经济学名词，指“可支配收入”（税后及扣除必要开支后可用于消费或储蓄的钱）。不说 'free income' 或 'spendable money'。"
+  },
+  {
+    "collocation": "in the foreseeable future",
+    "type": "prepositional phrase",
+    "example": "The company has no plans to expand its operations in the foreseeable future.",
+    "common_mistake": "一个非常正式和专业的说法，指“在可预见的未来”。常用于商业、政治和经济预测中，比 'in the near future' 的时间跨度更长，也更严谨。"
+  },
+  {
+    "collocation": "in retrospect",
+    "type": "prepositional phrase",
+    "example": "In retrospect, I should have taken his advice.",
+    "common_mistake": "指“回想起来，事后看来”。这是一个用于反思过去事件的关键词，通常暗示现在的看法与当时不同。"
+  },
+  {
+    "collocation": "to give someone free rein",
+    "type": "idiomatic verb phrase",
+    "example": "The director was given free rein to create the film he envisioned.",
+    "common_mistake": "一个源自马术的比喻，指“给予某人完全的自由，让其放手去做”。比 'to give someone freedom' 更能体现那种不受约束、完全掌控的状态。"
+  },
+  {
+    "collocation": "to frown upon",
+    "type": "phrasal verb",
+    "example": "In that traditional community, public displays of affection are frowned upon.",
+    "common_mistake": "指“不赞成，蹙眉反对”。这是一个比 'disapprove of' 更含蓄、更体现社会文化或群体态度的说法，暗示一种普遍的不赞成。"
+  },
+  {
+    "collocation": "to speak volumes about",
+    "type": "idiomatic verb phrase",
+    "example": "The fact that he didn't even apologize speaks volumes about his character.",
+    "common_mistake": "一个精妙的习语，指某事物（尤指行为或事实）“不言自明地充分说明了……”。强调无需言语，事实本身就极具说服力。"
+  },
+  {
+    "collocation": "to set a precedent",
+    "type": "verb + noun",
+    "example": "The court's decision will set a legal precedent for similar cases in the future.",
+    "common_mistake": "指“开创先例”。这是一个在法律、政治和商业领域至关重要的概念，指某个决定或行为将成为未来处理同类问题的范例或依据。"
+  },
+  {
+    "collocation": "a ripple effect",
+    "type": "noun phrase (metaphor)",
+    "example": "The closure of the factory had a ripple effect on the entire local economy.",
+    "common_mistake": "指“连锁反应，涟漪效应”。一个生动的比喻，形容一个事件像石头投入水中一样，其影响会一圈圈地扩散开去，波及更广的范围。"
+  },
+  {
+    "collocation": "to plead ignorance",
+    "type": "verb + noun",
+    "example": "He pleaded ignorance of the new company policy, but no one believed him.",
+    "common_mistake": "指“以不知道为借口”。'Plead' 在此有“申辩，辩称”的意思，所以这个短语常用于为自己开脱责任的语境。"
+  },
+  {
+    "collocation": "to shed light on",
+    "type": "idiomatic verb phrase",
+    "example": "New research has shed light on the causes of the disease.",
+    "common_mistake": "一个非常常见的比喻性说法，指“阐明，使……更为人所知”。比 'to explain' 更能体现那种“揭示、照亮”未知领域的感觉。"
+  },
+  {
+    "collocation": "the final nail in the coffin",
+    "type": "idiomatic noun phrase",
+    "example": "The massive data breach was the final nail in the coffin for the already struggling company.",
+    "common_mistake": "一个极具画面感的习语，指“导致彻底失败、终结的最后一击”。形容在一系列打击之后，最终导致全盘崩溃的那个决定性事件。"
+  },
+  {
+    "collocation": "to usher in an era",
+    "type": "verb + noun phrase",
+    "example": "The invention of the internet ushered in an era of unprecedented global communication.",
+    "common_mistake": "一个颇具文采和历史感的说法，指“开创一个……的时代”。'Usher in' (引领) 是一种非常正式和优雅的动词搭配，常用于描述具有划时代意义的事件。"
+  },
+  {
+    "collocation": "to pay lip service to",
+    "type": "idiomatic verb phrase",
+    "example": "Many corporations pay lip service to environmental protection but continue to pollute.",
+    "common_mistake": "一个带有批判性的习语，指“口头上支持，光说不做”。它用来揭示言语与行动之间的脱节，暗示虚伪。不能简单理解为 'to say something good'。"
+  },
+  {
+    "collocation": "to lay the groundwork for",
+    "type": "idiomatic verb phrase",
+    "example": "The initial research laid the groundwork for a major scientific breakthrough.",
+    "common_mistake": "指“为……奠定基础，做好前期准备”。这是一个极具建设性和策略性的说法，比 'to prepare for' 更强调基础性和系统性。"
+  },
+  {
+    "collocation": "a double-edged sword",
+    "type": "noun phrase (metaphor)",
+    "example": "Social media is a double-edged sword: it connects people but also spreads misinformation.",
+    "common_mistake": "一个经典的隐喻，指“双刃剑”，即事物同时具有利弊两面。这是在进行战略分析或评估时非常有用的一个概念。"
+  },
+  {
+    "collocation": "the moral high ground",
+    "type": "noun phrase",
+    "example": "In the debate, she sought to claim the moral high ground by focusing on human rights.",
+    "common_mistake": "指在争论或冲突中占据的“道德制高点”。占据此地的一方，其立场在伦理上显得比对手更优越、更正当。"
+  },
+  {
+    "collocation": "a crisis of conscience",
+    "type": "noun phrase",
+    "example": "He faced a crisis of conscience when asked to lie for his boss.",
+    "common_mistake": "指“良心危机”，即当一个人的行为或被要求的行为与其道德信念发生激烈冲突时所感受到的内心煎熬。"
+  },
+  {
+    "collocation": "to beg the question",
+    "type": "idiomatic verb phrase (logic)",
+    "example": "Saying that you should trust him because he is an honest man is to beg the question.",
+    "common_mistake": "这是一个在高级语境中非常重要的逻辑概念。其【正确】含义是“循环论证”，即把需要被证明的结论当作前提来使用。注意：它在现代口语中【常被误用】为 'to raise the question' (引出某个问题)。在您的数据库中，明辨其正确用法是高阶的体现。"
+  },
+  {
+    "collocation": "a frame of reference",
+    "type": "noun phrase",
+    "example": "People from different cultures have different frames of reference, which can lead to misunderstandings.",
+    "common_mistake": "指“参照系，参考标准”，即一个人进行判断、形成观点时所依据的背景、标准和价值观体系。这是一个进行深度分析时的关键术语。"
+  },
+  {
+    "collocation": "to give someone the benefit of the doubt",
+    "type": "idiomatic verb phrase",
+    "example": "Although I wasn't sure he was telling the truth, I decided to give him the benefit of the doubt.",
+    "common_mistake": "指“假定某人无辜/诚实，往好的一面想”。即在证据不足的情况下，宁愿选择相信对方。这是一个体现善意和信任的重要社交概念。"
+  },
+  {
+    "collocation": "wishful thinking",
+    "type": "noun phrase",
+    "example": "His belief that he could win the lottery without buying a ticket was pure wishful thinking.",
+    "common_mistake": "指“痴心妄想，一厢情愿的想法”。它描述的是一种基于愿望而非事实的信念或思考方式。"
+  },
+  {
+    "collocation": "the gold standard",
+    "type": "noun phrase (metaphor)",
+    "example": "The Mayo Clinic is considered the gold standard in patient care.",
+    "common_mistake": "比喻“黄金标准”，指某领域内最优秀、最权威、可作为最高标准的典范。比单纯说 'the best example' 更有分量。"
+  },
+  {
+    "collocation": "a recipe for disaster",
+    "type": "noun phrase (metaphor)",
+    "example": "Letting inexperienced climbers go up the mountain in a storm is a recipe for disaster.",
+    "common_mistaste": "一个形象的比喻，指某种情况或因素的组合“注定会引来灾难”。它强调了失败或灾难的必然性。"
+  },
+  {
+    "collocation": "checks and balances",
+    "type": "noun phrase (political/systems)",
+    "example": "The separation of powers among the executive, legislative, and judicial branches serves as a system of checks and balances.",
+    "common_mistake": "指（尤指政治中的）“制衡原则，监督制衡机制”。这是一个源于政治学的核心概念，用以描述系统内部不同部分如何相互限制，以防止任何一部分权力过大。不说 'checks and restraints'。"
+  },
+  {
+    "collocation": "a vicious cycle/circle",
+    "type": "noun phrase",
+    "example": "Poverty and lack of education often create a vicious cycle that is difficult to break.",
+    "common_mistake": "指“恶性循环”。它描述的是几个负面因素互为因果，导致情况不断恶化的局面。其反义词是 'a virtuous cycle' (良性循环)。"
+  },
+  {
+    "collocation": "the nuts and bolts",
+    "type": "idiomatic noun phrase",
+    "example": "I understand the overall strategy, but I need someone to explain the nuts and bolts of the implementation.",
+    "common_mistake": "指事物的“基本要素，具体细节，运作方式”。这是一个非常实用的比喻，强调基础和实践层面。不说 'the screws and nuts'。"
+  },
+  {
+    "collocation": "on the face of it",
+    "type": "prepositional phrase",
+    "example": "On the face of it, the deal looks fantastic, but we need to examine the fine print.",
+    "common_mistake": "意思是“乍看起来，从表面上看”。它常用来引出一个与表面印象可能不同的、更深层次的分析或事实。与 'at first glance' 意思相近。"
+  },
+  {
+    "collocation": "to take something at face value",
+    "type": "idiomatic verb phrase",
+    "example": "He's a very direct person, so you can usually take his words at face value.",
+    "common_mistake": "指“相信表面价值，对……信以为真”，即不怀疑其背后有隐藏的含义或动机。常用于否定句中，如 'You shouldn't take everything he says at face value'。"
+  },
+  {
+    "collocation": "a smokescreen",
+    "type": "noun (metaphor)",
+    "example": "The company's announcement about its new charity program was just a smokescreen to distract from its environmental scandal.",
+    "common_mistake": "指“烟幕弹”，比喻用来掩盖真实意图或活动的言行。这是一个带有负面含义的词，暗示欺骗和掩饰。"
+  },
+  {
+    "collocation": "to weather the storm",
+    "type": "idiomatic verb phrase",
+    "example": "Despite the fierce competition, the small bookstore managed to weather the storm and stay open.",
+    "common_mistake": "一个生动的比喻，指“经受住风暴，渡过难关”。它强调在困境中存活下来并坚持到底的韧性。"
+  },
+  {
+    "collocation": "a baptism of fire",
+    "type": "idiomatic noun phrase",
+    "example": "His first day as a junior doctor in the emergency room was a true baptism of fire.",
+    "common_mistake": "指“火的洗礼”，比喻某人初次上任或初次经历某事时所遇到的严峻考验。它强调了第一次经历的突然性和艰巨性。"
+  },
+  {
+    "collocation": "to stay the course",
+    "type": "idiomatic verb phrase",
+    "example": "The CEO urged the investors to stay the course, promising that the long-term strategy would eventually succeed.",
+    "common_mistake": "指“坚持到底，不改变航向”。这是一个带有决心和毅力的表达，尤其是在面临困难和批评时仍然坚持原定计划。"
+  },
+  {
+    "collocation": "the writing on the wall",
+    "type": "idiomatic noun phrase",
+    "example": "When the company started losing its key engineers, the writing was on the wall.",
+    "common_mistake": "指“不祥之兆，失败的明显迹象”。这个习语源自《圣经》，用来形容某个劫数难逃的结局已经有非常清晰的预兆。"
+  },
+  {
+    "collocation": "a litmus test",
+    "type": "noun phrase (metaphor)",
+    "example": "Support for the new policy is seen as a litmus test of a politician's loyalty to the party.",
+    "common_mistake": "源自化学中的“石蕊试纸测试”，比喻能迅速、明确地判断一个人或事物的真实立场、属性或质量的“试金石”。"
+  },
+  {
+    "collocation": "a false dichotomy",
+    "type": "noun phrase (logic/rhetoric)",
+    "example": "The argument that you must either support the new law entirely or reject it completely is a false dichotomy.",
+    "common_mistake": "指“伪二分法”，一种逻辑谬误，即错误地将问题呈现为只有两种非此即彼的选择，而忽略了其他可能性。这是一个进行批判性思维和分析辩论时的关键术语。"
+  },
+  {
+    "collocation": "a slippery slope",
+    "type": "noun phrase (logic/rhetoric)",
+    "example": "He argued that allowing minor exceptions would start us down a slippery slope to complete chaos.",
+    "common_mistake": "指“滑坡谬误”，即声称一个相对较小的第一步必然会导致一连串相关的、最终导致重大负面结果的事件。它常被用作一种夸大负面后果的辩论技巧。"
+  },
+  {
+    "collocation": "to move the goalposts",
+    "type": "idiomatic verb phrase",
+    "example": "Every time I think I've met all their requirements, they move the goalposts.",
+    "common_mistake": "一个生动的比喻，指在争论、竞争或任务进行中，不公平地改变规则或条件，使得对方更难成功。它强调了这种行为的“不公平性”。"
+  },
+  {
+    "collocation": "a rhetorical question",
+    "type": "adjective + noun",
+    "example": "When he asked, 'Do you want to live in a better world?', it was a rhetorical question to rally support.",
+    "common_mistake": "指“反问句，修辞性设问”。即提出问题并非为了得到答案，而是为了强调观点、引发听众思考或达到某种修辞效果。"
+  },
+  {
+    "collocation": "to strike a chord with",
+    "type": "idiomatic verb phrase",
+    "example": "The politician's speech about family values struck a chord with many voters.",
+    "common_mistake": "指（言论、故事、音乐等）“拨动心弦，引起共鸣”。这个搭配形象地描述了触动他人情感、获得其认同的过程。"
+  },
+  {
+    "collocation": "to read between the lines",
+    "type": "idiomatic verb phrase",
+    "example": "Reading between the lines of his resignation letter, you can see that he was forced to leave.",
+    "common_mistake": "指“领会言外之意”。即理解文字或话语中没有直接表达出来的、隐含的意义。这是一个描述洞察能力的常用习语。"
+  },
+  {
+    "collocation": "a veiled threat",
+    "type": "adjective + noun",
+    "example": "Saying 'it would be a shame if something happened to your business' was a veiled threat.",
+    "common_mistake": "指“含蓄的威胁，弦外之音的恐吓”。'Veiled' (蒙着面纱的) 形象地表达了威胁的间接性和隐藏性。"
+  },
+  {
+    "collocation": "conspicuous by one's absence",
+    "type": "adjective phrase",
+    "example": "The CEO's support for the new initiative was conspicuous by its absence.",
+    "common_mistake": "一个颇具智慧和讽刺意味的说法，指某人或某物“因其缺席而引人注目”。它强调了本应出现却未出现的反常情况，其“缺席”本身传递了强烈的信息。"
+  },
+  {
+    "collocation": "not to mince one's words",
+    "type": "idiomatic verb phrase (often negative)",
+    "example": "She didn't mince her words and told him his performance was unacceptable.",
+    "common_mistake": "指“直言不讳，毫不隐晦”。动词 'mince' 意为“切碎”，所以这个短语的字面意思是“不把话切碎了说”。它通常用否定形式来强调说话的直接和坦率。"
+  },
+  {
+    "collocation": "to iron out the details",
+    "type": "idiomatic verb phrase",
+    "example": "The leaders have agreed on the main points of the treaty, and now their teams will iron out the details.",
+    "common_mistake": "指“解决细节问题，消除细微分歧”。'Iron out' (熨平) 是一个生动的比喻，形容解决那些细小但棘手的“褶皱”，以达成最终的完美协议。"
+  },
+  {
+    "collocation": "a sticking point",
+    "type": "noun phrase",
+    "example": "The main sticking point in the negotiations is the timeline for withdrawal.",
+    "common_mistake": "指谈判或讨论中的“症结所在，关键障碍”。即那个阻止双方达成一致的核心难题。"
+  }
+  ]
+}

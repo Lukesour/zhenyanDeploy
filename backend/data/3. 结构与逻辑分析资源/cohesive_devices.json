@@ -1,0 +1,20 @@
+{
+  "cohesive_devices": {
+    "contrast_concession": {
+      "name": "转折、对比与让步",
+      "devices": [
+        { "phrase": "however", "sophistication": "intermediate", "usage_note": "用途广泛，通常用于开启一个新句子，表达与前文的转折。" },
+        { "phrase": "on the other hand", "sophistication": "intermediate", "usage_note": "常与On the one hand搭配使用，用于引出完全对立的另一面观点。" },
+        { "phrase": "nevertheless", "sophistication": "advanced", "usage_note": "更正式的however，表示尽管如此然而，带有更强的转折语气。" }
+      ]
+    },
+    "addition_emphasis": {
+      "name": "递进与强调",
+      "devices": [
+        { "phrase": "furthermore", "sophistication": "intermediate", "usage_note": "用于添加更多支持信息，表示递进关系。" },
+        { "phrase": "moreover", "sophistication": "intermediate", "usage_note": "表示此外而且，用于强调额外的重要信息。" },
+        { "phrase": "in addition", "sophistication": "basic", "usage_note": "简单直接的递进连接词。" }
+      ]
+    }
+  }
+}

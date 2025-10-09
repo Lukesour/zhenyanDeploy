@@ -1,0 +1,284 @@
+.auth-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.auth-content {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.auth-card {
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: none;
+  overflow: hidden;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.auth-title {
+  color: #1a1a1a;
+  margin-bottom: 8px !important;
+  font-weight: 700;
+}
+
+.auth-subtitle {
+  font-size: 16px;
+  color: #666;
+}
+
+.auth-form {
+  margin-top: 24px;
+}
+
+.auth-form .ant-form-item {
+  margin-bottom: 20px;
+}
+
+.auth-form .ant-input-affix-wrapper {
+  border-radius: 8px;
+  border: 2px solid #e0e7ff;
+  transition: all 0.3s ease;
+}
+
+.auth-form .ant-input-affix-wrapper:hover {
+  border-color: #4f46e5;
+}
+
+.auth-form .ant-input-affix-wrapper-focused {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.1);
+}
+
+.auth-form .ant-btn-primary {
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  border: none;
+  border-radius: 8px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.auth-form .ant-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.auth-form .ant-btn-link {
+  color: #4f46e5;
+  font-weight: 500;
+}
+
+.auth-form .ant-btn-link:hover {
+  color: #4338ca;
+}
+
+.auth-tips {
+  margin-top: 24px;
+  padding: 16px;
+  background: #eef2ff;
+  border-radius: 8px;
+  border-left: 4px solid #4f46e5;
+}
+
+.auth-tips ul {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.auth-tips li {
+  margin-bottom: 4px;
+  color: #666;
+}
+
+.contact-card {
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: none;
+  overflow: hidden;
+  background: linear-gradient(135deg, #eef2ff 0%, #ffffff 100%);
+}
+
+.contact-content {
+  text-align: center;
+}
+
+.contact-header {
+  margin-bottom: 32px;
+}
+
+.contact-title {
+  color: #1a1a1a;
+  margin-bottom: 8px !important;
+  font-weight: 600;
+}
+
+.contact-subtitle {
+  font-size: 16px;
+  color: #666;
+}
+
+.contact-image-container {
+  margin: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact-service-container {
+  width: 100%;
+  max-width: 320px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-service-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.contact-image-caption {
+  display: block;
+  color: #666;
+  font-size: 14px;
+}
+
+.contact-info {
+  margin-top: 32px;
+}
+
+.contact-details {
+  text-align: left;
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.contact-id {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  background: #f5f5f5;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Tabs样式 */
+.auth-card .ant-tabs {
+  margin-bottom: 0;
+}
+
+.auth-card .ant-tabs-tab {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 24px;
+}
+
+.auth-card .ant-tabs-tab-active {
+  color: #4f46e5 !important;
+}
+
+.auth-card .ant-tabs-ink-bar {
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  height: 3px;
+}
+
+.auth-card .ant-tabs-content-holder {
+  padding-top: 24px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .auth-container {
+    padding: 10px;
+  }
+  
+  .auth-content .ant-row {
+    flex-direction: column;
+  }
+  
+  .contact-service-container {
+    max-width: 240px;
+  }
+
+  .contact-service-image {
+    width: 100%;
+  }
+  
+  .contact-details {
+    text-align: center;
+  }
+}
+
+/* 动画效果 */
+.auth-card,
+.contact-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 表单验证样式 */
+.auth-form .ant-form-item-has-error .ant-input-affix-wrapper {
+  border-color: #ff4d4f;
+}
+
+.auth-form .ant-form-item-has-error .ant-input-affix-wrapper:hover {
+  border-color: #ff4d4f;
+}
+
+.auth-form .ant-form-item-has-error .ant-input-affix-wrapper-focused {
+  border-color: #ff4d4f;
+  box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.1);
+}
+
+/* 成功状态样式 */
+.auth-form .ant-form-item-has-success .ant-input-affix-wrapper {
+  border-color: #52c41a;
+}
+
+.auth-form .ant-form-item-has-success .ant-input-affix-wrapper:hover {
+  border-color: #52c41a;
+}
+
+.auth-form .ant-form-item-has-success .ant-input-affix-wrapper-focused {
+  border-color: #52c41a;
+  box-shadow: 0 0 0 2px rgba(82, 196, 26, 0.1);
+}
+
+/* 加载状态 */
+.auth-form .ant-btn-loading {
+  pointer-events: none;
+}
+
+/* 禁用状态 */
+.auth-form .ant-btn:disabled {
+  background: #f5f5f5 !important;
+  border-color: #d9d9d9 !important;
+  color: #00000040 !important;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}

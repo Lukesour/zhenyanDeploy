@@ -1,0 +1,24 @@
+{
+  "essay_structures": [
+    {
+      "question_type": "Agree or Disagree",
+      "structures": [
+        {
+          "structure_name": "标准四段式",
+          "description": "适用于你对题目观点有明确立场的情况。",
+          "paragraphs": [
+            { "paragraph": 1, "name": "引言 (Introduction)", "purpose": ["转述题目背景", "表明你的立场"] },
+            { "paragraph": 2, "name": "主体段 1", "purpose": ["提供第一个支持论据"] },
+            { "paragraph": 3, "name": "主体段 2", "purpose": ["提供第二个支持论据"] },
+            { "paragraph": 4, "name": "结论 (Conclusion)", "purpose": ["总结观点"] }
+          ],
+          "linking_phrases_suggestions": {
+            "intro_to_body1": ["Firstly,", "To begin with,"],
+            "body1_to_body2": ["Secondly,", "Furthermore,"],
+            "body2_to_conclusion": ["In conclusion,", "To summarize,"]
+          }
+        }
+      ]
+    }
+  ]
+}

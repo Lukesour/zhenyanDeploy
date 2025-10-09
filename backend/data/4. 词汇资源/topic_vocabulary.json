@@ -1,0 +1,325 @@
+{
+  "description": "按雅思常见话题分类的核心词汇、词组及搭配，帮助模型判断用词的贴切性。",
+  "环境 (Environment)": {
+    "keywords": ["sustainability", "biodiversity", "conservation", "deforestation", "pollution", "carbon footprint", "fossil fuels", "renewable energy", "climate change", "ecosystem"],
+    "collocations": [
+      {"phrase": "to curb emissions", "example": "Governments must take urgent measures to curb carbon emissions."},
+      {"phrase": "hazardous waste", "example": "The disposal of hazardous waste is a major environmental challenge."},
+      {"phrase": "irreversible damage", "example": "Deforestation can cause irreversible damage to local ecosystems."}
+    ]
+  },
+  "科技 (Technology)": {
+    "keywords": ["automation", "artificial intelligence (AI)", "cybersecurity", "digital divide", "innovation", "breakthrough", "ubiquitous", "cutting-edge"],
+    "collocations": [
+      {"phrase": "to harness technology", "example": "We need to find better ways to harness technology for educational purposes."},
+      {"phrase": "disruptive innovation", "example": "The rise of smartphones was a disruptive innovation for the camera industry."},
+      {"phrase": "to raise ethical concerns", "example": "The development of autonomous weapons continues to raise serious ethical concerns."}
+    ]
+  },
+  "教育 (Education)": {
+    "keywords": ["curriculum", "pedagogy", "tertiary education", "vocational training", "lifelong learning", "holistic education", "rote memorization"],
+    "collocations": [
+      {"phrase": "to foster critical thinking", "example": "The primary goal of higher education should be to foster critical thinking skills."},
+      {"phrase": "a conducive learning environment", "example": "Teachers are responsible for creating a conducive learning environment for all students."},
+      {"phrase": "to bridge the gap between academia and industry", "example": "Internship programs can help bridge the gap between academia and industry."}
+    ]
+  },
+  "健康 (Health)": {
+    "keywords": ["healthcare system", "preventive medicine", "sedentary lifestyle", "mental well-being", "obesity", "nutritious diet", "public health", "life expectancy"],
+    "collocations": [
+      {"phrase": "to lead a sedentary lifestyle", "example": "Many office workers lead a sedentary lifestyle, which can contribute to various health problems."},
+      {"phrase": "to boost the immune system", "example": "Eating a balanced diet rich in vitamins can help boost the immune system."},
+      {"phrase": "a ticking time bomb", "example": "The rising rate of childhood obesity is considered a public health ticking time bomb."}
+    ]
+  },
+  "社会 (Society)": {
+    "keywords": ["social cohesion", "cultural diversity", "generation gap", "social norms", "community spirit", "social mobility", "marginalized groups", "civic responsibility"],
+    "collocations": [
+      {"phrase": "a sense of community", "example": "Local festivals can help foster a strong sense of community among residents."},
+      {"phrase": "to break down social barriers", "example": "Education is a powerful tool to break down social barriers and promote equality."},
+      {"phrase": "the fabric of society", "example": "Strong family bonds are essential to the fabric of society."}
+    ]
+  },
+  "全球化 (Globalization)": {
+    "keywords": ["multinational corporations", "cultural homogenization", "interdependence", "global village", "free trade", "protectionism", "cross-cultural communication"],
+    "collocations": [
+      {"phrase": "a double-edged sword", "example": "Globalization is a double-edged sword, bringing both economic benefits and cultural challenges."},
+      {"phrase": "to erode cultural identity", "example": "Some argue that the dominance of Western media threatens to erode local cultural identity."},
+      {"phrase": "to facilitate the flow of information", "example": "The internet has greatly facilitated the flow of information and ideas across borders."}
+    ]
+  },
+  "政府与法律 (Government & Law)": {
+    "keywords": ["legislation", "taxation", "infrastructure", "public spending", "censorship", "law enforcement", "judicial system", "capital punishment", "rehabilitation"],
+    "collocations": [
+      {"phrase": "to enact legislation", "example": "The government is planning to enact legislation to tackle online fraud."},
+      {"phrase": "to allocate resources", "example": "It is the government's responsibility to allocate resources fairly to healthcare and education."},
+      {"phrase": "to act as a deterrent", "example": "Supporters of capital punishment argue that it acts as a deterrent to violent criminals."}
+    ]
+  },
+  "工作与经济 (Work & Economy)": {
+    "keywords": ["job satisfaction", "work-life balance", "automation", "unemployment rate", "consumerism", "economic disparity", "entrepreneurship", "gig economy"],
+    "collocations": [
+      {"phrase": "to climb the career ladder", "example": "Ambitious graduates are often eager to climb the career ladder as quickly as possible."},
+      {"phrase": "to stimulate economic growth", "example": "The government introduced tax cuts to stimulate economic growth."},
+      {"phrase": "the driving force behind", "example": "Small and medium-sized enterprises are the driving force behind the country's economy."}
+    ]
+  },
+  "文化与艺术 (Culture & Arts)": {
+    "keywords": ["cultural heritage", "artistic expression", "performing arts", "visual arts", "literary works", "preservation", "museums and galleries", "intangible cultural heritage"],
+    "collocations": [
+      {"phrase": "to preserve cultural heritage", "example": "It is crucial to preserve cultural heritage for future generations."},
+      {"phrase": "to enrich one's life", "example": "Engaging with art and music can greatly enrich one's life."},
+      {"phrase": "a form of self-expression", "example": "For many artists, painting is a powerful form of self-expression."}
+    ]
+  },
+  "媒体与广告 (Media & Advertising)": {
+    "keywords": ["mass media", "social media", "freedom of the press", "misinformation", "target audience", "advertising campaign", "consumer behavior", "celebrity endorsement"],
+    "collocations": [
+      {"phrase": "to shape public opinion", "example": "The media plays a significant role in shaping public opinion on political issues."},
+      {"phrase": "to go viral", "example": "The clever marketing campaign caused the video to go viral overnight."},
+      {"phrase": "to be swayed by advertisements", "example": "Consumers should be careful not to be easily swayed by misleading advertisements."}
+    ]
+  },
+  "城市化 (Urbanization)": {
+    "keywords": ["urban sprawl", "megacity", "infrastructure", "public transportation", "cost of living", "rural-urban migration", "overcrowding", "sustainable cities"],
+    "collocations": [
+      {"phrase": "the hustle and bustle", "example": "Many people are drawn to the hustle and bustle of city life."},
+      {"phrase": "to alleviate traffic congestion", "example": "Investing in reliable public transport is key to alleviating traffic congestion in major cities."},
+      {"phrase": "to improve the quality of life", "example": "Urban planners are constantly seeking new ways to improve the quality of life for city dwellers."}
+    ]
+  },
+    "旅游 (Tourism)": {
+    "keywords": ["ecotourism", "mass tourism", "tourist attraction", "cultural exchange", "peak season", "off the beaten track", "sustainable tourism", "hospitality industry"],
+    "collocations": [
+      {"phrase": "to boost the local economy", "example": "The annual festival attracts thousands of visitors, helping to boost the local economy."},
+      {"phrase": "to get off the beaten track", "example": "For a more authentic experience, adventurous travelers often choose to get off the beaten track."},
+      {"phrase": "to disrupt the local ecosystem", "example": "The construction of large resorts can severely disrupt the local ecosystem and harm wildlife."}
+    ]
+  },
+  "家庭 (Family)": {
+    "keywords": ["nuclear family", "extended family", "upbringing", "parental guidance", "family bonds", "breadwinner", "household chores", "generation gap"],
+    "collocations": [
+      {"phrase": "to strengthen family bonds", "example": "Regular family gatherings are a great way to strengthen family bonds."},
+      {"phrase": "to play a pivotal role", "example": "Parents play a pivotal role in a child's intellectual and emotional development."},
+      {"phrase": "the breakdown of the traditional family structure", "example": "Urbanization and changing social norms have contributed to the breakdown of the traditional family structure."}
+    ]
+  },
+  "食物与农业 (Food & Agriculture)": {
+    "keywords": ["genetically modified (GM) food", "organic farming", "food security", "processed food", "balanced diet", "food scarcity", "sustainable agriculture", "malnutrition"],
+    "collocations": [
+      {"phrase": "to ensure food security", "example": "It is a primary challenge for many nations to ensure food security for their entire population."},
+      {"phrase": "the long-term effects of", "example": "Scientists are still debating the long-term effects of consuming genetically modified foods."},
+      {"phrase": "to adopt a balanced diet", "example": "Health professionals strongly advise people to adopt a balanced diet for overall well-being."}
+    ]
+  },
+  "动物权益 (Animal Rights)": {
+    "keywords": ["animal testing", "endangered species", "wildlife conservation", "animal welfare", "poaching", "habitat destruction", "domestication", "biodiversity"],
+    "collocations": [
+      {"phrase": "to be on the brink of extinction", "example": "Due to illegal hunting and habitat loss, the Siberian tiger is on the brink of extinction."},
+      {"phrase": "to raise ethical questions", "example": "The use of animals for cosmetic testing continues to raise serious ethical questions."},
+      {"phrase": "to disturb the natural balance", "example": "Introducing non-native species can disturb the natural balance of an ecosystem."}
+    ]
+  },
+  "太空探索 (Space Exploration)": {
+    "keywords": ["unmanned mission", "space race", "extraterrestrial life", "astronomical costs", "scientific discovery", "satellite technology", "commercial spaceflight", "celestial body"],
+    "collocations": [
+      {"phrase": "the quest for knowledge", "example": "The quest for knowledge is a primary driver behind humanity's interest in space exploration."},
+      {"phrase": "to justify the expense", "example": "Proponents argue that the potential scientific breakthroughs can justify the astronomical expense of space missions."},
+      {"phrase": "to push the boundaries of", "example": "Space exploration continues to push the boundaries of human knowledge and technological capability."}
+    ]
+  },
+  "历史与传统 (History & Tradition)": {
+    "keywords": ["historical significance", "ancestors", "preservation", "cultural norms", "heritage site", "oral history", "sense of identity", "modernization"],
+    "collocations": [
+      {"phrase": "to hand down traditions", "example": "It is important for the older generation to hand down traditions to the younger generation."},
+      {"phrase": "to lose touch with one's roots", "example": "In our globalized world, some people fear that we are beginning to lose touch with our cultural roots."},
+      {"phrase": "a testament to", "example": "The ancient pyramids are a testament to the ingenuity of their builders."}
+    ]
+  },
+  "体育与竞赛 (Sports & Competition)": {
+    "keywords": ["sportsmanship", "doping", "sedentary lifestyle", "physical fitness", "team spirit", "professional athlete", "competitive spirit", "spectator sports"],
+    "collocations": [
+      {"phrase": "to foster a sense of teamwork", "example": "Participating in team sports can help young people foster a sense of teamwork and cooperation."},
+      {"phrase": "a lucrative industry", "example": "Professional football has become a lucrative industry with billions of dollars in revenue."},
+      {"phrase": "to strike a healthy balance", "example": "Students need to strike a healthy balance between their academic studies and extracurricular activities like sports."}
+    ]
+  },
+    "幸福与金钱 (Happiness & Money)": {
+    "keywords": ["materialism", "consumer culture", "intrinsic happiness", "contentment", "disposable income", "affluence", "standard of living", "emotional well-being"],
+    "collocations": [
+      {"phrase": "the relentless pursuit of", "example": "The relentless pursuit of wealth and material possessions does not always lead to happiness."},
+      {"phrase": "to derive satisfaction from", "example": "Many people derive more satisfaction from meaningful work and strong relationships than from money."},
+      {"phrase": "a means to an end", "example": "For most, money is simply a means to an end—the end being a safe and comfortable life."}
+    ]
+  },
+  "个人与社会 (Individual & Society)": {
+    "keywords": ["conformity", "individuality", "civic duty", "social contract", "personal freedom", "collective good", "peer pressure", "social integration"],
+    "collocations": [
+      {"phrase": "to strike a balance between", "example": "A stable society must strike a balance between the rights of the individual and the needs of the community."},
+      {"phrase": "to fulfill one's civic duty", "example": "Voting in elections and participating in community service are ways in which individuals fulfill their civic duty."},
+      {"phrase": "to succumb to peer pressure", "example": "It takes a strong sense of self not to succumb to peer pressure during adolescence."}
+    ]
+  },
+  "创造力与发明 (Creativity & Invention)": {
+    "keywords": ["ingenuity", "out-of-the-box thinking", "intellectual property", "patent", "innovation", "artistic talent", "problem-solving skills", "inspiration"],
+    "collocations": [
+      {"phrase": "to think outside the box", "example": "To solve this complex problem, we need a team that can think outside the box."},
+      {"phrase": "to stifle creativity", "example": "An overly rigid educational system can inadvertently stifle creativity in children."},
+      {"phrase": "a flash of inspiration", "example": "The inventor had a sudden flash of inspiration that led to the groundbreaking device."}
+    ]
+  },
+  "语言与交流 (Language & Communication)": {
+    "keywords": ["linguistic diversity", "mother tongue", "endangered language", "language barrier", "non-verbal communication", "global language", "bilingualism", "miscommunication"],
+    "collocations": [
+      {"phrase": "to act as a bridge", "example": "Learning a common language can act as a bridge between different cultures."},
+      {"phrase": "to facilitate communication", "example": "Modern technology has greatly facilitated communication across the globe, but it hasn't eliminated misunderstandings."},
+      {"phrase": "to be lost in translation", "example": "Nuances and cultural subtleties can often be lost in translation, leading to misinterpretations."}
+    ]
+  },
+  "风险与冒险 (Risk & Adventure)": {
+    "keywords": ["risk-averse", "calculated risk", "adrenaline rush", "extreme sports", "sense of adventure", "comfort zone", "trial and error", "precautionary measures"],
+    "collocations": [
+      {"phrase": "to step out of one's comfort zone", "example": "In order to grow personally and professionally, it's essential to be willing to step out of one's comfort zone."},
+      {"phrase": "to take a calculated risk", "example": "Entrepreneurs are often successful because they are willing to take calculated risks based on thorough research."},
+      {"phrase": "a sense of adventure", "example": "Exploring new places and trying new activities gives me a real sense of adventure."}
+    ]
+  },
+  "建筑与城市规划 (Architecture & Urban Planning)": {
+    "keywords": ["aesthetic appeal", "functionality", "historical preservation", "gentrification", "public space", "skyscrapers", "sustainable architecture", "zoning regulations"],
+    "collocations": [
+      {"phrase": "to blend in with the surroundings", "example": "New buildings in historical districts should be designed to blend in with their surroundings."},
+      {"phrase": "to stand the test of time", "example": "Good architecture should not only be visually pleasing but also be durable enough to stand the test of time."},
+      {"phrase": "a blot on the landscape", "example": "Many residents consider the new concrete office block to be a blot on the landscape."}
+    ]
+  },
+    "国际援助与全球问题 (International Aid & Global Issues)": {
+    "keywords": ["humanitarian aid", "developing countries", "developed nations", "poverty alleviation", "sustainable development", "non-governmental organization (NGO)", "global governance", "foreign debt"],
+    "collocations": [
+      {"phrase": "to foster self-sufficiency", "example": "The ultimate goal of international aid should be to foster long-term self-sufficiency in recipient nations."},
+      {"phrase": "to tackle global issues", "example": "Collaborative international effort is required to tackle global issues such as climate change and pandemics."},
+      {"phrase": "aid with no strings attached", "example": "There is an ongoing debate about whether foreign aid should be given with no strings attached."}
+    ]
+  },
+  "服装与时尚 (Clothing & Fashion)": {
+    "keywords": ["fast fashion", "designer labels", "disposable clothing", "a fashion statement", "formal attire", "casual wear", "timeless classic", "ethical fashion"],
+    "collocations": [
+      {"phrase": "a reflection of one's personality", "example": "For many, clothing is more than just a necessity; it's a reflection of their personality and creativity."},
+      {"phrase": "the cyclical nature of fashion", "example": "Due to the cyclical nature of fashion, styles that were popular decades ago often reappear on the runway."},
+      {"phrase": "to fuel consumerism", "example": "Critics argue that the fast fashion industry's business model is designed to fuel rampant consumerism."}
+    ]
+  },
+  "记忆与认知 (Memory & Cognition)": {
+    "keywords": ["short-term memory", "long-term memory", "cognitive decline", "nostalgia", "eyewitness testimony", "mnemonic devices", "collective memory", "subconscious mind"],
+    "collocations": [
+      {"phrase": "to trigger a memory", "example": "A particular scent or a piece of music can often trigger a vivid memory from the distant past."},
+      {"phrase": "to commit something to memory", "example": "Rote learning often involves trying to commit facts to memory without a deep understanding of them."},
+      {"phrase": "a selective memory", "example": "It's a common human tendency to have a selective memory, often remembering the good times and forgetting the bad."}
+    ]
+  },
+  "天气与气候 (Weather & Climate)": {
+    "keywords": ["meteorology", "extreme weather events", "air pressure", "humidity", "temperate climate", "tropical climate", "weather forecast", "seasonal affective disorder (SAD)"],
+    "collocations": [
+      {"phrase": "to be at the mercy of", "example": "Farmers and sailors are two professions that have always been at the mercy of the weather."},
+      {"phrase": "to have a profound impact on", "example": "A region's climate can have a profound impact on its culture, economy, and way of life."},
+      {"phrase": "under the weather", "example": "On a more personal level, many people report feeling a bit under the weather when the seasons change abruptly."}
+    ]
+  },
+  "睡眠与健康 (Sleep & Health)": {
+    "keywords": ["sleep deprivation", "circadian rhythm", "REM sleep", "insomnia", "sleep patterns", "cognitive function", "mental clarity", "public health issue"],
+    "collocations": [
+      {"phrase": "to disrupt sleep patterns", "example": "The blue light emitted from smartphones and tablets can significantly disrupt our natural sleep patterns."},
+      {"phrase": "to suffer from sleep deprivation", "example": "A large portion of the adult population suffers from chronic sleep deprivation, affecting their productivity and health."},
+      {"phrase": "to be crucial for", "example": "Getting enough quality sleep is crucial for both physical recovery and mental consolidation."}
+    ]
+  },
+  "幽默感 (A Sense of Humor)": {
+    "keywords": ["wit", "sarcasm", "irony", "slapstick comedy", "coping mechanism", "social lubricant", "icebreaker", "cultural differences"],
+    "collocations": [
+      {"phrase": "to break the ice", "example": "A well-timed joke can be a great way to break the ice at the beginning of a meeting or social gathering."},
+      {"phrase": "a coping mechanism", "example": "For many people, humor serves as a vital coping mechanism during difficult or stressful times."},
+      {"phrase": "a universal language", "example": "While specific jokes may not translate well, laughter itself is often considered a universal language."}
+    ]
+  },
+    "description": "用于构建、展开和深化论点的功能性词汇、短语和句式，适用于所有雅思写作及口语议题。",
+  "引出观点与介绍背景 (Introducing Opinions & Background)": {
+    "keywords": ["contention", "assertion", "viewpoint", "premise", "contemporary issue", "widespread belief"],
+    "collocations": [
+      {"phrase": "It is often argued that...", "example": "It is often argued that the primary responsibility for a child's education lies with their parents."},
+      {"phrase": "A prevalent notion is that...", "example": "In modern society, a prevalent notion is that technological advancement invariably leads to progress."},
+      {"phrase": "This essay will contend that...", "example": "While acknowledging the opposing view, this essay will contend that the benefits of globalization far outweigh its drawbacks."}
+    ]
+  },
+  "提供论据与例证 (Providing Support & Examples)": {
+    "keywords": ["evidence", "illustration", "case in point", "substantiate", "exemplify", "empirical data"],
+    "collocations": [
+      {"phrase": "A compelling example is...", "example": "A compelling example is the success of Finland's education system, which prioritizes holistic development over rote memorization."},
+      {"phrase": "This is best illustrated by...", "example": "The addictive nature of social media is best illustrated by the rise in reported cases of digital dependency."},
+      {"phrase": "To substantiate this point...", "example": "To substantiate this point, one need only look at the statistics on rising sea levels over the past century."}
+    ]
+  },
+  "表示对比、转折与让步 (Showing Contrast, Concession & Counterargument)": {
+    "keywords": ["contrast", "concession", "counterargument", "dichotomy", "notwithstanding", "conversely"],
+    "collocations": [
+      {"phrase": "Despite the aforementioned benefits,...", "example": "Despite the aforementioned benefits of urban living, the issue of overcrowding cannot be overlooked."},
+      {"phrase": "On the other hand, it is crucial to consider...", "example": "On the other hand, it is crucial to consider the potential for automation to displace human workers."},
+      {"phrase": "While it is true that..., the reality is more complex.", "example": "While it is true that renewable energy sources are expensive to install, the long-term reality is more complex when considering environmental costs."}
+    ]
+  },
+  "分析原因与结果 (Analyzing Cause & Effect)": {
+    "keywords": ["causation", "correlation", "ramification", "consequence", "catalyst", "by-product"],
+    "collocations": [
+      {"phrase": "This trend can be attributed to...", "example": "The rising popularity of online shopping can be attributed to its convenience and competitive pricing."},
+      {"phrase": "A direct consequence of this is...", "example": "A direct consequence of deforestation is the loss of biodiversity and the disruption of local ecosystems."},
+      {"phrase": "This, in turn, gives rise to...", "example": "Increased screen time can disrupt sleep patterns, and this, in turn, gives rise to a host of other health issues."}
+    ]
+  },
+  "进行强调 (Adding Emphasis)": {
+    "keywords": ["undoubtedly", "paramount", "imperative", "notably", "fundamental", "underscore"],
+    "collocations": [
+      {"phrase": "It is imperative that...", "example": "To ensure public health, it is imperative that governments invest in clean water infrastructure."},
+      {"phrase": "What is more, ...", "example": "The project is over budget. What is more, it is unlikely to be completed on time."},
+      {"phrase": "The crux of the matter is...", "example": "The crux of the matter is not whether technology is good or bad, but how we choose to use it."}
+    ]
+  },
+  "做出结论 (Concluding)": {
+    "keywords": ["conclusion", "recapitulation", "summary", "inference", "outlook", "synthesis"],
+    "collocations": [
+      {"phrase": "In light of the evidence presented,...", "example": "In light of the evidence presented, it is clear that individual action alone is insufficient to combat climate change."},
+      {"phrase": "To recapitulate, ...", "example": "To recapitulate, while there are valid arguments on both sides, the case for preserving cultural heritage is ultimately stronger."},
+      {"phrase": "Taking everything into account,...", "example": "Taking everything into account, it can be concluded that a balanced approach is required to solve this multifaceted issue."}
+    ]
+  },
+    "description": "用于精准分析问题、提出解决方案、进行批判性评价并展现高级学术风格的词汇与句式，旨在冲击雅思高分段。",
+  "描述问题与分析根源 (Describing Problems & Analyzing Root Causes)": {
+    "keywords": ["detrimental", "pernicious", "deep-rooted", "pervasive", "symptom", "underlying cause", "adverse effect", "vicious cycle"],
+    "collocations": [
+      {"phrase": "to pose a serious threat to", "example": "The proliferation of misinformation poses a serious threat to social cohesion and democratic processes."},
+      {"phrase": "to exacerbate the problem", "example": "Without timely intervention, the lack of affordable housing will only exacerbate the problem of urban poverty."},
+      {"phrase": "the root cause lies in", "example": "The root cause of this issue lies not in a lack of resources, but in their inequitable distribution."}
+    ]
+  },
+  "提出解决方案与评估效果 (Proposing Solutions & Evaluating Effects)": {
+    "keywords": ["viable solution", "remedial action", "implement measures", "long-term strategy", "potential drawback", "feasibility", "concerted effort", "panacea"],
+    "collocations": [
+      {"phrase": "to implement stringent measures", "example": "To curb pollution, it is necessary for governments to implement stringent measures against industrial polluters."},
+      {"phrase": "a two-pronged approach", "example": "A two-pronged approach, combining public education with legislative action, is often the most effective strategy."},
+      {"phrase": "to weigh the pros and cons", "example": "Before adopting any new policy, policymakers must meticulously weigh the pros and cons of its potential impacts."}
+    ]
+  },
+  "表达评价、怀疑与立场 (Expressing Evaluation, Skepticism & Stance)": {
+    "keywords": ["untenable", "plausible", "oversimplification", "incontrovertible", "problematic", "short-sighted", "questionable", "nuanced"],
+    "collocations": [
+      {"phrase": "This argument does not hold water.", "example": "The claim that economic growth can continue indefinitely without environmental consequences is an argument that does not hold water."},
+      {"phrase": "It is a common misconception that...", "example": "It is a common misconception that success is solely the result of individual talent, ignoring the role of social context."},
+      {"phrase": "A more nuanced perspective is needed.", "example": "A more nuanced perspective is needed, as viewing technology as either entirely beneficial or wholly detrimental is a gross oversimplification."}
+    ]
+  },
+  "预测趋势与未来影响 (Predicting Trends & Future Implications)": {
+    "keywords": ["foreseeable future", "inevitable", "emerging trend", "paradigm shift", "long-term implications", "trajectory", "precedent", "harbinger"],
+    "collocations": [
+      {"phrase": "on the current trajectory", "example": "On the current trajectory, global temperatures are projected to rise by more than two degrees Celsius by the end of the century."},
+      {"phrase": "to pave the way for", "example": "Advances in artificial intelligence will pave the way for breakthroughs in fields ranging from medicine to materials science."},
+      {"phrase": "It remains to be seen whether...", "example": "It remains to be seen whether these new regulations will be effective in the long run."}
+    ]
+  }
+}

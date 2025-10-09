@@ -1,0 +1,361 @@
+.verification-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verification-content {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.verification-card {
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: none;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.wechat-card {
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: none;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  height: 100%;
+}
+
+.verification-header {
+  text-align: center;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #666;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: #f5f5f5;
+  color: #4f46e5;
+}
+
+.verification-title {
+  margin: 16px 0 8px 0 !important;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.verification-subtitle {
+  font-size: 16px;
+  color: #666;
+}
+
+.verification-form {
+  margin-top: 24px;
+}
+
+.verification-input {
+  border-radius: 8px;
+  border: 2px solid #e8e8e8;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  padding: 12px 16px;
+}
+
+.verification-input:focus,
+.verification-input:hover {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.verify-button {
+  border-radius: 8px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #4f46e5 0%, #096dd9 100%);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.verify-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(24, 144, 255, 0.3);
+}
+
+.verify-button:active {
+  transform: translateY(0);
+}
+
+.success-message {
+  text-align: center;
+  margin: 24px 0;
+  padding: 16px;
+  background: #f6ffed;
+  border: 1px solid #b7eb8f;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.success-icon {
+  color: #52c41a;
+  font-size: 20px;
+}
+
+.verification-tips {
+  margin-top: 24px;
+  padding: 16px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.verification-tips ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.verification-tips li {
+  margin-bottom: 8px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* 右侧微信客服样式 */
+.wechat-content {
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wechat-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.wechat-icon {
+  font-size: 48px;
+  color: #07c160;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.wechat-title {
+  margin: 16px 0 8px 0 !important;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.wechat-subtitle {
+  font-size: 16px;
+  color: #666;
+}
+
+.wechat-image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.wechat-qr-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.wechat-qr-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.wechat-qr-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  border: 2px solid #e0e7ff;
+  transition: all 0.3s ease;
+}
+
+.wechat-qr-image:hover {
+  border-color: #07c160;
+  transform: scale(1.02);
+}
+
+.qr-caption {
+  font-size: 14px;
+  color: #666;
+  display: block;
+  margin-top: 8px;
+}
+
+.wechat-info {
+  margin: 24px 0;
+}
+
+.wechat-details {
+  width: 100%;
+}
+
+.wechat-details .ant-typography {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.wechat-id {
+  color: #4f46e5;
+  font-weight: 600;
+  font-family: 'Courier New', monospace;
+}
+
+.wechat-actions {
+  margin-top: auto;
+}
+
+.contact-button {
+  border-radius: 8px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #07c160 0%, #05a050 100%);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(7, 193, 96, 0.3);
+}
+
+.contact-button:active {
+  transform: translateY(0);
+}
+
+/* 响应式设计 */
+@media (max-width: 992px) {
+  .verification-container {
+    padding: 16px;
+  }
+  
+  .verification-content {
+    max-width: 100%;
+  }
+  
+  .verification-card,
+  .wechat-card {
+    margin-bottom: 24px;
+  }
+  
+  .wechat-content {
+    padding: 20px;
+  }
+  
+  .wechat-qr-container {
+    padding: 16px;
+  }
+  
+  .wechat-qr-image {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 576px) {
+  .verification-container {
+    padding: 12px;
+  }
+  
+  .verification-header {
+    margin-bottom: 24px;
+  }
+  
+  .verification-title {
+    font-size: 20px !important;
+  }
+  
+  .verification-subtitle {
+    font-size: 14px;
+  }
+  
+  .wechat-content {
+    padding: 16px;
+  }
+  
+  .wechat-qr-container {
+    padding: 12px;
+  }
+  
+  .wechat-qr-image {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+/* 动画效果 */
+.verification-card,
+.wechat-card {
+  animation: slideInUp 0.6s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.success-message {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 加载状态样式 */
+.verify-button.ant-btn-loading {
+  background: linear-gradient(135deg, #4f46e5 0%, #096dd9 100%);
+  opacity: 0.8;
+}
+
+/* 表单验证样式 */
+.ant-form-item-has-error .verification-input {
+  border-color: #ff4d4f;
+  box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
+}
+
+.ant-form-item-has-error .verification-input:focus {
+  border-color: #ff4d4f;
+  box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
+}

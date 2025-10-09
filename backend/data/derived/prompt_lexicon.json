@@ -1,0 +1,61 @@
+{
+  "absolute_terms": [
+    "all",
+    "always",
+    "completely",
+    "entirely",
+    "every",
+    "must",
+    "never",
+    "none"
+  ],
+  "limiters": [
+    "generally",
+    "in most cases",
+    "often",
+    "partly",
+    "some",
+    "sometimes",
+    "tend to"
+  ],
+  "comparative": [
+    "as ... as",
+    "compared to",
+    "decrease",
+    "increase",
+    "less",
+    "more",
+    "than"
+  ],
+  "causal": [
+    "as a result",
+    "because",
+    "consequently",
+    "since",
+    "so",
+    "therefore",
+    "thus"
+  ],
+  "concession": [
+    "although",
+    "even though",
+    "however",
+    "nevertheless",
+    "nonetheless",
+    "though"
+  ],
+  "condition": [
+    "as long as",
+    "if",
+    "in case",
+    "provided that",
+    "unless"
+  ],
+  "suggestion": [
+    "it is advisable",
+    "ought to",
+    "recommend",
+    "should",
+    "suggest"
+  ]
+}

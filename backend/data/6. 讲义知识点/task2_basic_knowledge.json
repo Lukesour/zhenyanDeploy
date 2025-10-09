@@ -1,0 +1,352 @@
+{
+  "description": "基于九分学长讲义提取的IELTS Task 2写作知识点",
+  "version": "2023 V2.0",
+  "source": "九分学长《雅思写作核心理论篇》",
+  "question_types": {
+    "观点型 (Opinion/Argument)": {
+      "instructions": [
+        "To what extent do you agree or disagree?",
+        "Do you agree or disagree?",
+        "What is your opinion?",
+        "To what extent do you agree with this statement?"
+      ],
+      "characteristics": "需要明确表达个人观点，支持或反对某个观点",
+      "writing_style": "主观风格",
+      "structure": "开头段 + 2-3个展开段 + 结尾段",
+      "argument_patterns": [
+        "一边倒态度",
+        "让步型中立",
+        "对立型中立"
+      ],
+      "paragraph_organization": {
+        "一边倒": "开头段 + 支持论点1 + 支持论点2 + 结尾段",
+        "让步型中立": "开头段 + 让步段 + 主要观点段 + 结尾段",
+        "对立型中立": "开头段 + 观点A优点 + 观点B优点 + 结尾段"
+      },
+      "introduction_elements": [
+        "背景介绍/题目改写",
+        "明确表达总观点"
+      ],
+      "conclusion_elements": [
+        "重申总观点",
+        "结合分论点总结"
+      ],
+      "body_elements": [
+        "主题句",
+        "论述",
+        "例子/细节",
+        "小结"
+      ]
+    },
+    "好坏型 (Positive/Negative)": {
+      "instructions": [
+        "Do you think this is a positive or negative development?",
+        "Is this a positive or negative trend?",
+        "Is this development positive or negative?"
+      ],
+      "characteristics": "评判某个现象或发展的好坏，需要明确立场",
+      "writing_style": "主观风格",
+      "structure": "开头段 + 2-3个展开段 + 结尾段",
+      "argument_patterns": [
+        "一边倒态度",
+        "让步型中立",
+        "对立型中立"
+      ],
+      "paragraph_organization": {
+        "积极态度": "开头段 + 积极影响1 + 积极影响2 + 结尾段",
+        "消极态度": "开头段 + 消极影响1 + 消极影响2 + 结尾段",
+        "中立态度": "开头段 + 积极影响 + 消极影响 + 结尾段"
+      },
+      "introduction_elements": [
+        "背景介绍/题目改写",
+        "明确表达总观点"
+      ],
+      "conclusion_elements": [
+        "重申总观点",
+        "结合分论点总结"
+      ],
+      "body_elements": [
+        "主题句",
+        "论述",
+        "例子/细节",
+        "小结"
+      ]
+    },
+    "讨论型 (Discussion)": {
+      "instructions": [
+        "Discuss both views and give your opinion",
+        "Discuss both sides and give your view",
+        "Some people think... Others believe... Discuss both views and give your opinion"
+      ],
+      "characteristics": "需要客观讨论两个预设观点，然后给出个人看法",
+      "writing_style": "客观+主观风格",
+      "structure": "开头段 + 观点A展开段 + 观点B展开段 + 个人观点段 + 结尾段",
+      "argument_patterns": [
+        "共存型中立"
+      ],
+      "paragraph_organization": {
+        "标准模式": "开头段 + 观点A论述 + 观点B论述 + 个人观点 + 结尾段",
+        "延伸模式": "开头段 + 观点A论述 + 观点B论述 + 结尾段（含个人观点）"
+      },
+      "introduction_elements": [
+        "背景介绍/题目改写",
+        "概述两个观点",
+        "预告个人立场"
+      ],
+      "conclusion_elements": [
+        "总结两个观点",
+        "明确个人立场",
+        "给出最终判断"
+      ],
+      "body_elements": {
+        "discuss_both": [
+          "客观论述",
+          "支持论据",
+          "具体例子"
+        ],
+        "personal_opinion": [
+          "主观判断",
+          "个人理由",
+          "具体建议"
+        ]
+      }
+    },
+    "比较型 (Comparison)": {
+      "instructions": [
+        "Do you think the advantages outweigh the disadvantages?",
+        "Do the benefits outweigh the problems?",
+        "Do you think the advantages of this outweigh the disadvantages?"
+      ],
+      "characteristics": "比较利弊并判断哪方面更重要，需要明确表态",
+      "writing_style": "主观风格",
+      "structure": "开头段 + 优势段 + 劣势段 + 结尾段",
+      "argument_patterns": [
+        "优势大于劣势",
+        "劣势大于优势",
+        "优劣势平衡"
+      ],
+      "paragraph_organization": {
+        "优势导向": "开头段 + 主要优势 + 次要劣势 + 结尾段",
+        "劣势导向": "开头段 + 次要优势 + 主要劣势 + 结尾段",
+        "平衡分析": "开头段 + 优势分析 + 劣势分析 + 结尾段"
+      },
+      "introduction_elements": [
+        "背景介绍/题目改写",
+        "明确比较立场"
+      ],
+      "conclusion_elements": [
+        "重申比较结论",
+        "总结主要理由"
+      ],
+      "body_elements": [
+        "主题句",
+        "优势/劣势论述",
+        "具体例子",
+        "影响分析"
+      ]
+    },
+    "报告型 (Report)": {
+      "instructions": [
+        "Why has this happened? What can be done?",
+        "What are the causes? What are the solutions?",
+        "What are the reasons? How can this problem be solved?",
+        "Why is this the case? What measures can be taken?"
+      ],
+      "characteristics": "客观分析原因和提出解决方案，不需要个人观点",
+      "writing_style": "客观风格",
+      "structure": "开头段 + 原因段 + 解决方案段 + 结尾段",
+      "argument_patterns": [
+        "原因分析",
+        "解决方案",
+        "原因-解决方案对应"
+      ],
+      "paragraph_organization": {
+        "标准模式": "开头段 + 原因分析 + 解决方案 + 结尾段",
+        "对应模式": "开头段 + 原因1+解决方案1 + 原因2+解决方案2 + 结尾段"
+      },
+      "introduction_elements": [
+        "背景介绍/题目改写",
+        "概述将要讨论的内容"
+      ],
+      "conclusion_elements": [
+        "总结主要原因",
+        "概括解决方案",
+        "展望未来"
+      ],
+      "body_elements": {
+        "causes": [
+          "原因分析",
+          "具体例子",
+          "影响说明"
+        ],
+        "solutions": [
+          "解决措施",
+          "实施方法",
+          "预期效果"
+        ]
+      }
+    },
+    "混搭型 (Mixed)": {
+      "instructions": [
+        "Why has this happened? Is it positive or negative?",
+        "What causes this? Do you agree?",
+        "What are the reasons? To what extent do you agree?",
+        "Why is this the case? Do you think this is a positive development?"
+      ],
+      "characteristics": "结合报告型和观点型的要求，既要分析又要评判",
+      "writing_style": "客观+主观风格",
+      "structure": "开头段 + 原因/现象段 + 观点评价段 + 结尾段",
+      "argument_patterns": [
+        "原因+观点",
+        "现象+评价",
+        "分析+立场"
+      ],
+      "paragraph_organization": {
+        "原因+观点": "开头段 + 原因分析 + 个人观点 + 结尾段",
+        "现象+评价": "开头段 + 现象描述 + 好坏评价 + 结尾段"
+      },
+      "introduction_elements": [
+        "背景介绍/题目改写",
+        "概述讨论内容",
+        "预告个人立场"
+      ],
+      "conclusion_elements": [
+        "总结分析内容",
+        "重申个人观点",
+        "给出最终建议"
+      ],
+      "body_elements": {
+        "analysis": [
+          "客观分析",
+          "具体例子",
+          "影响说明"
+        ],
+        "opinion": [
+          "主观判断",
+          "个人理由",
+          "支持论据"
+        ]
+      }
+    }
+  },
+  "topic_analysis": {
+    "key_elements": [
+      "话题关键词 (Topic Keywords)",
+      "限定词 (Limiting Words)",
+      "指令词 (Instruction Words)",
+      "逻辑关系词 (Logical Connectors)"
+    ],
+    "attention_points": {
+      "并列关系": [
+        "and",
+        "as well as",
+        "both...and"
+      ],
+      "比较关系": [
+        "more...than",
+        "better than",
+        "rather than"
+      ],
+      "对立关系": [
+        "instead of",
+        "rather than",
+        "versus"
+      ],
+      "因果关系": [
+        "because",
+        "since",
+        "as a result of"
+      ],
+      "程度关键词": [
+        "all",
+        "every",
+        "immediately",
+        "completely"
+      ]
+    },
+    "topic_focus": "区分话题中的主要部分和次要部分，确定写作重心"
+  },
+  "argument_patterns": {
+    "一边倒态度": {
+      "description": "完全同意或完全不同意某个观点",
+      "structure": "明确立场 + 2-3个支持论点",
+      "适用题型": [
+        "观点型",
+        "好坏型",
+        "比较型"
+      ],
+      "写作要点": [
+        "开头段明确表达强烈立场",
+        "所有展开段都支持同一观点",
+        "避免提及对立观点的优势",
+        "结尾段强化总观点"
+      ],
+      "示例表达": [
+        "I strongly believe that...",
+        "I completely agree that...",
+        "There is no doubt that...",
+        "I am convinced that..."
+      ]
+    },
+    "让步型中立": {
+      "description": "承认对方观点有一定道理，但更倾向于自己的观点",
+      "structure": "让步 + 转折 + 主要观点",
+      "适用题型": [
+        "观点型",
+        "好坏型",
+        "比较型"
+      ],
+      "写作要点": [
+        "先承认对立观点的合理性",
+        "使用转折词引出主要观点",
+        "主要观点的论证更充分",
+        "结尾段重申主要立场"
+      ],
+      "示例表达": [
+        "While it is true that..., I believe that...",
+        "Although some people argue..., I think...",
+        "Despite the fact that..., I would argue...",
+        "Admittedly..., however..."
+      ]
+    },
+    "对立型中立": {
+      "description": "认为两个方面都有道理，各有利弊",
+      "structure": "观点A的优点 + 观点B的优点",
+      "适用题型": [
+        "观点型",
+        "好坏型"
+      ],
+      "写作要点": [
+        "平等对待两个对立观点",
+        "分别论述各自的优势",
+        "避免明确偏向任何一方",
+        "结尾段总结两方面价值"
+      ],
+      "示例表达": [
+        "Both sides have their merits...",
+        "There are valid arguments on both sides...",
+        "Each approach has its own advantages...",
+        "Both perspectives offer valuable insights..."
+      ]
+    },
+    "共存型中立": {
+      "description": "认为两个观点可以并存，不冲突",
+      "structure": "观点A适用情况 + 观点B适用情况",
+      "适用题型": [
+        "讨论型"
+      ],
+      "写作要点": [
+        "客观论述两个预设观点",
+        "分析各自的适用条件",
+        "强调两者的互补性",
+        "个人观点倾向于综合方案"
+      ],
+      "示例表达": [
+        "Both approaches can be effective depending on...",
+        "The choice between... depends on...",
+        "In some situations..., while in others...",
+        "A combination of both methods might be ideal..."
+      ]
+    }
+  }
+}

@@ -1,0 +1,798 @@
+{
+"description": "一个针对（尤其是华语）雅思学习者的常见语法错误数据库。每个条目都包含详细的解释、多组示例和对分数影响的评估，用于错误的精准识别、归因和建议优先级排序。",
+"entries": [
+    {
+    "error_id": "GRA_SVA_01",
+    "error_type": "Subject-Verb Agreement",
+    "error_type_cn": "主谓不一致",
+    "target_audience": ["Chinese Speakers"],
+    "explanation_cn": "动词的形式必须与其主语的人称和数保持一致。当主语是复杂的名词短语，或者主谓之间被其他成分隔开时，这是最常见的错误之一。",
+    "common_triggers_cn": ["“one of the + 复数名词”结构", "由'everybody', 'nobody'等不定代词作主语", "倒装句中的主谓识别", "长修饰语隔开主语和动词"],
+    "impact_on_score": "High",
+    "examples": [
+        {
+        "incorrect": "The quality of these products are poor.",
+        "correct": "The quality of these products is poor.",
+        "correction_note_cn": "主语是单数名词 'quality'，而不是复数名词 'products'，因此动词应为 'is'。"
+        },
+        {
+        "incorrect": "One of the most significant advantage are...",
+        "correct": "One of the most significant advantages is...",
+        "correction_note_cn": "主语是 'One'，是单数。同时，'one of the' 后面应跟名词复数 'advantages'。"
+        }
+    ]
+    },
+    {
+    "error_id": "GRA_ART_01",
+    "error_type": "Article Misuse",
+    "error_type_cn": "冠词误用 (a/an/the)",
+    "target_audience": ["Chinese Speakers"],
+    "explanation_cn": "汉语中没有冠词，因此在需要使用定冠词(the)、不定冠词(a/an)或零冠词时，学习者常常会遗漏或用错。",
+    "common_triggers_cn": ["泛指可数名词复数前误加'a'", "特指或上文提过的名词前漏用'the'", "不可数名词前误用'a/an'"],
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+        "incorrect": "Government should invest more in the education.",
+        "correct": "The government should invest more in education.",
+        "correction_note_cn": "'The government' 通常指代国家的特定政府，是特指。'education' 在此作为抽象概念，是泛指，前面不需要冠词。"
+        },
+        {
+        "incorrect": "This is a useful information.",
+        "correct": "This is a useful piece of information.",
+        "correction_note_cn": "'information' 是不可数名词，不能与 'a' 直接搭配。需要使用 'a piece of' 等量词短语。"
+        }
+    ]
+    },
+    {
+    "error_id": "GRA_TENSE_01",
+    "error_type": "Incorrect Tense",
+    "error_type_cn": "时态错误",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "未能根据上下文或时间状语选择正确的动词时态，尤其是在描述图表（过去时）或讨论普遍真理（一般现在时）时。",
+    "impact_on_score": "High",
+    "examples": [
+        {
+        "incorrect": "The graph shows that the number of tourists has increased dramatically in 2010.",
+        "correct": "The graph shows that the number of tourists increased dramatically in 2010.",
+        "correction_note_cn": "“in 2010” 是一个明确的过去时间点，应使用一般过去时 'increased'，而不是现在完成时。"
+        }
+    ]
+    },
+    {
+    "error_id": "GRA_FRAG_01",
+    "error_type": "Sentence Fragment / Run-on Sentence",
+    "error_type_cn": "句子残缺或句子粘连",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "句子残缺指一个不完整的句子被当作完整句使用。句子粘连（或称逗号拼接）指两个或多个独立分句仅用逗号连接，而没有使用正确的连词或标点。",
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+        "incorrect": "Because technology is developing so fast. It brings many changes to our lives.",
+        "correct": "Because technology is developing so fast, it brings many changes to our lives.",
+        "correction_note_cn": "这是一个句子残缺错误。'Because'引导的是从句，不能独立成句，应与主句合并。"
+        },
+        {
+        "incorrect": "Some people support this idea, others disagree with it.",
+        "correct": "Some people support this idea, while others disagree with it.",
+        "correction_note_cn": "这是一个逗号拼接错误。应用连词 'while' 或分号 ';' 来连接两个独立的句子。"
+        }
+    ]
+    },
+    {
+    "error_id": "GRA_NOUN_01",
+    "error_type": "Noun Plurality Mismatch",
+    "error_type_cn": "名词单复数错误",
+    "target_audience": ["Chinese Speakers"],
+    "explanation_cn": "英语中可数名词必须根据其数量使用单数或复数形式，而不可数名词通常没有复数形式。华语学习者常因母语习惯而忽略这一规则。",
+    "common_triggers_cn": ["在 'many', 'several', 'a lot of' 等词后忘记使用复数", "泛指一个类别时误用单数", "将不可数名词（如 advice, information, equipment）当作可数名词使用"],
+    "impact_on_score": "High",
+    "examples": [
+        {
+            "incorrect": "There are many reason for this phenomenon.",
+            "correct": "There are many reasons for this phenomenon.",
+            "correction_note_cn": "'many' 后面必须跟可数名词的复数形式 'reasons'。"
+        },
+        {
+            "incorrect": "He gave me many useful advices.",
+            "correct": "He gave me a lot of useful advice.",
+            "correction_note_cn": "'advice' 是不可数名词，没有复数形式。可以用 'a lot of' 或 'some pieces of' 来修饰。"
+        }
+    ]
+},
+{
+    "error_id": "GRA_PREP_01",
+    "error_type": "Preposition Misuse",
+    "error_type_cn": "介词误用",
+    "target_audience": ["All Learners", "Chinese Speakers"],
+    "explanation_cn": "错误地使用介词（如 in, on, at, for, with），尤其是在时间、地点表达和动词/形容词的固定搭配中。",
+    "common_triggers_cn": ["时间介词混淆（in 2020, on Monday, at 8 o'clock）", "地点介词混淆（in the city, on the street）", "固定搭配错误（depend on, interested in）"],
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+            "incorrect": "The meeting will be held in Friday morning.",
+            "correct": "The meeting will be held on Friday morning.",
+            "correction_note_cn": "当时间具体到某一天或某一天的某个部分时，应使用介词 'on'。"
+        },
+        {
+            "incorrect": "The result depends of many factors.",
+            "correct": "The result depends on many factors.",
+            "correction_note_cn": "'depend' 的固定搭配是 'depend on'，表示“取决于”。"
+        }
+    ]
+},
+{
+    "error_id": "GRA_GERINF_01",
+    "error_type": "Gerund vs. Infinitive",
+    "error_type_cn": "动名词与不定式混淆",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "在特定动词或介词后，错误地使用了动名词（-ing形式）或不定式（to do）。",
+    "common_triggers_cn": ["动词后误用（enjoy doing, avoid doing vs. want to do, decide to do）", "介词后必须跟动名词"],
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+            "incorrect": "I suggest to take a break.",
+            "correct": "I suggest taking a break.",
+            "correction_note_cn": "动词 'suggest' 后面应跟动名词（gerund）作宾语。"
+        },
+        {
+            "incorrect": "He is capable to solve this complex problem.",
+            "correct": "He is capable of solving this complex problem.",
+            "correction_note_cn": "在介词 'of' 后面，必须使用动名词 'solving'。"
+        }
+    ]
+},
+{
+    "error_id": "LEX_FORM_01",
+    "error_type": "Incorrect Word Form",
+    "error_type_cn": "词性错误",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "在句子中使用了错误的词性，例如用名词修饰名词（应使用形容词），或用形容词修饰动词（应使用副词）。",
+    "common_triggers_cn": ["economic vs. economy", "significant vs. significance", "slow vs. slowly"],
+    "impact_on_score": "High",
+    "examples": [
+        {
+            "incorrect": "The industrial has brought huge changes.",
+            "correct": "Industrialization has brought huge changes.",
+            "correction_note_cn": "此处需要一个名词 'Industrialization'（工业化）作主语，而不是形容词 'industrial'。"
+        },
+        {
+            "incorrect": "He explained the process very clear.",
+            "correct": "He explained the process very clearly.",
+            "correction_note_cn": "修饰动词 'explained' 需要使用副词 'clearly'，而不是形容词 'clear'。"
+        }
+    ]
+},
+{
+    "error_id": "LEX_COLLOC_01",
+    "error_type": "Unnatural Collocation / Chinglish",
+    "error_type_cn": "词语搭配错误 / 中式英语",
+    "target_audience": ["Chinese Speakers"],
+    "explanation_cn": "使用了不符合英语习惯的词语搭配，通常是由于母语的直接翻译造成的（例如“学习知识”直译为 learn knowledge）。",
+    "common_triggers_cn": ["动词与名词的搭配（do/make/take/have）", "形容词与名词的搭配", "中式思维的直译"],
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+            "incorrect": "This policy raised a hot discussion online.",
+            "correct": "This policy sparked a heated discussion online.",
+            "correction_note_cn": "在英语中，我们通常用 'heated discussion'（激烈的讨论）而不是 'hot discussion'，动词用 'sparked' 或 'caused' 更地道。"
+        },
+        {
+            "incorrect": "We should increase our knowledge.",
+            "correct": "We should broaden / expand our knowledge.",
+            "correction_note_cn": "虽然 'increase' 语法正确，但 'broaden' 或 'expand knowledge'（拓宽知识）是更地道的搭配。"
+        }
+    ]
+},
+{
+    "error_id": "GRA_COMP_01",
+    "error_type": "Incorrect Comparative/Superlative",
+    "error_type_cn": "比较级与最高级错误",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "比较级（-er/more）和最高级（-est/most）的构成或使用不正确。",
+    "common_triggers_cn": ["双重比较（more cheaper）", "不规则变化（good-better-best）", "最高级缺少 'the' 或范围"],
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+            "incorrect": "This solution is more better than the previous one.",
+            "correct": "This solution is better than the previous one.",
+            "correction_note_cn": "'better' 本身就是 'good' 的比较级，不能再与 'more' 连用。"
+        },
+        {
+            "incorrect": "She is the most cleverest student in the class.",
+            "correct": "She is the cleverest student in the class.",
+            "correction_note_cn": "'clever' 的最高级是 'cleverest'，不需要再加 'most'。"
+        }
+    ]
+},
+{
+    "error_id": "GRA_CLAUSE_01",
+    "error_type": "Relative Clause Error",
+    "error_type_cn": "定语从句错误",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "在定语从句中错误地使用关系代词（who, whom, which, that, whose）或关系副词（where, when, why）。",
+    "common_triggers_cn": ["用 'which' 指代人", "用 'what' 引导定语从句", "在非限定性定语从句中误用 'that'"],
+    "impact_on_score": "High",
+    "examples": [
+        {
+            "incorrect": "The scientist which won the Nobel Prize is famous.",
+            "correct": "The scientist who won the Nobel Prize is famous.",
+            "correction_note_cn": "指代人时，应使用关系代词 'who'，而不是 'which'。"
+        },
+        {
+            "incorrect": "This is the reason what he was late.",
+            "correct": "This is the reason why he was late.",
+            "correction_note_cn": "表示原因时，应用关系副词 'why' 引导定语从句，'what' 不能引导定语从句。"
+        }
+    ]
+},
+{
+    "error_id": "GRA_PARAL_01",
+    "error_type": "Faulty Parallelism",
+    "error_type_cn": "平行结构错误",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "当使用连词（如 and, but, or）连接一系列的词、短语或从句时，这些成分的语法形式应该保持一致。",
+    "common_triggers_cn": ["列表中的词性不一致", "动词形式不一致（动名词与不定式混搭）"],
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+            "incorrect": "She likes reading, swimming and to play the piano.",
+            "correct": "She likes reading, swimming and playing the piano.",
+            "correction_note_cn": "为了保持平行结构，列表中的所有项目都应是动名词形式（-ing）。"
+        },
+        {
+            "incorrect": "The new system is faster, more efficient, and it is also secure.",
+            "correct": "The new system is faster, more efficient, and more secure.",
+            "correction_note_cn": "连接的三个元素都应是形容词（或其比较级形式）以保持结构平行。"
+        }
+    ]
+},
+{
+    "error_id": "GRA_PRON_01",
+    "error_type": "Unclear Pronoun Reference",
+    "error_type_cn": "代词指代不清",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "代词（如 it, they, this, which）在句子中没有一个清晰、唯一的先行词（antecedent），导致读者无法确定其具体指代内容，造成文意模糊。",
+    "common_triggers_cn": ["句子开头使用 'This' 来指代前一句话的整个概念", "一个句子中 'it' 或 'they' 可能指代多个名词", "使用 'which' 笼统地指代整个前句，但用法不规范"],
+    "impact_on_score": "High",
+    "examples": [
+        {
+            "incorrect": "Many people are moving to cities, which creates a lot of pressure on public services.",
+            "correct": "Many people are moving to cities, a trend that creates a lot of pressure on public services.",
+            "correction_note_cn": "用 'which' 指代整个前句的做法在正式写作中应谨慎使用。明确指出 'which' 指代的是 'a trend' 可以让句子更清晰。"
+        },
+        {
+            "incorrect": "The report shows that the company's profit has declined. It is a serious problem.",
+            "correct": "The report shows that the company's profit has declined. This decline is a serious problem.",
+            "correction_note_cn": "句首的 'It' 指代不明。明确说出 'This decline'（这次下降）能精准地连接上下文，避免歧义。"
+        }
+    ]
+},{
+    "error_id": "GRA_PRON_01",
+    "error_type": "Unclear Pronoun Reference",
+    "error_type_cn": "代词指代不清",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "代词（如 it, they, this, which）在句子中没有一个清晰、唯一的先行词（antecedent），导致读者无法确定其具体指代内容，造成文意模糊。",
+    "common_triggers_cn": ["句子开头使用 'This' 来指代前一句话的整个概念", "一个句子中 'it' 或 'they' 可能指代多个名词", "使用 'which' 笼统地指代整个前句，但用法不规范"],
+    "impact_on_score": "High",
+    "examples": [
+        {
+            "incorrect": "Many people are moving to cities, which creates a lot of pressure on public services.",
+            "correct": "Many people are moving to cities, a trend that creates a lot of pressure on public services.",
+            "correction_note_cn": "用 'which' 指代整个前句的做法在正式写作中应谨慎使用。明确指出 'which' 指代的是 'a trend' 可以让句子更清晰。"
+        },
+        {
+            "incorrect": "The report shows that the company's profit has declined. It is a serious problem.",
+            "correct": "The report shows that the company's profit has declined. This decline is a serious problem.",
+            "correction_note_cn": "句首的 'It' 指代不明。明确说出 'This decline'（这次下降）能精准地连接上下文，避免歧义。"
+        }
+    ]
+},
+{
+    "error_id": "GRA_PASSIVE_01",
+    "error_type": "Passive Voice Error",
+    "error_type_cn": "被动语态错误",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "被动语态的结构是 'be + 过去分词'。常见错误包括遗漏 'be' 动词、'be' 动词时态错误或使用了错误的过去分词形式。",
+    "common_triggers_cn": ["在情态动词或完成时后遗漏 'be/been'", "不规则动词的过去分词形式掌握不牢"],
+    "impact_on_score": "High",
+    "examples": [
+        {
+            "incorrect": "More attention should be pay to environmental protection.",
+            "correct": "More attention should be paid to environmental protection.",
+            "correction_note_cn": "被动语态中，情态动词 'should' 后面跟 'be' + 过去分词 'paid'。"
+        },
+        {
+            "incorrect": "The new library has finished last month.",
+            "correct": "The new library was finished last month.",
+            "correction_note_cn": "图书馆是“被”完成的，应用被动语态。同时，时间状语 'last month' 决定了应使用一般过去时的被动语态 'was finished'，而不是现在完成时。"
+        }
+    ]
+},
+{
+    "error_id": "GRA_COND_01",
+    "error_type": "Conditional Sentence Error",
+    "error_type_cn": "条件状语从句错误",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "在条件状语从句（If-clauses）中，主句和从句的时态搭配不符合语法规则，尤其是在真实条件句和虚拟语气中。",
+    "common_triggers_cn": ["在表示将来的真实条件句中误用 'will'", "混淆对现在和对过去虚拟的动词形式", "主句和从句时态不匹配"],
+    "impact_on_score": "High",
+    "examples": [
+        {
+            "incorrect": "If the government will invest more in technology, the economy would grow faster.",
+            "correct": "If the government invested more in technology, the economy would grow faster.",
+            "correction_note_cn": "这是对现在情况的虚拟。'if' 从句动词用过去式 'invested'，主句用 'would + 动词原形'。"
+        },
+        {
+            "incorrect": "If I was you, I would accept the offer.",
+            "correct": "If I were you, I would accept the offer.",
+            "correction_note_cn": "在对现在的虚拟语气中，当主语是 'I' 时，'be' 动词的过去式通常用 'were' 而不是 'was'，这是一种固定的虚拟语气用法。"
+        }
+    ]
+},
+{
+    "error_id": "GRA_DMOD_01",
+    "error_type": "Dangling Modifier",
+    "error_type_cn": "悬垂修饰语",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "句首的修饰性短语（通常是分词短语）的逻辑主语与句子主语不一致，导致句子意义不合逻辑或产生滑稽的歧义。",
+    "common_triggers_cn": ["以 -ing 或 -ed 分词短语开头的句子", "以介词短语开头的句子"],
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+            "incorrect": "Walking home from work, the rain began to fall heavily.",
+            "correct": "Walking home from work, I was caught in heavy rain.",
+            "correction_note_cn": "句子的逻辑主语应该是人（“我”），而不是“雨”。原句的字面意思是“雨在下班回家的路上走着”。"
+        },
+        {
+            "incorrect": "To improve the city's air quality, more factories were closed.",
+            "correct": "To improve the city's air quality, the government closed more factories.",
+            "correction_note_cn": "“为了提升空气质量”这个动作的发出者应该是“政府”，而不是“工厂”。需要明确指出动作的执行者。"
+        }
+    ]
+},
+{
+    "error_id": "LEX_CONFUSE_01",
+    "error_type": "Commonly Confused Words",
+    "error_type_cn": "易混淆词",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "因拼写、发音或意义相近而混淆使用词语，导致表达不准确。例如 affect/effect, principal/principle。",
+    "common_triggers_cn": ["affect (v.) vs. effect (n.)", "economic (经济的) vs. economical (省钱的)", "principle (原则) vs. principal (主要的；校长)", "then (然后) vs. than (比)"],
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+            "incorrect": "The main principle of the company is to maximize profit.",
+            "correct": "The principal aim of the company is to maximize profit.",
+            "correction_note_cn": "'Principal' 作形容词意为“主要的”，而 'principle' 是名词，意为“原则、原理”。"
+        },
+        {
+            "incorrect": "This car is very economic because it doesn't use much fuel.",
+            "correct": "This car is very economical because it doesn't use much fuel.",
+            "correction_note_cn": "'Economical' 意为“经济实惠的、省钱的”，而 'economic' 指“经济学（上）的”。"
+        }
+    ]
+},
+{
+    "error_id": "LEX_REDUND_01",
+    "error_type": "Redundancy / Wordiness",
+    "error_type_cn": "冗余/累赘",
+    "target_audience": ["Chinese Speakers"],
+    "explanation_cn": "使用了不必要的词语，导致句子啰嗦、不简洁。这通常源于中文的表达习惯。",
+    "common_triggers_cn": ["'In my opinion, I think...'", "'The reason is because...'", "'return back'", "'repeat again'", "'cooperate together'"],
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+            "incorrect": "The two countries should cooperate together to solve this problem.",
+            "correct": "The two countries should cooperate to solve this problem.",
+            "correction_note_cn": "'Cooperate' 本身就含有 'together'（一起）的意思，因此 'together' 是多余的。"
+        },
+        {
+            "incorrect": "Although he is young, but he is very experienced.",
+            "correct": "Although he is young, he is very experienced.",
+            "correction_note_cn": "英语中 'Although' 和 'but' 不能在同一个句子中同时使用来表示转折，选择其一即可。"
+        }
+    ]
+},
+{
+    "error_id": "GRA_QUANT_01",
+    "error_type": "Quantifier Misuse",
+    "error_type_cn": "数量词误用",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "用于修饰可数名词与不可数名词的数量词被混淆使用。例如，用 'many' 或 'number' 修饰不可数名词，或用 'much' 或 'amount' 修饰可数名词。",
+    "common_triggers_cn": ["many/much 混用", "the number of (可数) vs. the amount of (不可数)", "a few (可数) vs. a little (不可数)", "few (几乎没有) vs. a few (有一些)"],
+    "impact_on_score": "High",
+    "examples": [
+        {
+            "incorrect": "I don't have much friends in this city.",
+            "correct": "I don't have many friends in this city.",
+            "correction_note_cn": "'friends' 是可数名词，应该用 'many' 来修饰。"
+        },
+        {
+            "incorrect": "A huge amount of people attended the concert.",
+            "correct": "A huge number of people attended the concert.",
+            "correction_note_cn": "'people' 在此是可数名词，应用 'number' 来描述其数量。'amount' 通常用于不可数名词，如 'a large amount of money'。"
+        }
+    ]
+},
+{
+    "error_id": "COH_CONN_01",
+    "error_type": "Misuse of Transitional Words",
+    "error_type_cn": "过渡词/逻辑连接词误用",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "未能准确使用表示因果、转折、对比、递进等关系的过渡词语，导致上下文逻辑混乱或不清晰。",
+    "common_triggers_cn": ["混淆 'Although' (尽管) 和 'However' (然而)", "一句话中同时使用 'because' 和 'so'", "误用 'despite' (介词) 和 'although' (连词)"],
+    "impact_on_score": "High",
+    "examples": [
+        {
+            "incorrect": "Despite he was tired, he continued to work.",
+            "correct": "Although he was tired, he continued to work.",
+            "correction_note_cn": "'Despite' 是介词，后面应跟名词或动名词短语 (e.g., 'Despite being tired')。'Although' 是连词，后面跟一个完整的从句。"
+        },
+        {
+            "incorrect": "The company's profits increased. In the other hand, its market share declined.",
+            "correct": "The company's profits increased. On the other hand, its market share declined.",
+            "correction_note_cn": "表示“另一方面”的固定搭配是 'On the other hand'，而不是 'In the other hand'。"
+        }
+    ]
+},
+{
+    "error_id": "GRA_ADVP_01",
+    "error_type": "Incorrect Adverb Placement",
+    "error_type_cn": "副词位置错误",
+    "target_audience": ["All Learners", "Chinese Speakers"],
+    "explanation_cn": "副词，特别是频率副词（如 always, often）和方式副词（如 carefully），在句子中的位置不符合英语语法习惯。",
+    "common_triggers_cn": ["频率副词放在实义动词之后", "频率副词放在 be 动词/助动词之前", "副词 'enough' 放在其修饰的形容词或副词之前"],
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+            "incorrect": "I have been always interested in science.",
+            "correct": "I have always been interested in science.",
+            "correction_note_cn": "频率副词 'always' 应位于第一个助动词 'have' 之后。"
+        },
+        {
+            "incorrect": "He is not enough experienced for this job.",
+            "correct": "He is not experienced enough for this job.",
+            "correction_note_cn": "作为副词，'enough' 必须放在它所修饰的形容词 'experienced' 或副词之后。"
+        }
+    ]
+},
+{
+    "error_id": "PUNC_APOS_01",
+    "error_type": "Apostrophe Misuse",
+    "error_type_cn": "撇号(')误用",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "在构成所有格（如 student's）或缩写（如 it's）时，错误地添加、遗漏或放错了撇号。",
+    "common_triggers_cn": ["'its' (物主代词“它的”) 与 'it's' (it is/it has 的缩写) 混淆", "复数名词的所有格形式错误 (the students' books)", "在普通复数名词后误加撇号 (two apple's)"],
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+            "incorrect": "The government should reconsider it's policy on immigration.",
+            "correct": "The government should reconsider its policy on immigration.",
+            "correction_note_cn": "'its' 是物主代词，表示“它的”。'it's' 是 'it is' 或 'it has' 的缩写。"
+        },
+        {
+            "incorrect": "My parents house is in the countryside.",
+            "correct": "My parents' house is in the countryside.",
+            "correction_note_cn": "'parents' 是复数名词，其所有格应在 's' 后面加撇号，即 'parents''。"
+        }
+    ]
+},
+{
+    "error_id": "GRA_INV_01",
+    "error_type": "Incorrect Inversion",
+    "error_type_cn": "倒装结构错误",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "在需要使用倒装的结构中（如疑问句、否定词开头的句子），未能正确地将助动词、情态动词或be动词置于主语之前。",
+    "common_triggers_cn": ["间接问句中误用直接问句的倒装语序", "以 'Not only', 'Hardly', 'Never' 等否定意义的词或短语开头的句子未进行倒装"],
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+            "incorrect": "Could you tell me where is the nearest bank?",
+            "correct": "Could you tell me where the nearest bank is?",
+            "correction_note_cn": "在宾语从句（间接问句）中，应使用正常的陈述句语序（主语+谓语），而不是疑问句的倒装语序。"
+        },
+        {
+            "incorrect": "Never before I have seen such a beautiful sunset.",
+            "correct": "Never before have I seen such a beautiful sunset.",
+            "correction_note_cn": "当 'Never before' 等具有否定意义的副词短语置于句首时，主句需要部分倒装，即将助动词 'have' 提前到主语 'I' 之前。"
+        }
+    ]
+},
+{
+    "error_id": "GRA_ART_02",
+    "error_type": "Unnecessary Definite Article with Generic/Abstract Nouns",
+    "error_type_cn": "泛指/抽象名词误用定冠词 (the)",
+    "target_audience": ["Chinese Speakers"],
+    "explanation_cn": "在泛指的复数名词或不可数的抽象名词（如 society, education, happiness, technology）前，错误地添加了定冠词 'the'。学习者常常误以为加上 'the' 会让表达更正式，但实际上这违反了英语的语法习惯。",
+    "common_triggers_cn": ["讨论社会宏大议题时，如 'the society', 'the education', 'the environment'", "泛指某一群体时，如 'the students should work hard'"],
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+            "incorrect": "The technology has changed our lives dramatically.",
+            "correct": "Technology has changed our lives dramatically.",
+            "correction_note_cn": "当 'Technology' 作为一个抽象的、泛指的概念时，前面不需要加定冠词 'the'。"
+        },
+        {
+            "incorrect": "The happiness is the ultimate goal for most people.",
+            "correct": "Happiness is the ultimate goal for most people.",
+            "correction_note_cn": "'Happiness' 在此作为抽象概念，是泛指，因此前面不需要加 'the'。"
+        }
+    ]
+},
+{
+    "error_id": "STY_VAGUE_01",
+    "error_type": "Vague or Unspecific Language",
+    "error_type_cn": "语言模糊/不具体",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "在学术写作中使用了过于宽泛、口语化或不精确的词语（如 good, bad, thing, aspect, people say），未能清晰、有力地表达观点。",
+    "common_triggers_cn": ["使用 'thing' 来指代任何事物", "使用 'good/bad' 来描述影响或性质", "用 'some people think' 这种含糊的方式来引出观点"],
+    "impact_on_score": "High",
+    "examples": [
+        {
+            "incorrect": "Fast food is a bad thing for our health.",
+            "correct": "The high concentration of fat and sugar in fast food poses a serious risk to public health.",
+            "correction_note_cn": "避免使用 'bad thing'。应具体说明“如何”不好，例如指出其高脂肪、高糖分的构成，并将其与“公共健康风险”联系起来。"
+        },
+        {
+            "incorrect": "The government should do more things to protect the environment.",
+            "correct": "The government should implement stricter regulations on industrial emissions to protect the environment.",
+            "correction_note_cn": "'do more things' 表达非常模糊。应具体指出可以做什么，例如 'implement stricter regulations' (实施更严格的规章制度)。"
+        }
+    ]
+},
+{
+    "error_id": "LOGIC_COMP_01",
+    "error_type": "Illogical Comparison",
+    "error_type_cn": "比较对象不一致/不合逻辑",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "在构建比较句时，所比较的两个对象在逻辑上或类别上并不对等，导致比较失去意义。",
+    "common_triggers_cn": ["将“A的某物”与“B”直接比较", "比较两个完全不同范畴的事物"],
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+            "incorrect": "The price of vegetables in this supermarket is higher than the wet market.",
+            "correct": "The price of vegetables in this supermarket is higher than that in the wet market.",
+            "correction_note_cn": "原句将“价格”与“菜市场”进行比较，逻辑不通。应将“这家超市的价格”与“菜市场的价格”进行比较。用 'that' 来指代前面出现过的 'the price'。"
+        },
+        {
+            "incorrect": "Unlike the past, we now have access to vast information online.",
+            "correct": "Unlike people in the past, we now have access to vast information online.",
+            "correction_note_cn": "原句比较的是 'the past' (过去，时间) 和 'we' (我们，人)，对象不对等。应改为比较“过去的人”和“我们”。"
+        }
+    ]
+},
+{
+    "error_id": "GRA_SUBJ_01",
+    "error_type": "Incorrect Subjunctive Mood (Non-conditional)",
+    "error_type_cn": "虚拟语气使用错误 (非条件句)",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "在由表示“建议、要求、命令、重要性”等动词或形容词引导的 that 从句中，未能使用正确的虚拟语气形式，即 '(should) + 动词原形'。",
+    "common_triggers_cn": ["suggest that...", "recommend that...", "insist that...", "demand that...", "it is important/essential/vital that..."],
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+            "incorrect": "The professor insisted that every student submits the paper on time.",
+            "correct": "The professor insisted that every student (should) submit the paper on time.",
+            "correction_note_cn": "在动词 'insist that' 后的从句中，谓语动词需要使用虚拟语气，即动词原形 'submit'，无论主语是单数还是复数。"
+        },
+        {
+            "incorrect": "It is vital that the government takes immediate action.",
+            "correct": "It is vital that the government (should) take immediate action.",
+            "correction_note_cn": "在 'It is vital that...' 结构引导的从句中，谓语动词需要使用虚拟语气 'take'。"
+        }
+    ]
+},
+{
+    "error_id": "STR_TOPIC_01",
+    "error_type": "Weak or Unclear Topic Sentence",
+    "error_type_cn": "主题句薄弱或不清",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "段落的主题句（通常是第一句）未能清晰地陈述该段的核心论点，或只是一个事实的罗列，导致段落缺乏明确的中心和论证方向。",
+    "common_triggers_cn": ["主题句是一个过于宽泛的陈述", "主题句只是一个事实，而不是一个有争议、需要论证的观点", "主题句包含了多个不相关的论点"],
+    "impact_on_score": "High",
+    "examples": [
+        {
+            "incorrect": "Nowadays, many students choose to study abroad.",
+            "correct": "Studying abroad offers students an unparalleled opportunity to achieve cultural immersion and personal independence.",
+            "correction_note_cn": "原句只是一个事实陈述，无法引领一个段落的论证。修改后的句子提出了一个明确的观点（提供文化沉浸和个人独立的机会），可以作为段落的中心思想进行后续的阐述和举例。"
+        },
+        {
+            "incorrect": "Advertisements are everywhere in our daily life.",
+            "correct": "One of the most significant negative impacts of advertising is its tendency to create artificial needs and promote consumerism.",
+            "correction_note_cn": "原句是一个众所周知的事实。修改后的句子提出了一个清晰、可供辩论的论点（广告的负面影响是制造人工需求、鼓吹消费主义），为段落的展开设定了明确的方向。"
+        }
+    ]
+},
+{
+    "error_id": "STY_HEDGE_01",
+    "error_type": "Lack of Hedging / Overgeneralization",
+    "error_type_cn": "缺乏限定语/过度概括",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "在陈述观点、分析数据或讨论社会趋势时，使用了过于绝对化的词语（如 always, never, prove, all），而未能使用适当的限定性、缓和性语言（如 may, tend to, suggest, it seems likely that）来使论证更客观、严谨和留有余地。",
+    "common_triggers_cn": ["在结论段下定论", "解释图表数据趋势", "讨论某个解决方案的绝对效果"],
+    "impact_on_score": "High",
+    "examples": [
+        {
+            "incorrect": "This proves that stricter gun control will stop all violent crime.",
+            "correct": "This suggests that stricter gun control may be an effective measure in reducing violent crime.",
+            "correction_note_cn": "学术写作应避免绝对化的结论。用 'suggests' 替代 'proves'，并用 'may be effective in reducing' 替代 'will stop all'，使论断更客观、更符合现实的复杂性。"
+        },
+        {
+            "incorrect": "Children who play video games become antisocial.",
+            "correct": "Excessive video gaming might lead some children to develop antisocial tendencies.",
+            "correction_note_cn": "原句是一个过度概括。使用限定词 'Excessive'（过度的）、情态动词 'might' 和缓和的动词 'tendencies'（倾向），可以使观点更严谨、更具说服力。"
+        }
+    ]
+},
+{
+    "error_id": "GRA_SVA_02",
+    "error_type": "Indefinite Pronoun Agreement",
+    "error_type_cn": "不定代词主谓不一致",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "当使用不定代词（如 everybody, someone, anyone, nobody, each, either）作为主语时，其后的谓语动词必须使用第三人称单数形式。学习者常常因为这些词在逻辑上指代多人而误用动词的复数形式。",
+    "common_triggers_cn": ["Everybody/Everyone ...", "Each of the students ...", "Nobody ...", "Either of the options ..."],
+    "impact_on_score": "High",
+    "examples": [
+        {
+            "incorrect": "Everybody in the class want to pass the exam.",
+            "correct": "Everybody in the class wants to pass the exam.",
+            "correction_note_cn": "不定代词 'Everybody' 作主语时，应被视为单数，因此谓语动词需要加 's'。"
+        },
+        {
+            "incorrect": "Each of the proposals have their own merits.",
+            "correct": "Each of the proposals has its own merits.",
+            "correction_note_cn": "短语的核心主语是 'Each'，而不是 'proposals'，所以谓语动词应为单数形式 'has'。同时，物主代词也应相应地变为单数 'its'。"
+        }
+    ]
+},
+{
+    "error_id": "STY_NOMIN_01",
+    "error_type": "Awkward or Excessive Nominalization",
+    "error_type_cn": "名词化过度或生硬",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "过度地将动词和形容词转换为抽象名词（例如，将 'analyze' 变为 'the analysis of'），导致句子结构臃肿、行文晦涩，并且隐藏了动作的执行者。虽然适度的名词化是学术写作的特征，但滥用则会适得其反。",
+    "common_triggers_cn": ["试图通过复杂化句子来显得“学术”", "受到低质范文的影响"],
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+            "incorrect": "The reason for the cancellation of the event was the sudden arrival of a storm.",
+            "correct": "The event was cancelled because a storm suddenly arrived.",
+            "correction_note_cn": "修改后的句子使用动词 'was cancelled' 和 'arrived'，表达更直接、更有力，避免了原句中一连串的名词短语，使句子更易读。"
+        },
+        {
+            "incorrect": "There was a successful implementation of the new strategy by the team.",
+            "correct": "The team successfully implemented the new strategy.",
+            "correction_note_cn": "将名词 'implementation' 转换回动词 'implemented'，并将动作的执行者 'the team' 作为主语，使句子更简洁、清晰。"
+        }
+    ]
+},
+{
+    "error_id": "GRA_LOGSUBJ_01",
+    "error_type": "Incorrect Logical Subject of Non-finite Verbs",
+    "error_type_cn": "非谓语动词的逻辑主语错误",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "当使用非谓语动词（不定式、动名词或分词）短语时，其隐含的逻辑主语与句子的主语不一致，造成逻辑混乱。",
+    "common_triggers_cn": ["用作状语的不定式短语 'To do sth, ...'", "用作插入语的动名词短语 'In doing sth, ...'"],
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+            "incorrect": "To be successful in this field, a lot of hard work is needed.",
+            "correct": "To be successful in this field, one must work very hard.",
+            "correction_note_cn": "不定式 'To be successful' 的逻辑主语应该是人（'one'），而不是“努力”（'hard work'）。原句的逻辑好像是“努力”想要成功一样。"
+        },
+        {
+            "incorrect": "After graduating from university, my first job was in a tech company.",
+            "correct": "After graduating from university, I started my first job in a tech company.",
+            "correction_note_cn": "“大学毕业”的动作执行者是人（'I'），而不是“我的第一份工作”（'my first job'）。"
+        }
+    ]
+},
+{
+    "error_id": "STY_THEREBE_01",
+    "error_type": "Overuse of 'There is/are'",
+    "error_type_cn": "'There be' 句型滥用",
+    "target_audience": ["Chinese Speakers"],
+    "explanation_cn": "过于频繁地使用 'There is' 或 'There are' 句型来引出新信息。虽然这个句型本身是正确的，但滥用会使句子开头单调，并且通常可以通过使用更精确、更有力的动词来替代，从而使表达更简洁。",
+    "common_triggers_cn": ["句子开头", "想表达“有……”的概念时，直接套用中文思维"],
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+            "incorrect": "There are many factors that influence a child's development.",
+            "correct": "Many factors influence a child's development.",
+            "correction_note_cn": "直接将 'factors' 作为主语，并使用动词 'influence'，句子变得更直接、更紧凑。"
+        },
+        {
+            "incorrect": "There is a growing recognition that climate change is a serious issue.",
+            "correct": "People increasingly recognize that climate change is a serious issue.",
+            "correction_note_cn": "将抽象的 'recognition' 变为具体的动作 'recognize'，并明确动作发出者 'People'，使句子更有活力。'A growing recognition' 也可以用副词 'increasingly' 来表达。"
+        }
+    ]
+},
+{
+    "error_id": "LEX_NUM_01",
+    "error_type": "Incorrect Use of Numerical Expressions",
+    "error_type_cn": "数据与数值表达错误",
+    "target_audience": ["IELTS Academic Test Takers"],
+    "explanation_cn": "在描述图表、数据和统计信息时，使用了不准确的介词、词汇或比较结构，导致信息传达错误或不专业。这在学术写作任务一中是致命的。",
+    "common_triggers_cn": ["'increase to' (增长到) vs. 'increase by' (增长了)", "'a number of' (许多) vs. 'the number of' (…的数量)", "'percentage' (百分比) vs. 'percentage points' (百分点)", "倍数表达错误"],
+    "impact_on_score": "High (in Task 1)",
+    "examples": [
+        {
+            "incorrect": "The investment in renewable energy rose to 20% in 2020.",
+            "correct": "The investment in renewable energy rose by 20% in 2020.",
+            "correction_note_cn": "'rose to 20%' 意味着最终的数值是20%。'rose by 20%' 意味着在原有基础上增长了20%。描述增量时应用 'by'。"
+        },
+        {
+            "incorrect": "The popularity of electric cars in 2020 was three times more than 2015.",
+            "correct": "The popularity of electric cars in 2020 was three times as high as in 2015.",
+            "correction_note_cn": "表示“是…的三倍”时，标准结构是 'three times as ... as ...'。'three times more than' 意为“比…多三倍”，即总共是四倍，容易引起歧义，应谨慎使用。"
+        },
+        {
+            "incorrect": "The approval rate dropped from 50% to 40%, a fall of 10%.",
+            "correct": "The approval rate dropped from 50% to 40%, a fall of 10 percentage points.",
+            "correction_note_cn": "描述两个百分比数值之间的差额时，应使用 'percentage points' (百分点) 以求精确，'a fall of 10%' 意味着下降了原数值的10% (即50%的10%，等于5%)。"
+        }
+    ]
+},{
+    "error_id": "STY_CONJ_01",
+    "error_type": "Starting Sentences with Basic Conjunctions",
+    "error_type_cn": "使用基础连词 (And/But/So) 开启句子",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "在正式的学术写作中，过于频繁地使用 'And', 'But', 'So' 等简单连词来开启句子会使文章显得口语化、不够连贯和专业。应优先使用更正式、逻辑关系更明确的过渡词或短语。",
+    "common_triggers_cn": ["段落中句子的衔接", "表达因果或转折关系", "受到口语或非正式写作习惯的影响"],
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+            "incorrect": "The internet provides access to information. But it also poses risks to privacy.",
+            "correct": "The internet provides access to information. However, it also poses risks to privacy.",
+            "correction_note_cn": "在正式写作中，使用 'However' 来表示句间的转折关系比 'But' 更为正式和有力。"
+        },
+        {
+            "incorrect": "He didn't prepare for the test. So he failed.",
+            "correct": "He didn't prepare for the test. Consequently, he failed.",
+            "correction_note_cn": "使用 'Consequently' 或 'Therefore' 来引导结果，比 'So' 的逻辑性更强，语气也更符合学术写作的要求。"
+        }
+    ]
+},{
+    "error_id": "LEX_RESP_01",
+    "error_type": "Misuse of 'Respectively'",
+    "error_type_cn": "'Respectively' (分别地) 误用",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "副词 'respectively' 要求句子中必须存在两个或多个可以按顺序一一对应的列表，用以精确匹配信息。当列表不存在、不平行或信息无需一一对应时，使用该词是多余或错误的。",
+    "common_triggers_cn": ["只有一个列表时画蛇添足", "试图用它来对应动词或非平行结构"],
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+            "incorrect": "The governments of China and the US released statements.",
+            "correct": "The governments of China and the US released statements.",
+            "correction_note_cn": "当只有一个列表（国家列表）且动作相同时，使用 'respectively' 是完全多余且错误的。此例中 'respectively' 应直接删除。"
+        },
+        {
+            "incorrect": "The number of male and female participants increased and decreased in the final year respectively.",
+            "correct": "The number of male participants increased, while the number of female participants decreased in the final year.",
+            "correction_note_cn": "'Respectively' 无法清晰地将两个主语（male and female participants）与两个动词（increased and decreased）对应起来。在这种情况下，必须分写两个独立的从句以确保表意清晰。"
+        }
+    ]
+},
+{
+    "error_id": "STY_CLEFT_01",
+    "error_type": "Awkward or Incorrect Cleft Sentence",
+    "error_type_cn": "分裂句使用生硬或错误",
+    "target_audience": ["All Learners"],
+    "explanation_cn": "分裂句（如 'It is ... that ...' 和 'What ... is ...'）是一种高级的强调结构。但当被强调的部分不重要，或句子结构不正确时，使用分裂句会显得冗余、笨拙，甚至产生语法错误。",
+    "common_triggers_cn": ["为强调而强调，缺乏明确的修辞目的", "What从句作主语时，表语形式错误", "'It is...' 后面关系代词 'that/who' 使用错误"],
+    "impact_on_score": "Medium",
+    "examples": [
+        {
+            "incorrect": "What this chart shows is increase in sales.",
+            "correct": "What this chart shows is an increase in sales.",
+            "correction_note_cn": "在 'What ... is ...' 结构中，如果表语是一个动作或概念，通常需要使用不定式（to do）、动名词（doing）或名词形式。此处 'increase' 是可数名词，前面需要冠词 'an'。"
+        },
+        {
+            "incorrect": "It is the teamwork that play a crucial role in a project's success.",
+            "correct": "It is teamwork that plays a crucial role in a project's success.",
+            "correction_note_cn": "分裂句不改变主谓一致的规则。关系从句 'that plays...' 的主语 'that' 指代的是单数名词 'teamwork'，因此谓语动词应用单数形式 'plays'。"
+        }
+    ]
+  }
+  ]
+}

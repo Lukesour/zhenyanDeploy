@@ -1,0 +1,72 @@
+{
+  "types": [
+    {
+      "type": "agree_disagree",
+      "display": "Agree or Disagree",
+      "anchors": [
+        "to what extent do you agree",
+        "do you agree or disagree",
+        "what is your opinion"
+      ],
+      "required_elements": [
+        "clear_position",
+        "supporting_arguments",
+        "counter_argument_optional",
+        "conclusion"
+      ]
+    },
+    {
+      "type": "discuss_both",
+      "display": "Discuss Both Views",
+      "anchors": [
+        "discuss both views",
+        "discuss both these views"
+      ],
+      "required_elements": [
+        "view_a_discussion",
+        "view_b_discussion",
+        "personal_opinion"
+      ]
+    },
+    {
+      "type": "advantages_disadvantages",
+      "display": "Advantages and Disadvantages",
+      "anchors": [
+        "advantages and disadvantages",
+        "benefits and drawbacks"
+      ],
+      "required_elements": [
+        "advantages_analysis",
+        "disadvantages_analysis",
+        "balanced_conclusion"
+      ]
+    },
+    {
+      "type": "problem_solution",
+      "display": "Problem and Solution",
+      "anchors": [
+        "problems and solutions",
+        "causes and solutions",
+        "how to solve"
+      ],
+      "required_elements": [
+        "problem_identification",
+        "solution_proposal",
+        "implementation_discussion"
+      ]
+    },
+    {
+      "type": "two_part_question",
+      "display": "Two-part Question",
+      "anchors": [
+        "give your reasons and examples",
+        "answer the following questions"
+      ],
+      "required_elements": [
+        "question1_answer",
+        "question2_answer",
+        "coherent_link"
+      ]
+    }
+  ]
+}

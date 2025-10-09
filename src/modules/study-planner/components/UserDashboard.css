@@ -1,0 +1,251 @@
+.user-dashboard {
+  margin-bottom: 24px;
+}
+
+.user-info-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+}
+
+.user-details {
+  flex: 1;
+}
+
+.user-details .ant-typography {
+  margin-bottom: 4px;
+}
+
+.user-status {
+  margin-top: 8px;
+}
+
+.stats-section,
+.invitation-section {
+  height: 100%;
+}
+
+.stats-section .ant-typography,
+.invitation-section .ant-typography {
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+
+.stats-section .anticon,
+.invitation-section .anticon {
+  margin-right: 8px;
+  color: #4f46e5;
+}
+
+/* 邀请模态框样式 */
+.invite-modal-content {
+  padding: 8px 0;
+}
+
+.invite-code-section {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.invite-code-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+  padding: 16px;
+  background: #eef2ff;
+  border-radius: 8px;
+  border: 2px dashed #4f46e5;
+}
+
+.invite-code {
+  font-size: 20px !important;
+  font-weight: bold !important;
+  letter-spacing: 2px;
+  color: #4f46e5 !important;
+  background: white !important;
+  padding: 8px 16px !important;
+  border-radius: 6px !important;
+  border: 1px solid #4f46e5 !important;
+}
+
+.invite-rules {
+  margin: 24px 0;
+}
+
+.invite-rules ul {
+  margin: 16px 0;
+  padding-left: 20px;
+}
+
+.invite-rules li {
+  margin-bottom: 8px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.invite-rules strong {
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+.invite-stats {
+  margin: 24px 0;
+  padding: 16px;
+  background: #eef2ff;
+  border-radius: 8px;
+}
+
+.invite-actions {
+  margin-top: 24px;
+}
+
+.invite-actions .ant-btn {
+  height: 48px;
+  font-size: 16px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  border: none;
+}
+
+.invite-actions .ant-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* 统计数字样式 */
+.ant-statistic-content-value {
+  font-weight: 600;
+}
+
+.ant-statistic-title {
+  color: #666 !important;
+  font-size: 14px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .user-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .user-avatar {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+  
+  .stats-section,
+  .invitation-section {
+    margin-top: 24px;
+  }
+  
+  .invite-code-display {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .invite-code {
+    font-size: 16px !important;
+  }
+}
+
+/* 动画效果 */
+.user-info-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 按钮悬停效果 */
+.user-info-card .ant-btn-primary {
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.user-info-card .ant-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.3);
+}
+
+.user-info-card .ant-btn-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 77, 79, 0.3);
+}
+
+/* 标签样式 */
+.user-status .ant-tag {
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* 分割线样式 */
+.user-info-card .ant-divider {
+  margin: 24px 0;
+  border-color: #e0e7ff;
+}
+
+/* 模态框标题样式 */
+.ant-modal-header {
+  border-bottom: 1px solid #e0e7ff;
+  padding: 16px 24px;
+}
+
+.ant-modal-title {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+/* 复制按钮样式 */
+.invite-code-display .ant-btn {
+  border-radius: 6px;
+  height: 36px;
+  font-weight: 500;
+}
+
+/* 加载状态 */
+.ant-btn-loading {
+  pointer-events: none;
+}
+
+/* 成功状态提示 */
+.ant-message-success {
+  color: #52c41a;
+}
+
+/* 错误状态提示 */
+.ant-message-error {
+  color: #ff4d4f;
+}

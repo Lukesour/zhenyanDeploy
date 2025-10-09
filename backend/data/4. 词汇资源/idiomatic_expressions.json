@@ -1,0 +1,671 @@
+{
+  "description": "适用于学术写作的习语和固定表达，正确使用可以提升语言的地道性和表现力 (LR 8-9分特征)。",
+  "entries": [
+    {
+      "expression": "a double-edged sword",
+      "meaning": "一把双刃剑 (指事物同时有利有弊)",
+      "example": "Globalization, while promoting economic growth, is a double-edged sword as it can also widen the gap between the rich and the poor.",
+      "usage_note": "非常适合用于讨论利弊 (Advantages/Disadvantages) 类型的题目。"
+    },
+    {
+      "expression": "to open the door to something",
+      "meaning": "为...打开方便之门，导致...",
+      "example": "The development of gene-editing technology could open the door to cures for many genetic diseases.",
+      "usage_note": "用于引出某一行为可能带来的新机会或可能性。"
+    },
+    {
+      "expression": "to be part and parcel of something",
+      "meaning": "是...不可或缺的一部分",
+      "example": "Dealing with setbacks and failures is part and parcel of the scientific research process.",
+      "usage_note": "用于强调某事物是另一事物的内在基本组成部分。"
+    },
+    {
+      "expression": "to pave the way for",
+      "meaning": "为...铺平道路，为...创造条件",
+      "example": "The discovery of penicillin paved the way for the development of a wide range of antibiotics.",
+      "usage_note": "用于描述某项发现、事件或政策如何为后续的发展创造了基础或条件。"
+    },
+    {
+      "expression": "to give rise to",
+      "meaning": "引起，导致，造成 (通常指更广泛或间接的结果)",
+      "example": "The industrial revolution gave rise to profound social and economic changes.",
+      "usage_note": "比 'cause' 更正式、更书面化，常用于引出复杂的或始料未及的后果。"
+    },
+    {
+      "expression": "to play a pivotal role in",
+      "meaning": "在...中扮演关键角色/起到关键作用",
+      "example": "Artificial intelligence is expected to play a pivotal role in the future of medical diagnostics.",
+      "usage_note": "用于强调某个因素或个体在某一过程或系统中的核心重要性。"
+    },
+    {
+      "expression": "to shed light on",
+      "meaning": "阐明，揭示，为了解...提供线索",
+      "example": "Recent archaeological findings have shed new light on the daily life of ancient civilizations.",
+      "usage_note": "常用于引出新的研究发现或证据如何帮助我们更好地理解一个复杂的问题。"
+    },
+    {
+      "expression": "to be inextricably linked",
+      "meaning": "密不可分地联系在一起",
+      "example": "In this globalized era, economic prosperity and environmental sustainability are inextricably linked.",
+      "usage_note": "用来强调两个或多个事物之间无法分割的紧密关系。"
+    },
+    {
+      "expression": "to be on the cusp of",
+      "meaning": "正处于...的风口浪尖，即将进入...",
+      "example": "Humanity is on the cusp of a new era of space exploration, with missions planned for Mars and beyond.",
+      "usage_note": "用于描述一个即将发生重大转变或进入新阶段的时刻。"
+    },
+    {
+      "expression": "a case in point",
+      "meaning": "一个恰当的例子，一个典型的例证",
+      "example": "Many renewable energy sources are intermittent. Solar power, which is only generated during the day, is a case in point.",
+      "usage_note": "用于引出一个具体的例子来支持或说明前面提出的观点，比 'for example' 更具强调意味。"
+    },
+    {
+      "expression": "in the grand scheme of things",
+      "meaning": "从宏观角度来看，从长远来看",
+      "example": "While this quarter's results are disappointing, in the grand scheme of things, the company's long-term growth trajectory remains strong.",
+      "usage_note": "用于将一个具体事件或问题置于一个更广阔的背景下进行评估，强调其相对重要性。"
+    },
+    {
+      "expression": "to grapple with",
+      "meaning": "努力解决，尽力克服 (通常指复杂或困难的问题)",
+      "example": "Governments around the world are grappling with the challenge of climate change.",
+      "usage_note": "强调解决问题的过程充满困难和挣扎，比 'deal with' 或 'solve' 情感色彩更强。"
+    },
+    {
+      "expression": "to set the stage for",
+      "meaning": "为...做好准备，为...奠定基础",
+      "example": "The preliminary research set the stage for a much larger, more comprehensive study.",
+      "usage_note": "与 'pave the way for' 类似，但更侧重于创造一个即将发生某事的“场景”或“背景”。"
+    },
+    {
+      "expression": "in stark contrast to",
+      "meaning": "与...形成鲜明对比",
+      "example": "In stark contrast to the optimistic predictions of the last decade, recent data shows a slowing trend in global economic growth.",
+      "usage_note": "用于强烈地突出两事物之间的巨大差异，是 'in contrast to' 的加强版，语气更重。"
+    },
+    {
+      "expression": "be that as it may",
+      "meaning": "尽管如此，然而",
+      "example": "The experiment yielded some promising results. Be that as it may, the sample size is too small to draw any definitive conclusions.",
+      "usage_note": "一种非常正式的让步状语。用于先承认前面提到的观点，然后引出相反或限制性的信息，功能类似于 'Nevertheless' 或 'However'。"
+    },
+    {
+      "expression": "to go hand in hand",
+      "meaning": "相辅相成，密切相关",
+      "example": "In modern urban planning, economic development and environmental protection must go hand in hand.",
+      "usage_note": "用于描述两个事物紧密关联，经常同时出现或相互依存。"
+    },
+    {
+      "expression": "a litmus test for",
+      "meaning": "...的试金石 (检验某事物的决定性标准)",
+      "example": "The government's response to the public health crisis is seen as a litmus test for its administrative capacity and public trust.",
+      "usage_note": "比喻用法，源于化学中的“石蕊试纸测试”，指一个可以明确判断事物性质或成败的标准或事件。"
+    },
+    {
+      "expression": "to open a Pandora's box",
+      "meaning": "打开潘多拉的盒子 (引起一系列始料未及的麻烦)",
+      "example": "While legalizing autonomous weapons might seem to offer a tactical advantage, it could open a Pandora's box of ethical dilemmas and uncontrollable escalation.",
+      "usage_note": "源自希腊神话，用于警示某个行为可能会引发一连串无法预见的、严重的负面后果。"
+    },
+    {
+      "expression": "the Achilles' heel of",
+      "meaning": "...的致命弱点，阿喀琉斯之踵",
+      "example": "The reliance on a single-source supplier proved to be the Achilles' heel of the company's entire production chain during the trade disruption.",
+      "usage_note": "源自希腊神话，用于指代一个系统、计划或论点中最脆弱、最容易被攻击的部分。"
+    },
+    {
+      "expression": "by the same token",
+      "meaning": "出于同样的原因，同样地",
+      "example": "Increased investment in education can boost a nation's human capital. By the same token, investing in healthcare is crucial for a productive workforce.",
+      "usage_note": "用于引出一个与前述观点逻辑相似或基于相同理由的论点，起到承上启下的作用，使论证更连贯。"
+    },
+    {
+      "expression": "it stands to reason that",
+      "meaning": "理应如此，按理说",
+      "example": "Given the overwhelming evidence of melting glaciers and rising sea levels, it stands to reason that immediate action on climate change is required.",
+      "usage_note": "用于引出一个基于已有证据或前提的、显而易见的逻辑推论，以增强论证的说服力。"
+    },
+    {
+      "expression": "a far cry from",
+      "meaning": "与...大相径庭，远非",
+      "example": "The current state of artificial intelligence, though impressive, is still a far cry from the sentient machines depicted in science fiction.",
+      "usage_note": "用于强调两者之间存在巨大的差距或不同。"
+    },
+    {
+      "expression": "the cornerstone of",
+      "meaning": "...的基石",
+      "example": "The principle of peer review is the cornerstone of modern academic publishing.",
+      "usage_note": "用于形容某个事物是某个系统、理论或组织最基本、最重要的组成部分。"
+    },
+    {
+      "expression": "on the face of it",
+      "meaning": "乍一看，从表面上看",
+      "example": "On the face of it, the policy seems to be a straightforward solution to unemployment; however, its long-term economic repercussions are complex.",
+      "usage_note": "用于引出一个初步的、表面的印象，并通常暗示接下来会揭示更深层、更复杂或与表面不符的真相。"
+    },
+    {
+      "expression": "not a silver bullet",
+      "meaning": "并非万能之策，不是灵丹妙药",
+      "example": "While carbon capture technology is promising, it is not a silver bullet for the climate crisis and must be part of a broader strategy.",
+      "usage_note": "用于强调某个解决方案虽然有益，但无法独自解决整个复杂问题。一个常见的同义表达是 'not a panacea'。"
+    },
+    {
+      "expression": "to have a knock-on effect",
+      "meaning": "产生连锁反应，带来间接影响",
+      "example": "The closure of the main factory had a significant knock-on effect on local businesses, from suppliers to retail shops.",
+      "usage_note": "指一个事件或行为引发了一系列非直接的、连锁的后果，常用于经济学和社会学分析中。"
+    },
+    {
+      "expression": "the tipping point",
+      "meaning": "临界点，引爆点",
+      "example": "Scientists warn that the continued loss of Arctic sea ice may soon reach a tipping point, beyond which melting becomes irreversible.",
+      "usage_note": "指一个系统中，微小的变化累积到一定程度后，导致系统发生突然、剧烈且通常不可逆转的巨大变化的那个关键点。"
+    },
+    {
+      "expression": "to come to the fore",
+      "meaning": "涌现，变得突出，崭露头角",
+      "example": "During the recent economic crisis, new theories about fiscal policy have come to the fore.",
+      "usage_note": "用于描述某个问题、观点或人物变得重要、引人注目。"
+    },
+    {
+      "expression": "the thin end of the wedge",
+      "meaning": "（导致更大麻烦的）开端，祸根",
+      "example": "Critics argue that allowing limited government surveillance is the thin end of the wedge, potentially leading to a widespread erosion of privacy.",
+      "usage_note": "一个很地道的英式表达。指一个看似无伤大雅的小改变或小让步，但它很可能会成为未来更严重、更不受欢迎的改变的开端。"
+    },
+    {
+      "expression": "the driving force behind",
+      "meaning": "...背后的驱动力",
+      "example": "Technological innovation has been the driving force behind the rapid economic growth of the past century.",
+      "usage_note": "用于指明促成某个事件、发展或现象最主要的原因或动力。"
+    },
+    {
+      "expression": "in the final analysis",
+      "meaning": "归根结底，说到底",
+      "example": "Many factors contributed to the project's failure, but in the final analysis, it was a lack of clear leadership that proved fatal.",
+      "usage_note": "一个非常正式的短语，用于在考虑了所有因素后，引出最重要的、根本性的结论或观点，通常放在段落或句子的开头。"
+    },
+    {
+      "expression": "to hinge on / upon",
+      "meaning": "取决于，有赖于 (某个关键因素)",
+      "example": "The success of the entire project hinges on the reliability of the new data collection method.",
+      "usage_note": "用于强调某个结果或论点完全依赖于一个关键的、可能不确定的因素，形象地表达了其核心重要性。"
+    },
+    {
+      "expression": "beyond the scope of",
+      "meaning": "超出...的范围",
+      "example": "A full analysis of the geopolitical implications is beyond the scope of this paper, which focuses primarily on the economic aspects.",
+      "usage_note": "在引言或方法论部分非常有用，用于明确界定研究的边界，说明哪些相关问题因篇幅或研究重点所限而将不会被探讨。"
+    },
+    {
+      "expression": "it remains to be seen whether",
+      "meaning": "...是否如此，还有待观察",
+      "example": "The government has implemented new educational reforms, but it remains to be seen whether they will effectively address the root causes of inequality.",
+      "usage_note": "用于对未来的结果表达一种客观的不确定性，表明需要更多时间或数据才能判断某个行为或政策的最终效果，体现了学术的审慎态度。"
+    },
+    {
+      "expression": "to fall short of",
+      "meaning": "未能达到，不符合 (标准、期望)",
+      "example": "While the new drug shows some efficacy, its performance in clinical trials fell short of the researchers' initial expectations.",
+      "usage_note": "用于进行批判性评估，委婉而正式地指出某事物（如研究结果、政策效果等）未达到预期的标准或目标。"
+    },
+    {
+      "expression": "a moot point",
+      "meaning": "有争议的/无实际意义的论点",
+      "example": "Whether the author intended this subtle symbolism is a moot point; the fact is that it enriches the reader's experience regardless.",
+      "usage_note": "指一个问题没有确定的答案（因此争论下去无益），或者已经失去了实际意义（例如，因情况变化而不再相关）。"
+    },
+    {
+      "expression": "to sow the seeds of",
+      "meaning": "播下...的种子 (指未来的发展或结果)",
+      "example": "The treaty, while ending the immediate conflict, sowed the seeds of future resentment and instability.",
+      "usage_note": "比喻用法，指某个早期的行为或事件为未来的某种局面（可以是好的也可以是坏的）创造了初始条件。"
+    },
+    {
+      "expression": "to bear something out",
+      "meaning": "证实，为...作证",
+      "example": "The initial hypothesis was that the two compounds would react, and the experimental results appear to bear this out.",
+      "usage_note": "一个比 'prove' 或 'confirm' 更为地道的动词短语，用于表示证据支持或证实了某个说法、理论或假设。"
+    },
+    {
+      "expression": "in the same vein",
+      "meaning": "同样地，以类似的方式",
+      "example": "The first chapter critiques the economic assumptions of the theory. In the same vein, the second chapter examines its sociological shortcomings.",
+      "usage_note": "用作过渡语，表示接下来要讨论的内容与前面提到的在主题、风格或逻辑上是相似的，有助于保持论证的连贯和流畅。"
+    },
+    {
+      "expression": "to fly in the face of",
+      "meaning": "公然违背，与...背道而驰",
+      "example": "The study's conclusions fly in the face of all previous research conducted in this field, demanding a re-evaluation of our core assumptions.",
+      "usage_note": "语气非常强烈。用于指出某个观点、行为或结果与公认的事实、常识或准则完全相反。"
+    },
+    {
+      "expression": "by its very nature",
+      "meaning": "就其本质而言",
+      "example": "Scientific inquiry, by its very nature, is a process of continuous questioning and refinement, not the pursuit of absolute dogma.",
+      "usage_note": "用于强调某个事物的固有属性或内在特征，说明其行为或状态是由其本质所决定的，是不可避免的。"
+    },
+    {
+      "expression": "to leave much to be desired",
+      "meaning": "远不能令人满意，有很大改进空间",
+      "example": "While the model is innovative, its predictive accuracy in real-world scenarios leaves much to be desired.",
+      "usage_note": "一种非常正式和委婉的批评方式，用于指出某事物（如研究、方法、结果）存在显著的缺陷或不足。"
+    },
+    {
+      "expression": "the interplay between",
+      "meaning": "...之间的相互作用",
+      "example": "The book provides a fascinating analysis of the interplay between politics and culture in the early 20th century.",
+      "usage_note": "用于描述两个或多个因素之间复杂的、双向的、动态的相互影响关系，比 'the relationship between' 更有深度和学术感。"
+    },
+    {
+      "expression": "to give credence to",
+      "meaning": "使...显得可信，相信",
+      "example": "The discovery of similar fossils on separate continents gives credence to the theory of continental drift.",
+      "usage_note": "用于表示新的证据或发现使得某个理论、观点或说法更加可信、更值得相信。"
+    },
+    {
+      "expression": "a delicate balance between A and B",
+      "meaning": "在A和B之间取得微妙的平衡",
+      "example": "Effective public policy often requires striking a delicate balance between individual freedoms and collective security.",
+      "usage_note": "用于描述一种需要小心处理的状况，其中两个对立或不同的因素必须得到同等重视，任何一方的过度都会破坏整体和谐。"
+    },
+    {
+      "expression": "to open the floodgates to",
+      "meaning": "为...打开闸门，导致...蜂拥而至",
+      "example": "Critics fear that the new legislation could open the floodgates to a wave of frivolous lawsuits, overwhelming the court system.",
+      "usage_note": "一个生动的比喻，指某个决定或行为会引发大量无法控制的、类似事物的涌入（通常是负面的，如批评、请求、问题等）。"
+    },
+    {
+      "expression": "the lifeblood of",
+      "meaning": "...的命脉，至关重要的部分",
+      "example": "The free exchange of ideas is the lifeblood of a healthy academic community.",
+      "usage_note": "一个强烈的比喻，用于形容对一个系统、组织或事业的生存和发展来说最核心、最必不可少的元素。"
+    },
+    {
+      "expression": "a paradigm shift",
+      "meaning": "范式转移 (指革命性的、根本性的变化)",
+      "example": "The discovery of DNA's double helix structure triggered a paradigm shift in the field of biology, paving the way for molecular genetics.",
+      "usage_note": "源自科学哲学家托马斯·库恩的术语，指在一个学科领域里，其基本理论、方法和世界观发生的根本性转变。用于描述颠覆性的变革。"
+    },
+    {
+      "expression": "a bone of contention",
+      "meaning": "争论的焦点，争议所在",
+      "example": "The exact level of government funding for the arts remains a major bone of contention between the two political parties.",
+      "usage_note": "指一个长期存在且难以解决的争议问题。非常适合用于引出学术辩论或政策分歧的核心。"
+    },
+    {
+      "expression": "to gain traction",
+      "meaning": "获得支持，开始受欢迎，取得进展",
+      "example": "The theory, initially dismissed by the mainstream, began to gain traction as more supporting evidence emerged.",
+      "usage_note": "用于描述一个想法、理论或运动逐渐被人们接受、认可并变得有影响力的过程。"
+    },
+    {
+      "expression": "first and foremost",
+      "meaning": "首先，首要的是",
+      "example": "The responsibility of a researcher is, first and foremost, to conduct their work with integrity and ethical rigor.",
+      "usage_note": "用于在列举多个要点时，强有力地引出其中最重要的一点，以示强调。比 'firstly' 的语气更重。"
+    },
+    {
+      "expression": "in isolation",
+      "meaning": "孤立地",
+      "example": "To understand the social impact of this technology, it is crucial to analyze it within its broader economic context, not in isolation.",
+      "usage_note": "用于强调某个事物不应脱离其背景或与其他相关因素割裂开来单独看待，常与否定形式 (not in isolation) 连用，是体现系统性思维的标志。"
+    },
+    {
+      "expression": "to come to fruition",
+      "meaning": "（计划、希望等）实现，取得成果",
+      "example": "After years of meticulous planning and research, the ambitious space exploration project finally came to fruition with the successful launch.",
+      "usage_note": "一个非常正式且带有积极色彩的短语，用于描述一个长期的努力、计划或理想最终成功实现。"
+    },
+    {
+      "expression": "on a case-by-case basis",
+      "meaning": "以个案处理的方式，具体问题具体分析",
+      "example": "Given the cultural diversity of the regions, there is no one-size-fits-all solution; applications must be evaluated on a case-by-case basis.",
+      "usage_note": "用于强调不能一概而论，必须根据每个个体的具体情况来分别处理或评判，常见于法律、医学和政策讨论中。"
+    },
+    {
+      "expression": "There is a growing consensus that...",
+      "meaning": "越来越多的共识认为...",
+      "example": "There is a growing consensus among climatologists that the recent surge in extreme weather events is linked to human activity.",
+      "usage_note": "在文献综述或引言部分非常有用，用于引出一个在特定领域内正被越来越广泛接受的观点或理论，以表明其主流性和权威性。"
+    },
+    {
+      "expression": "to set a precedent",
+      "meaning": "创立先例，为...开创先河",
+      "example": "The court's ruling in this case is expected to set a legal precedent for all future cases involving intellectual property in the digital age.",
+      "usage_note": "指某项决定或事件为未来类似情况提供了可供遵循的范例或准则。在法律、政策和伦理讨论中尤为常用。"
+    },
+    {
+      "expression": "It follows that...",
+      "meaning": "由此可见，因此...",
+      "example": "All the premises of the argument have been proven correct; it follows that the conclusion must also be valid.",
+      "usage_note": "一个非常正式的逻辑连接词，用于从前面陈述的前提或证据中自然地引出合乎逻辑的结论，比 'therefore' 更具演绎推理的意味。"
+    },
+    {
+      "expression": "a foregone conclusion",
+      "meaning": "预料之中的必然结局",
+      "example": "Given the overwhelming support and the bipartisan consensus, the passage of the bill was a foregone conclusion.",
+      "usage_note": "指某个结果在事情发生之前就已经确定，毫无悬念。用于强调结果的必然性。"
+    },
+    {
+      "expression": "to break new ground",
+      "meaning": "开辟新天地，取得突破性进展",
+      "example": "Her research on cellular communication has broken new ground, offering novel insights into the mechanisms of disease.",
+      "usage_note": "用于高度评价一项研究或工作具有开创性，在某个领域做出了前所未有的贡献。"
+    },
+    {
+      "expression": "to throw something into sharp relief",
+      "meaning": "使...显得尤为突出，使...更加清晰",
+      "example": "The global pandemic threw the deep-seated inequalities in healthcare access into sharp relief.",
+      "usage_note": "一个生动的比喻。指通过对比或特定事件的发生，使得某个问题、特征或差异变得异常明显和引人注目。"
+    },
+    {
+      "expression": "the nuts and bolts of",
+      "meaning": "...的具体细节，基本要素",
+      "example": "While his speech eloquently outlined the vision, it failed to address the nuts and bolts of how the policy would actually be implemented.",
+      "usage_note": "指某个主题最基本、最实际的具体操作细节，常用于区别于宏观的理论、战略或愿景。"
+    },
+    {
+      "expression": "to err on the side of caution",
+      "meaning": "为求谨慎而宁愿过于保守",
+      "example": "When dealing with potentially hazardous materials, it is always best to err on the side of caution and implement the strictest safety protocols.",
+      "usage_note": "指在不确定的情况下，宁愿选择更安全、风险更小的方案。在提出建议、讨论风险管理和伦理规范时非常有用。"
+    },
+    {
+      "expression": "It is not simply a matter of...",
+      "meaning": "这不仅仅是...的问题",
+      "example": "Solving urban traffic congestion is not simply a matter of building more roads; it requires a holistic approach to public transport and city planning.",
+      "usage_note": "用于驳斥一个过于简单化的观点，并随即引出对一个问题更复杂、更多层面的分析。这是展示批判性思维深度的常用句式。"
+    },
+    {
+      "expression": "Granted, ...",
+      "meaning": "诚然，固然 (用于让步)",
+      "example": "Granted, the initial investment for renewable energy is substantial; however, the long-term environmental and economic returns are projected to be far greater.",
+      "usage_note": "这是一个非常简洁和书面化的让步方式。用于句首，先承认对方观点或某个事实的合理性，然后紧接着提出自己的反驳或补充观点，结构通常是 'Granted, [concession], [counter-argument]'。"
+    },
+    {
+      "expression": "a bitter pill to swallow",
+      "meaning": "必须接受的苦药/不愉快的现实",
+      "example": "The report's conclusion that the project was fundamentally flawed was a bitter pill for the entire research team to swallow.",
+      "usage_note": "用于描述一个令人不快但又不得不接受的事实、失败或后果。"
+    },
+    {
+      "expression": "to bridge the gap between",
+      "meaning": "消除...之间的差距，连接...",
+      "example": "This research aims to bridge the gap between theoretical models of cognitive behavior and their practical application in educational settings.",
+      "usage_note": "经常用于描述研究或行动的目标，即连接两个通常被认为分离或有差异的领域（如理论与实践、宏观与微观、不同学科等）。"
+    },
+    {
+      "expression": "the acid test",
+      "meaning": "严峻的考验，试金石",
+      "example": "The theory works well in the laboratory, but the acid test will come when it is applied to large-scale, real-world industrial processes.",
+      "usage_note": "与 'a litmus test' 类似，但更强调在真实、困难的环境下对某事物的价值、质量或耐久度的最终考验。"
+    },
+    {
+      "expression": "to lay the groundwork for",
+      "meaning": "为...奠定基础，打下根基",
+      "example": "The early work of pioneers in sociology laid the groundwork for the development of modern social theory.",
+      "usage_note": "与 'pave the way for' 相似，但更侧重于早期、基础性和根本性的准备工作，强调创建了后续发展所必需的结构或基础。"
+    },
+    {
+      "expression": "to be subject to scrutiny",
+      "meaning": "受到严格审查",
+      "example": "All experimental data and the methodology used must be subject to rigorous peer scrutiny before publication.",
+      "usage_note": "一个非常正式的被动语态短语，用于表示某个事物（如数据、理论、行为）正在或将会被仔细地、批判性地检查和评估。"
+    },
+    {
+      "expression": "the lesser of two evils",
+      "meaning": "两害相权取其轻",
+      "example": "From a policy perspective, imposing a carbon tax was considered the lesser of two evils compared to the catastrophic long-term effects of inaction.",
+      "usage_note": "用于描述在两个都不理想的选项中做出选择的情景，所选的那个虽然也不好，但其负面影响相对较小。常见于政治、经济和伦理决策的讨论中。"
+    },
+    {
+      "expression": "in broad strokes",
+      "meaning": "概括地，粗略地",
+      "example": "While this chapter cannot delve into every detail, it aims to outline in broad strokes the historical context of the conflict.",
+      "usage_note": "用于引出对一个主题的总体概括或纲要，同时表明将省略其中的具体细节。常用于引言或摘要部分，以管理读者的期望。"
+    },
+    {
+      "expression": "to run counter to",
+      "meaning": "与...背道而驰，违反",
+      "example": "The policy's unintended effect of increasing inequality seems to run counter to the stated social goals of the administration.",
+      "usage_note": "用于正式地指出某个结果、行为或理念与既定的目标、原则或趋势相悖。"
+    },
+    {
+      "expression": "a contradiction in terms",
+      "meaning": "自相矛盾的说法",
+      "example": "The concept of 'sustainable depletion' of a finite resource is, for many ecologists, a contradiction in terms.",
+      "usage_note": "指一个短语由于其内在组成部分的含义相互冲突而显得荒谬或不合逻辑。用于进行概念分析和逻辑批判。"
+    },
+    {
+      "expression": "The jury is still out on...",
+      "meaning": "对...尚无定论",
+      "example": "While promising, the jury is still out on whether this new therapeutic approach will be effective and safe in the long term.",
+      "usage_note": "一个生动的比喻，指对于某个问题的最终效果、价值或真相，专家或公众尚未达成一致的看法，还需要更多证据或时间来判断。"
+    },
+    {
+      "expression": "uncharted territory / waters",
+      "meaning": "未知的领域/水域",
+      "example": "With the advent of quantum computing, we are entering uncharted territory in terms of data processing capabilities and security risks.",
+      "usage_note": "用于形容一个全新的、缺乏经验和先例可循的领域或状况，常用于强调研究的开创性或形势的新颖性。"
+    },
+    {
+      "expression": "in its own right",
+      "meaning": "凭其自身的价值，本身就...",
+      "example": "While often studied as a precursor to the main conflict, the initial skirmish was a significant historical event in its own right.",
+      "usage_note": "用于强调某事物自身就具有重要性或某种地位，而无需依附于其他事物或作为他物的附属品，有助于提升其重要性。"
+    },
+    {
+      "expression": "to take a dim view of",
+      "meaning": "对...持悲观/不赞成的看法",
+      "example": "Most economists take a dim view of protectionist policies, arguing that they ultimately harm the domestic economy.",
+      "usage_note": "一个正式且有些含蓄的说法，用来表达对某事的不赞成、怀疑或悲观态度。"
+    },
+    {
+      "expression": "suffice it to say",
+      "meaning": "只需说...就够了",
+      "example": "I will not go into all the technical failures of the experiment; suffice it to say that the results were ultimately unreliable.",
+      "usage_note": "用于在不想或不必提供完整细节时，引出一个总结性的陈述。它暗示所说的这一点已经足以让读者明白整个情况。"
+    },
+    {
+      "expression": "to put something into perspective",
+      "meaning": "正确地看待某事，将...进行合理的评估",
+      "example": "To put the current crisis into perspective, it is helpful to compare it with similar economic downturns in the past century.",
+      "usage_note": "指通过比较或提供更广阔的背景信息，来帮助更准确、更客观地理解一个事件或数据的重要性、规模或影响。"
+    },
+    {
+      "expression": "to cross the Rubicon",
+      "meaning": "跨过卢比孔河 (喻指做出重大且无法挽回的决定)",
+      "example": "By investing in a fully automated factory, the company has crossed the Rubicon, fundamentally changing its business model for good.",
+      "usage_note": "源自凯撒大帝的历史典故。用于形容某人或某组织采取了决定性的、不可逆转的行动，通过了一个无法回头的临界点。"
+    },
+    {
+      "expression": "a saving grace",
+      "meaning": "可取之处，补偿性优点",
+      "example": "The methodology of the study was flawed, but its extensive and unique dataset was its saving grace, making it valuable to other researchers.",
+      "usage_note": "指在一个整体上不完美或有缺陷的事物中，那个使其免于一无是处的优点。用于进行平衡的、有细微差别的批评。"
+    },
+    {
+      "expression": "due in no small part to",
+      "meaning": "很大程度上是由于...",
+      "example": "The project's success was due in no small part to the team's meticulous planning and risk management.",
+      "usage_note": "一种非常地道且有力的表达方式，用于强调某个因素是导致某个结果的重要原因之一，但又巧妙地承认了可能还有其他因素存在。"
+    },
+    {
+      "expression": "The weight of evidence suggests...",
+      "meaning": "大量证据表明...",
+      "example": "While some outlier studies exist, the overwhelming weight of evidence suggests a strong correlation between the two variables.",
+      "usage_note": "用于引出基于现有大部分研究或数据的、最有可能的结论。它强调结论不是基于单一证据，而是基于证据的总体趋势，非常有说服力。"
+    },
+    {
+      "expression": "to stand up to scrutiny",
+      "meaning": "经得起严格审查",
+      "example": "Any scientific theory must be robust enough to stand up to rigorous scrutiny from the academic community.",
+      "usage_note": "这是对一个论点、理论或证据的正面评价，意为其逻辑严密、证据可靠，能够经受住批判性的检验。"
+    },
+    {
+      "expression": "to read between the lines",
+      "meaning": "领会言外之意",
+      "example": "When analyzing the diplomat's carefully worded statement, one must read between the lines to understand the government's true position.",
+      "usage_note": "指理解文本或言论中没有直接说出但被暗示的深层含义。在人文、社科领域的文本分析中非常有用。"
+    },
+    {
+      "expression": "Against this backdrop...",
+      "meaning": "在此背景下...",
+      "example": "The 19th century was marked by rapid industrialization and social upheaval. Against this backdrop, new political ideologies began to emerge.",
+      "usage_note": "一个绝佳的过渡短语，用于在介绍完宏观背景（历史、经济、社会环境等）之后，引出对具体事件或主题的分析。"
+    },
+    {
+      "expression": "to be a function of",
+      "meaning": "是...的结果，取决于...",
+      "example": "In this economic model, the level of consumer demand is seen to be a function of disposable income and public confidence.",
+      "usage_note": "一种非常学术和精确的表达方式，用于说明一个变量是由另一个或多个变量决定或与之相关的，带有数学般的严谨感。"
+    },
+    {
+      "expression": "to muddy the waters",
+      "meaning": "把水搅浑，使问题复杂化",
+      "example": "The introduction of irrelevant anecdotal evidence at this stage only serves to muddy the waters and distracts from the core research question.",
+      "usage_note": "用于负面地评价某个行为或论点，指其非但没有澄清问题，反而通过引入混淆信息使之变得更加复杂难懂。"
+    },
+    {
+      "expression": "from the ground up",
+      "meaning": "从头开始，从零做起",
+      "example": "Because no existing framework could account for the anomalies, the research team had to build a new theoretical model from the ground up.",
+      "usage_note": "强调某事是完全从零开始、从最基础的部分构建起来的，没有任何现成的基础。常用于描述理论、模型、组织或项目的创建过程。"
+    },
+    {
+      "expression": "a ripple effect",
+      "meaning": "涟漪效应",
+      "example": "The new policy targeting a single industry created a ripple effect, influencing employment, consumer spending, and eventually international trade.",
+      "usage_note": "与 'knock-on effect' (连锁反应) 类似，但更形象地比喻一个事件的影响像涟漪一样，从一个中心点逐渐扩散到越来越广的范围。"
+    },
+    {
+      "expression": "in no uncertain terms",
+      "meaning": "毫不含糊地，非常明确地",
+      "example": "The ethics committee's report stated in no uncertain terms that the existing safety protocols were inadequate and required immediate revision.",
+      "usage_note": "用于强调某个声明、结论或警告的清晰度和直接性，表示其中没有任何模棱两可的余地。"
+    },
+    {
+      "expression": "par for the course",
+      "meaning": "意料之中的事，正常现象",
+      "example": "Initial setbacks and the need for multiple revisions are par for the course in any ambitious, long-term research project.",
+      "usage_note": "源自高尔夫球术语。在学术语境中，用于指明某个困难、挑战或结果在特定领域或过程中是常见且可以预料的，不必大惊小怪。"
+    },
+    {
+      "expression": "an uphill battle",
+      "meaning": "一场艰苦的战斗",
+      "example": "Changing long-standing public misconceptions about vaccination remains an uphill battle for public health organizations worldwide.",
+      "usage_note": "用于形容一个需要付出巨大努力且成功机会不大的斗争或任务，强调其过程的艰难和持续的阻力。"
+    },
+    {
+      "expression": "a sign of the times",
+      "meaning": "一个时代标志",
+      "example": "The rapid integration of artificial intelligence into everyday academic research is a sign of the times, reflecting a broader technological shift.",
+      "usage_note": "指某个现象或事件能够典型地反映当前时代或社会的特定特征、价值观或趋势。在社会科学和人文学科中尤为常用。"
+    },
+    {
+      "expression": "to cast a wide net",
+      "meaning": "广泛撒网，广纳百川",
+      "example": "In the initial phase of the literature review, we decided to cast a wide net, including studies from adjacent disciplines to ensure no relevant theories were missed.",
+      "usage_note": "比喻用法，指在研究、调查或搜索的初期阶段，尽可能地包含多种多样的来源、选项或可能性，以求全面，避免遗漏。"
+    },
+    {
+      "expression": "The be-all and end-all",
+      "meaning": "唯一重要的事，终极目标 (常用于否定句)",
+      "example": "While GDP is a useful metric for economic activity, it should not be considered the be-all and end-all of a nation's success and well-being.",
+      "usage_note": "源自莎士比亚戏剧。通常用于否定句 (not the be-all and end-all)，以反驳某种过于简单或片面的观点，强调还有其他重要因素需要考虑。"
+    },
+    {
+      "expression": "The devil is in the details",
+      "meaning": "魔鬼在细节中",
+      "example": "The proposed peace treaty seems promising on the surface, but as with all such complex agreements, the devil is in the details.",
+      "usage_note": "用于提醒人们，一个计划或方案中那些看似微不足道的细节，实际上可能是最困难、最容易出问题的部分，需要仔细审查。"
+    },
+    {
+      "expression": "to cut both ways",
+      "meaning": "对双方都有利有弊，产生双重影响",
+      "example": "The new transparency regulation cuts both ways: while it holds institutions accountable, it may also discourage candid internal discussion.",
+      "usage_note": "与 'a double-edged sword' 类似，但更强调某个原则、规则或行动会同时对立的两方产生（或好或坏的）影响。"
+    },
+    {
+      "expression": "to draw a line in the sand",
+      "meaning": "划定底线",
+      "example": "The ethics committee drew a line in the sand regarding the use of AI in grading, prohibiting its use for final, unreviewed assessments.",
+      "usage_note": "指设定一个明确且不容逾越的界限或立场，表明超过此限度的行为将不被接受。在伦理、政策和原则性讨论中非常有力。"
+    },
+    {
+      "expression": "to call a spade a spade",
+      "meaning": "实话实说，直言不讳",
+      "example": "To call a spade a spade, the previous study was not just flawed; it was a clear case of methodological negligence.",
+      "usage_note": "用于引出一个直白、不加修饰的（通常是负面的）评价。使用时需注意场合，因为它意味着要摒弃委婉，直接点明问题的本质。"
+    },
+    {
+      "expression": "The state of play",
+      "meaning": "（某事在特定时间的）进展情况，当前态势",
+      "example": "Before presenting our own hypothesis, it is necessary to review the current state of play in the field of particle physics.",
+      "usage_note": "一个非常地道的英式表达，用于总结一个持续发展或变化的领域的最新情况。在文献综述或介绍背景时非常有用。"
+    },
+    {
+      "expression": "The subtext of",
+      "meaning": "...的潜台词，深层含义",
+      "example": "The subtext of the novel is a powerful critique of the social and political norms of its time.",
+      "usage_note": "指文本、对话或事件表面之下隐藏的、未明说的真正含义或主题。在文学批评、历史和文化研究中是核心概念。"
+    },
+    {
+      "expression": "to nail one's colors to the mast",
+      "meaning": "公开表明立场，旗帜鲜明",
+      "example": "In the final chapter, the author nails her colors to the mast, unequivocally supporting the reformist agenda she had previously discussed more neutrally.",
+      "usage_note": "源自海战术语。一个强有力的比喻，指某人（尤指在有争议的情况下）毫不含糊地公开声明自己的观点或阵营，不再保持中立或模棱两可。"
+    },
+    {
+      "expression": "to beg the question",
+      "meaning": "循环论证 (逻辑谬误)",
+      "example": "To say that the theory is correct because it is scientifically proven begs the question, as you haven't explained what constitutes the proof.",
+      "usage_note": "这是一个非常精确的逻辑术语，指在论证过程中，把尚未被证明的、有待证明的论点作为论据来使用。注意：它在日常用语中常被误用为“引出一个问题”(to raise the question)，但在学术写作中应使用其本义。"
+    },
+    {
+      "expression": "a red herring",
+      "meaning": "转移注意力的次要问题，烟雾弹",
+      "example": "The debate over the author's personal life is a red herring that distracts from a serious analysis of the novel's literary merits.",
+      "usage_note": "指在辩论或论证中被故意引入的、与主题无关但又很吸引眼球的题外话，目的是将注意力从真正的核心问题上引开。"
+    },
+    {
+      "expression": "to bear fruit",
+      "meaning": "取得成果，奏效",
+      "example": "After several years of foundational research, the investment in the new research center is finally beginning to bear fruit.",
+      "usage_note": "一个带有积极和有机生长意味的比喻，形容长期的努力、投入或计划最终产生了预期的良好结果。"
+    },
+    {
+      "expression": "to move the goalposts",
+      "meaning": "（不公平地）改变规则或目标",
+      "example": "The funding committee was accused of moving the goalposts by adding new evaluation criteria after the research proposals had already been submitted.",
+      "usage_note": "用于负面地批评在某项活动或评估进行过程中，一方不公平地改变成功或完成的条件，使另一方更难达成目标。"
+    },
+    {
+      "expression": "a bellwether for",
+      "meaning": "...的领头羊，风向标",
+      "example": "The performance of this particular tech stock is often seen as a bellwether for the entire technology sector.",
+      "usage_note": "指某件事物可以作为预示未来趋势或更广泛情况的指标。比 'an indicator' 更为生动和正式。"
+    },
+    {
+      "expression": "(can't) see the wood for the trees",
+      "meaning": "见树不见林 (只见细节，不见整体)",
+      "example": "By focusing excessively on minor grammatical errors, the reviewer couldn't see the wood for the trees and missed the groundbreaking argument of the thesis.",
+      "usage_note": "常用于否定句中，批评某人因过于纠结于细枝末节而忽略了整个问题的本质或全局。"
+    },
+    {
+      "expression": "The genesis of",
+      "meaning": "...的起源，开端",
+      "example": "The book traces the genesis of the modern environmental movement back to the publication of Rachel Carson's 'Silent Spring'.",
+      "usage_note": "一个非常正式和文雅的词，用于描述一个想法、运动、项目或事物的起源和最初的发展阶段。"
+    },
+    {
+      "expression": "a clean slate",
+      "meaning": "干净的历史，全新的开始",
+      "example": "The change in leadership provided the organization with a clean slate to reform its internal policies and rebuild public trust.",
+      "usage_note": "指一个重新开始的机会，过去的错误或问题都被清除或忽略。常用于描述改革、重建或转型的起点。"
+    }
+  ]
+}

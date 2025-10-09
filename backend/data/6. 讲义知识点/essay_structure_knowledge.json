@@ -1,0 +1,234 @@
+{
+  "description": "IELTS Task 2文章结构和段落组成知识",
+  "paragraph_patterns": {
+    "1+2+1模式": {
+      "structure": "开头段 + 2个展开段 + 结尾段",
+      "适用情况": "观点明确，论点较少但需要深入展开",
+      "展开段要求": "每段包含主题句、论述、例子/细节、小结"
+    },
+    "1+3+1模式": {
+      "structure": "开头段 + 3个展开段 + 结尾段",
+      "适用情况": "论点较多，需要分别论述",
+      "展开段要求": "每段包含主题句、论述、例子/细节"
+    }
+  },
+  "introduction_writing": {
+    "Argument类型": {
+      "必备内容": [
+        "背景介绍/题目改写",
+        "明确表达总观点"
+      ],
+      "写作步骤": [
+        "1. 改写题目背景，避免完全照抄",
+        "2. 明确表达个人立场和观点"
+      ],
+      "注意事项": [
+        "避免模糊表态",
+        "确保观点明确"
+      ],
+      "改写技巧": [
+        "同义词替换关键词汇",
+        "改变句式结构",
+        "概括题目主要内容",
+        "避免逐字照搬"
+      ],
+      "观点表达方式": {
+        "强烈同意": "I strongly believe that...",
+        "完全同意": "I completely agree that...",
+        "部分同意": "I partly agree that...",
+        "让步同意": "While..., I believe that...",
+        "强烈反对": "I strongly disagree that...",
+        "中立立场": "I believe both sides have merit..."
+      },
+      "示例模板": "It is said that [题目改写]. I [观点表达] that [具体立场]."
+    },
+    "Report类型": {
+      "必备内容": [
+        "背景介绍/题目改写",
+        "概述文章结构"
+      ],
+      "写作步骤": [
+        "1. 改写题目背景",
+        "2. 简要说明将要讨论的内容"
+      ],
+      "结构预告方式": [
+        "This essay will examine the causes and suggest solutions.",
+        "This essay will analyze the reasons and propose measures.",
+        "The following essay will discuss both the causes and potential remedies."
+      ],
+      "示例模板": "[题目改写]. This essay will [结构预告]."
+    },
+    "Discussion类型": {
+      "必备内容": [
+        "背景介绍/题目改写",
+        "概述两个观点",
+        "预告个人立场"
+      ],
+      "写作步骤": [
+        "1. 改写题目背景",
+        "2. 简要概述两个对立观点",
+        "3. 预告将给出个人看法"
+      ],
+      "观点概述方式": [
+        "While some people believe..., others argue that...",
+        "There are those who think..., whereas others contend that...",
+        "Some individuals support..., while others favor..."
+      ],
+      "个人立场预告": [
+        "I will discuss both views and give my opinion.",
+        "This essay will examine both perspectives before presenting my view.",
+        "Both sides will be analyzed before I offer my personal stance."
+      ]
+    }
+  },
+  "conclusion_writing": {
+    "必备内容": "重申总观点并结合分论点",
+    "写作方法": "To conclude, [总观点] since [分论点1] while [分论点2]",
+    "注意事项": [
+      "不引入新观点",
+      "与开头段呼应",
+      "简洁有力"
+    ],
+    "不同题型的结尾方式": {
+      "Argument类型": {
+        "结构": "重申总观点 + 结合分论点总结",
+        "示例模板": "To conclude, [重申观点] since [分论点1] while [分论点2].",
+        "常用开头词": [
+          "To conclude",
+          "In conclusion",
+          "Overall",
+          "To summarize"
+        ]
+      },
+      "Report类型": {
+        "结构": "总结主要原因 + 概括解决方案 + 展望未来",
+        "示例模板": "In conclusion, [主要原因总结]. [解决方案概括]. [未来展望].",
+        "常用开头词": [
+          "In conclusion",
+          "To summarize",
+          "Overall",
+          "In summary"
+        ]
+      },
+      "Discussion类型": {
+        "结构": "总结两个观点 + 明确个人立场 + 给出最终判断",
+        "示例模板": "In conclusion, while [观点A总结], [观点B总结]. In my opinion, [个人立场].",
+        "个人立场表达": [
+          "In my opinion",
+          "From my perspective",
+          "I believe that",
+          "My view is that"
+        ]
+      },
+      "Comparison类型": {
+        "结构": "重申比较结论 + 总结主要理由",
+        "示例模板": "In conclusion, I believe the [advantages/disadvantages] outweigh the [disadvantages/advantages] because [主要理由].",
+        "比较结论表达": [
+          "outweigh",
+          "are more significant than",
+          "are more important than"
+        ]
+      }
+    },
+    "写作技巧": [
+      "使用since/because连接分论点",
+      "保持与开头段观点一致",
+      "避免重复使用相同词汇",
+      "控制在2-3句话内",
+      "语气要坚定明确"
+    ]
+  },
+  "body_paragraph_elements": {
+    "论述 (Reasoning)": {
+      "定义": "对观点进行逻辑分析和解释",
+      "作用": "说明为什么这个观点是正确的",
+      "写作技巧": [
+        "使用因果关系连接词",
+        "进行逻辑推理",
+        "分析深层原因",
+        "探讨广泛影响"
+      ],
+      "常用连接词": [
+        "because",
+        "since",
+        "as",
+        "due to",
+        "owing to",
+        "as a result",
+        "therefore",
+        "thus",
+        "consequently"
+      ],
+      "示例": "To punish a very young child is both wrong and foolish, because an infant will not understand what is happening or why he or she is being punished.",
+      "论证链条延长": {
+        "基本逻辑": "A导致B，B导致C，C导致D",
+        "增强方法": [
+          "添加具体细节",
+          "使用对比论证",
+          "分析深层原因",
+          "探讨广泛影响"
+        ]
+      }
+    },
+    "例子 (Examples)": {
+      "定义": "具体的事例来支持论点",
+      "写作风格": [
+        "客观描述",
+        "避免第一人称",
+        "使用泛指表达"
+      ],
+      "写作手法": {
+        "概括性例子": {
+          "特点": "使用宽泛的概括性表述",
+          "示例": "For example, there is severe air pollution in every major city in the world.",
+          "适用情况": "论证普遍性现象"
+        },
+        "对比性例子": {
+          "特点": "通过对比突出论点",
+          "示例": "For example, an engine can only be designed by a group of experts; conversely, even the most gifted individual would struggle to complete this task.",
+          "适用情况": "强调差异和优劣"
+        },
+        "具体性例子": {
+          "特点": "提供具体的实例描述",
+          "示例": "Some businesses, for instance, hire college interns for the summer. These interns work on assigned tasks and receive certificates upon completion.",
+          "适用情况": "增加真实感和说服力"
+        }
+      },
+      "例子引入词": [
+        "For example",
+        "For instance",
+        "Such as",
+        "Like",
+        "Take...as an example",
+        "A case in point is"
+      ],
+      "写作注意事项": [
+        "避免使用第一人称",
+        "使用people, individuals等泛指",
+        "确保例子与论点相关",
+        "控制例子长度适中"
+      ]
+    },
+    "细节 (Details)": {
+      "定义": "对论点或例子的进一步具体说明",
+      "作用": "增加论证的深度和说服力",
+      "类型": {
+        "数据细节": "提供具体数字、比例、统计信息",
+        "过程细节": "描述具体的步骤、流程、方法",
+        "影响细节": "说明具体的结果、后果、影响",
+        "背景细节": "提供相关的背景信息、历史context"
+      },
+      "写作技巧": [
+        "使用具体而非抽象的描述",
+        "提供量化信息",
+        "描述具体过程",
+        "说明具体影响"
+      ],
+      "与论述和例子的关系": [
+        "细节可以在论述之后进一步解释",
+        "细节可以对例子进行补充说明",
+        "细节可以独立作为支持论据"
+      ]
+    }
+  }
+}

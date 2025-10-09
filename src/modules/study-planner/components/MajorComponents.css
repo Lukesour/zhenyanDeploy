@@ -1,0 +1,276 @@
+/* 专业和学校组件样式 */
+
+/* 主导航样式 */
+.planner-tabs .ant-tabs-tab {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 24px;
+}
+
+.planner-tabs .ant-tabs-tab-active {
+  color: #4f46e5;
+}
+
+/* 卡片悬停效果 */
+.school-card,
+.major-card {
+  transition: all 0.3s ease;
+  border: 1px solid #e0e7ff;
+}
+
+.school-card:hover,
+.major-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border-color: #4f46e5;
+}
+
+/* 专业详情页样式 */
+.major-detail {
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.major-detail .ant-card {
+  margin-bottom: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.major-detail .ant-descriptions-item-label {
+  font-weight: 600;
+  color: #262626;
+}
+
+/* 标签样式 */
+.ranking-tag {
+  font-weight: 600;
+  border-radius: 16px;
+}
+
+.ranking-tag.gold {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #8b4513;
+}
+
+.ranking-tag.orange {
+  background: linear-gradient(135deg, #ff7f00, #ffb347);
+  color: #fff;
+}
+
+.ranking-tag.blue {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: #fff;
+}
+
+/* 搜索和筛选区域 */
+.filter-section {
+  background: #f5f7ff;
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.filter-section .ant-input-search {
+  border-radius: 6px;
+}
+
+.filter-section .ant-select {
+  border-radius: 6px;
+}
+
+/* 统计卡片 */
+.stats-card {
+  text-align: center;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  color: #fff;
+}
+
+.stats-card .ant-statistic-title {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.stats-card .ant-statistic-content {
+  color: #fff;
+}
+
+/* 面包屑导航 */
+.breadcrumb-nav {
+  background: #fff;
+  padding: 16px 24px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .planner-tabs .ant-tabs-tab {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  
+  .filter-section {
+    padding: 16px;
+    margin: 0 -12px 16px;
+    border-radius: 0;
+  }
+  
+  .school-card,
+  .major-card {
+    margin-bottom: 12px;
+  }
+  
+  .major-detail {
+    padding: 12px;
+  }
+  
+  .major-detail .ant-card {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .planner-tabs .ant-tabs-tab {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  
+  .stats-card {
+    margin-bottom: 12px;
+  }
+  
+  .filter-section .ant-row {
+    gap: 12px;
+  }
+}
+
+/* 加载状态 */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  background: #f5f7ff;
+  border-radius: 8px;
+}
+
+.loading-container .ant-spin {
+  margin-bottom: 16px;
+}
+
+/* 错误状态 */
+.error-container {
+  text-align: center;
+  padding: 48px 24px;
+}
+
+.error-container .ant-alert {
+  border-radius: 8px;
+}
+
+/* 空状态 */
+.empty-state {
+  text-align: center;
+  padding: 48px 24px;
+  color: #8c8c8c;
+}
+
+.empty-state .ant-empty-image {
+  margin-bottom: 16px;
+}
+
+/* 语言要求卡片 */
+.language-requirement-card {
+  background: #f9f9f9;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+}
+
+.language-requirement-card .ant-card-head {
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+/* 课程列表 */
+.curriculum-list .ant-list-item {
+  border-bottom: 1px solid #e0e7ff;
+  padding: 12px 0;
+}
+
+.curriculum-list .ant-list-item:last-child {
+  border-bottom: none;
+}
+
+/* 申请轮次 */
+.application-rounds .ant-list-item {
+  border-left: 3px solid #4f46e5;
+  padding-left: 16px;
+  margin-bottom: 8px;
+  background: #f6f8ff;
+  border-radius: 4px;
+}
+
+/* 专业方向标签 */
+.direction-tag {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+  color: #722ed1;
+  border: none;
+  border-radius: 16px;
+  font-weight: 500;
+}
+
+/* 学校信息卡片 */
+.school-info-card {
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+  color: #fff;
+  border: none;
+}
+
+.school-info-card .ant-card-body {
+  padding: 32px;
+}
+
+.school-info-card h2 {
+  color: #fff !important;
+  margin-bottom: 16px;
+}
+
+.school-info-card .ant-tag {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* 动画效果 */
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

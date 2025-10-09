@@ -1,0 +1,786 @@
+{
+  "description": "针对常见、简单或被滥用的词汇，提供具体、带语境的升级替换方案。",
+  "good": {
+    "comment": "“good” 是一个非常基础的词，缺乏学术写作所需的精确性和力度。替换它可以显著提升文章的正式度和说服力。",
+    "suggestions": [
+      {"word": "beneficial", "meaning": "有益的，有利的", "example": "Regular exercise has a beneficial effect on mental health."},
+      {"word": "advantageous", "meaning": "有优势的，有利的", "example": "A flexible work schedule can be advantageous for working parents."},
+      {"word": "constructive", "meaning": "建设性的", "example": "Instead of simply criticising, you should provide constructive feedback."},
+      {"word": "favourable", "meaning": "有利的，赞成的", "example": "The new policy has received a favourable response from the public."},
+      {"word": "effective", "meaning": "有效的", "example": "This is a highly effective method for reducing costs."}
+    ]
+  },
+  "important": {
+    "comment": "“important” 是写作中被过度使用的词汇之一。使用多样化的同义词可以展示更丰富的词汇量。",
+    "suggestions": [
+      {"word": "significant", "meaning": "重大的，影响深远的", "example": "The discovery of penicillin was a significant medical breakthrough."},
+      {"word": "crucial", "meaning": "至关重要的，决定性的", "example": "Parental involvement is crucial for a child's development."},
+      {"word": "vital", "meaning": "必不可少的，极重要的", "example": "Access to clean water is vital for public health."},
+      {"word": "pivotal", "meaning": "关键的，中枢的", "example": "The main actor plays a pivotal role in the film's success."},
+      {"word": "essential", "meaning": "必要的，本质的", "example": "It is essential to follow the safety guidelines strictly."}
+    ]
+  },
+  "a lot of": {
+    "comment": "“a lot of” 过于口语化。在学术写作中，应使用更正式、更精确的量词。",
+    "suggestions": [
+      {"word": "numerous / a large number of", "meaning": "许多 (用于可数名词)", "example": "Numerous studies have shown a link between smoking and lung cancer."},
+      {"word": "a great deal of / a significant amount of", "meaning": "大量 (用于不可数名词)", "example": "A great deal of research is still needed in this field."},
+      {"word": "a wide range of", "meaning": "广泛的，各种各样的", "example": "The library offers a wide range of academic resources."},
+      {"word": "plentiful / abundant", "meaning": "丰富的，充裕的", "example": "Natural resources are abundant in this region."}
+    ]
+  },
+  "bad": {
+    "comment": "“bad” 同样是一个非常笼统的词。使用更具体的负面词汇能让你的描述更有力、更精确。",
+    "suggestions": [
+      {"word": "detrimental", "meaning": "有害的 (常指长期的、潜在的伤害)", "example": "The new policy had a detrimental effect on the local economy."},
+      {"word": "negative", "meaning": "负面的，消极的", "example": "The project received a lot of negative feedback from the users."},
+      {"word": "harmful", "meaning": "有害的 (常指直接的伤害)", "example": "The chemical waste is harmful to the environment."},
+      {"word": "inadequate", "meaning": "不充分的，不足的", "example": "His preparation for the exam was inadequate."},
+      {"word": "poor", "meaning": "差的，劣质的", "example": "The company suffered from poor management."}
+    ]
+  },
+  "show": {
+    "comment": "“show” 是一个常用但略显平淡的动词。在学术写作中，使用更具描述性的动词能更好地表达“展示”或“揭示”的过程。",
+    "suggestions": [
+      {"word": "demonstrate", "meaning": "证明，论证", "example": "The study demonstrates the link between diet and disease."},
+      {"word": "illustrate", "meaning": "阐明，举例说明", "example": "This chart illustrates the recent trends in population growth."},
+      {"word": "indicate", "meaning": "表明，指出", "example": "The survey results indicate a shift in public opinion."},
+      {"word": "reveal", "meaning": "揭示，透露", "example": "The investigation revealed some unexpected findings."},
+      {"word": "depict", "meaning": "描绘，描述", "example": "The novel depicts the struggles of a young immigrant family."}
+    ]
+  },
+  "thing": {
+    "comment": "“thing” 是一个非常模糊和口语化的词。为了保证写作的清晰度和学术性，必须用更具体的名词替换它。",
+    "suggestions": [
+      {"word": "factor / element", "meaning": "因素 / 要素", "example": "Several factors contributed to the project's success."},
+      {"word": "issue / matter", "meaning": "问题 / 事情", "example": "We need to address this pressing issue immediately."},
+      {"word": "concept / idea", "meaning": "概念 / 想法", "example": "The concept of democracy is central to their political system."},
+      {"word": "aspect / feature", "meaning": "方面 / 特征", "example": "One key feature of the new software is its user-friendly interface."},
+      {"word": "phenomenon", "meaning": "现象", "example": "Globalization is a complex economic phenomenon."}
+    ]
+  },
+  "big": {
+    "comment": "“big” 是一个非常基础和口语化的形容词。使用更具描述性的词汇可以增加表达的精确度和细致度。",
+    "suggestions": [
+      {"word": "substantial", "meaning": "大量的，重大的", "example": "She inherited a substantial amount of money."},
+      {"word": "considerable", "meaning": "相当大的，可观的", "example": "The project required a considerable investment of time and resources."},
+      {"word": "extensive", "meaning": "广泛的，大量的", "example": "He has extensive knowledge of ancient history."},
+      {"word": "immense / vast", "meaning": "巨大的，广阔的", "example": "The universe is immense, and it holds vast mysteries."},
+      {"word": "major", "meaning": "主要的，重大的", "example": "Pollution is a major global problem."}
+    ]
+  },
+  "get": {
+    "comment": "“get” 含义广泛，在口语中非常普遍，但对于学术写作来说通常过于口语化。应根据上下文选择更精确的动词。",
+    "suggestions": [
+      {"word": "obtain / acquire", "meaning": "获得，取得 (较正式)", "example": "You need to obtain a permit before starting construction."},
+      {"word": "receive", "meaning": "收到", "example": "Did you receive my email this morning?"},
+      {"word": "become", "meaning": "变得", "example": "As the evening progressed, the sky became darker."},
+      {"word": "achieve", "meaning": "达成，实现", "example": "She worked hard to achieve her academic goals."},
+      {"word": "understand", "meaning": "理解，明白", "example": "I didn't understand the last point he made."}
+    ]
+  },
+  "so": {
+    "comment": "“so” 是一个表示结果的常用连词，但偏向口语化。使用其他词汇可以构建更正式、更多样的句式。",
+    "suggestions": [
+      {"word": "therefore / consequently", "meaning": "因此，所以 (更正式)", "example": "He was late; therefore, he missed the beginning of the presentation."},
+      {"word": "as a result", "meaning": "因此，结果是", "example": "The company invested heavily in new technology. As a result, its productivity increased."},
+      {"word": "thus", "meaning": "因此 (非常正式)", "example": "The evidence was inconclusive; thus, the case was dismissed."},
+      {"word": "for this reason", "meaning": "因此，为此", "example": "The weather was poor. For this reason, the event was cancelled."}
+    ]
+  },
+  "also": {
+    "comment": "虽然 “also” 在语法上是正确的，但过度使用会使文章显得重复。使用更多样的连接词可以改善文章的逻辑流畅性。",
+    "suggestions": [
+      {"word": "in addition / additionally", "meaning": "此外，而且", "example": "In addition, the report highlights the need for more funding."},
+      {"word": "furthermore / moreover", "meaning": "而且，此外 (语气更强)", "example": "The plan is risky. Moreover, it is extremely expensive."},
+      {"word": "likewise / similarly", "meaning": "同样地", "example": "You should review your notes. Likewise, it's important to do the practice questions."},
+      {"word": "not only... but also...", "meaning": "不仅... 而且...", "example": "Not only is the new system more efficient, but it is also more secure."}
+    ]
+  },
+  "use": {
+    "comment": "“use” 是一个功能性动词，但往往可以通过更具体的词汇来增强表达效果，说明“如何”使用。",
+    "suggestions": [
+      {"word": "utilize", "meaning": "利用 (强调有效或创新的使用)", "example": "We must utilize all available resources to complete the project."},
+      {"word": "employ", "meaning": "采用，使用 (方法、技术等)", "example": "The company employs advanced techniques in its manufacturing process."},
+      {"word": "apply", "meaning": "应用，运用 (理论、规则等)", "example": "The skills he learned at university can be applied to his new job."},
+      {"word": "leverage", "meaning": "利用 (尤指为了获得优势)", "example": "She is skilled at leveraging her network to find new opportunities."}
+    ]
+  },
+  "interesting": {
+    "comment": "“interesting” 是一个非常主观且模糊的词。具体说明某事物为何有趣，可以使你的写作更具说服力和分析性。",
+    "suggestions": [
+      {"word": "fascinating", "meaning": "极有趣的，迷人的", "example": "The documentary about deep-sea life was absolutely fascinating."},
+      {"word": "compelling", "meaning": "引人入胜的，令人信服的", "example": "She presented a compelling argument for reform."},
+      {"word": "thought-provoking", "meaning": "发人深省的", "example": "It was a thought-provoking film that stayed with me for days."},
+      {"word": "intriguing", "meaning": "引起兴趣的，新奇的", "example": "The origins of the ancient manuscript remain an intriguing mystery."},
+      {"word": "noteworthy", "meaning": "值得注意的，显著的", "example": "The study's most noteworthy finding was the speed of the reaction."}
+    ]
+  },
+  "think": {
+    "comment": "在表达观点时，“think” 非常普遍。使用更具体的动词可以清晰地表明你的思考方式，例如是相信、分析还是建议。",
+    "suggestions": [
+      {"word": "believe", "meaning": "相信，认为", "example": "I believe that education is the key to a better future."},
+      {"word": "argue", "meaning": "主张，认为 (带有论证意味)", "example": "The author argues that the current policy is ineffective."},
+      {"word": "contend / maintain", "meaning": "主张，坚称", "example": "Some economists contend that a recession is imminent."},
+      {"word": "suggest", "meaning": "暗示，表明", "example": "The data suggests a correlation between the two variables."},
+      {"word": "posit", "meaning": "假定，提出 (非常学术)", "example": "He posited a new theory to explain the phenomenon."}
+    ]
+  },
+  "say": {
+    "comment": "“say” 是一个中性且容易重复的动词，常用于转述信息。使用更具描述性的词汇可以更好地传达陈述背后的语气和意图。",
+    "suggestions": [
+      {"word": "state", "meaning": "陈述，声明 (正式)", "example": "The witness stated that he saw the suspect leave the building."},
+      {"word": "assert", "meaning": "断言，坚称", "example": "He asserted his innocence in front of the jury."},
+      {"word": "claim", "meaning": "声称", "example": "The company claims its product can cure hair loss."},
+      {"word": "mention", "meaning": "提及", "example": "She briefly mentioned her travel plans for the summer."},
+      {"word": "emphasize / highlight", "meaning": "强调", "example": "The speaker emphasized the importance of teamwork."}
+    ]
+  },
+  "but": {
+    "comment": "“but” 是一个基础的连词，但过度使用会使文章显得简单。使用多样的转折词可以增强逻辑的流畅度和复杂性。",
+    "suggestions": [
+      {"word": "however", "meaning": "然而 (更正式，常用于句首)", "example": "The task was difficult; however, they managed to complete it on time."},
+      {"word": "nevertheless / nonetheless", "meaning": "然而，尽管如此", "example": "There was little chance of success; nevertheless, they decided to proceed."},
+      {"word": "on the other hand", "meaning": "另一方面 (用于对比)", "example": "The city offers many job opportunities. On the other hand, the cost of living is very high."},
+      {"word": "despite / in spite of", "meaning": "尽管 (后接名词或动名词)", "example": "Despite the bad weather, the match went ahead."},
+      {"word": "while / whereas", "meaning": "然而，鉴于 (用于直接对比)", "example": "My brother loves spicy food, while I prefer milder dishes."}
+    ]
+  },
+  "problem": {
+    "comment": "“problem” 是一个通用词。在正式写作中，使用更具体的词汇能更好地定义困难的性质。",
+    "suggestions": [
+      {"word": "issue", "meaning": "议题，问题 (常指需讨论解决的)", "example": "Climate change is a global issue that requires immediate attention."},
+      {"word": "challenge", "meaning": "挑战 (强调困难但可克服)", "example": "Funding remains the biggest challenge for the new startup."},
+      {"word": "obstacle", "meaning": "障碍，阻碍", "example": "A lack of experience can be a major obstacle to finding a job."},
+      {"word": "dilemma", "meaning": "困境，两难境地", "example": "She faced the dilemma of choosing between her career and her family."},
+      {"word": "complication / setback", "meaning": "复杂情况 / 挫折", "example": "The political situation introduced a new complication into the negotiations."}
+    ]
+  },
+  "very": {
+    "comment": "“very” 是一个较弱的强度副词。通常，用一个更强、更精确的形容词来代替 “very + 形容词” 会使表达更有力。",
+    "suggestions": [
+      {"word": "very tired -> exhausted", "meaning": "筋疲力尽的", "example": "After the marathon, he was completely exhausted."},
+      {"word": "very big -> enormous / immense", "meaning": "巨大的", "example": "The new skyscraper is enormous."},
+      {"word": "very good -> excellent / superb / outstanding", "meaning": "极好的", "example": "She gave an outstanding performance in the play."},
+      {"word": "very important -> crucial / vital", "meaning": "至关重要的", "example": "It is crucial that we arrive on time."},
+      {"word": "very angry -> furious / infuriated", "meaning": "极其愤怒的", "example": "He was furious when he discovered the mistake."}
+    ]
+  },
+  "new": {
+    "comment": "“new” 含义清晰但缺乏细节。根据上下文，可以用更生动的词来描述“新”的特质。",
+    "suggestions": [
+      {"word": "innovative", "meaning": "创新的", "example": "The company is known for its innovative approach to product design."},
+      {"word": "modern / contemporary", "meaning": "现代的 / 当代的", "example": "The museum features a collection of contemporary art."},
+      {"word": "updated / revised", "meaning": "更新的 / 修订的", "example": "Please refer to the revised edition of the textbook."},
+      {"word": "groundbreaking", "meaning": "开创性的，突破性的", "example": "Her research on gene editing was truly groundbreaking."}
+    ]
+  },
+  "and": {
+    "comment": "“and” 是最基础的连接词。在列举或连接观点时，使用不同的词汇可以使句子结构更丰富，逻辑关系更清晰。",
+    "suggestions": [
+      {"word": "as well as", "meaning": "以及，也", "example": "The new policy affects businesses as well as individual consumers."},
+      {"word": "in addition to", "meaning": "除了...之外", "example": "In addition to his full-time job, he runs a small online store."},
+      {"word": "along with", "meaning": "连同，和...一起", "example": "A detailed report was submitted along with the application form."},
+      {"word": "furthermore / moreover", "meaning": "此外，而且 (用于补充论点)", "example": "The source code is well-documented. Furthermore, it has an extensive test suite."}
+    ]
+  },
+  "help": {
+    "comment": "“help” 是一个好词，但通常比较笼统。使用更具体的动词可以清晰地描述“如何”提供帮助，使行为更具体。",
+    "suggestions": [
+      {"word": "assist", "meaning": "协助，辅助 (更正式)", "example": "The junior researcher will assist the professor with the experiment."},
+      {"word": "facilitate", "meaning": "促进，使…便利", "example": "A good teacher facilitates learning rather than just giving answers."},
+      {"word": "support", "meaning": "支持", "example": "The government provides funding to support small businesses."},
+      {"word": "enable", "meaning": "使…能够", "example": "The new software will enable us to process data more efficiently."},
+      {"word": "contribute to", "meaning": "促进，有助于", "example": "Regular exercise contributes to overall health and well-being."}
+    ]
+  },
+  "make": {
+    "comment": "“make” 是一个万能但通常偏口语化的动词。在许多语境下，替换它可以增加表达的精确度和正式性。",
+    "suggestions": [
+      {"word": "create", "meaning": "创造", "example": "The artist uses recycled materials to create beautiful sculptures."},
+      {"word": "generate", "meaning": "产生 (常用于想法、收入、能量)", "example": "The marketing campaign is expected to generate significant revenue."},
+      {"word": "produce", "meaning": "生产，制造", "example": "The factory can produce 1,000 units per day."},
+      {"word": "construct", "meaning": "构建，建造", "example": "They plan to construct a new bridge over the river."},
+      {"word": "render", "meaning": "致使，使成为 (非常正式)", "example": "The unexpected news rendered him speechless."}
+    ]
+  },
+  "people": {
+    "comment": "“people” 是一个极其笼统的词。根据上下文使用更具体的名词，可以让你的写作更准确、更专业。",
+    "suggestions": [
+      {"word": "individuals", "meaning": "个人 (强调个体)", "example": "The new law protects the rights of individuals."},
+      {"word": "citizens / the public", "meaning": "公民 / 公众", "example": "The government should be accountable to the public."},
+      {"word": "residents / inhabitants", "meaning": "居民", "example": "Local residents have complained about the noise."},
+      {"word": "participants / subjects", "meaning": "参与者 / (实验)对象", "example": "All participants in the study were asked to sign a consent form."},
+      {"word": "consumers / users", "meaning": "消费者 / 用户", "example": "The company collects feedback from its users to improve the product."}
+    ]
+  },
+  "small": {
+    "comment": "和 “big” 一样，“small” 是一个基础的描述词。更精确的词汇能更好地传达其规模、重要性或具体特征。",
+    "suggestions": [
+      {"word": "minor", "meaning": "次要的，轻微的", "example": "He made a few minor adjustments to the plan."},
+      {"word": "slight", "meaning": "微小的，细微的", "example": "There has been a slight increase in prices this month."},
+      {"word": "modest", "meaning": "适度的，不大的", "example": "She achieved modest success with her first novel."},
+      {"word": "limited", "meaning": "有限的", "example": "The study was based on a limited number of samples."},
+      {"word": "compact", "meaning": "紧凑的，小巧的", "example": "He lives in a compact apartment in the city center."}
+    ]
+  },
+  "look at": {
+    "comment": "动词短语 “look at” 通常较为口语化。更正式或更具描述性的动词能更好地表达观察、检查或分析的行为。",
+    "suggestions": [
+      {"word": "examine", "meaning": "检查，审查", "example": "The auditors will examine the company's financial records."},
+      {"word": "analyze", "meaning": "分析", "example": "In this essay, I will analyze the main themes of the novel."},
+      {"word": "observe", "meaning": "观察", "example": "Scientists observe the behavior of animals in their natural habitat."},
+      {"word": "review", "meaning": "回顾，审查", "example": "The committee will review all the applications."},
+      {"word": "consider", "meaning": "考虑", "example": "We need to consider all the options before making a decision."}
+    ]
+  },
+  "explain": {
+    "comment": "“explain” 是一个清晰的动词，但其替代词可以增加关于“如何”解释的细节，例如通过澄清、举例或详细阐述。",
+    "suggestions": [
+      {"word": "clarify", "meaning": "澄清，阐明", "example": "Could you clarify your last point? I didn't quite understand."},
+      {"word": "elaborate on", "meaning": "详细阐述", "example": "The CEO was asked to elaborate on the company's future plans."},
+      {"word": "define", "meaning": "定义", "example": "The first chapter of the book defines the key terms used."},
+      {"word": "describe", "meaning": "描述", "example": "The witness described the suspect in great detail."},
+      {"word": "illustrate", "meaning": "(用例子) 阐明", "example": "Let me give you an example to illustrate my point."}
+    ]
+  },
+  "idea": {
+    "comment": "“idea” 是个常用词，但替换成更具体的词可以更好地表达这个“想法”的性质：它是一个概念、一个建议还是一个观点？",
+    "suggestions": [
+      {"word": "concept", "meaning": "概念", "example": "The concept of gravity is fundamental to physics."},
+      {"word": "notion", "meaning": "观念，看法", "example": "He rejected the notion that success is measured by wealth alone."},
+      {"word": "perspective / viewpoint", "meaning": "视角，观点", "example": "From a historical perspective, the event was a turning point."},
+      {"word": "proposal / suggestion", "meaning": "提议，建议", "example": "The committee is now considering your proposal."},
+      {"word": "theory", "meaning": "理论", "example": "The scientist developed a new theory about the origin of the universe."}
+    ]
+  },
+  "right / wrong": {
+    "comment": "“right” 和 “wrong” 在道德或事实判断上过于绝对和简单。在学术和分析性写作中，使用更严谨的词汇能体现更细致的考量。",
+    "suggestions": [
+      {"word": "right -> correct / accurate", "meaning": "正确的 / 精确的", "example": "Your calculations are accurate."},
+      {"word": "right -> appropriate / suitable", "meaning": "合适的，恰当的", "example": "This is not an appropriate time to discuss the issue."},
+      {"word": "right -> justified / valid", "meaning": "正当的 / 有效的", "example": "Her anger was completely justified."},
+      {"word": "wrong -> incorrect / inaccurate", "meaning": "不正确的 / 不精确的", "example": "The information in the report was inaccurate."},
+      {"word": "wrong -> inappropriate / unsuitable", "meaning": "不合适的", "example": "His casual remarks were inappropriate for such a formal occasion."},
+      {"word": "wrong -> flawed / questionable", "meaning": "有缺陷的 / 可疑的", "example": "The methodology of the study was seriously flawed."}
+    ]
+  },
+  "start / begin": {
+    "comment": "这两个词本身没有问题，但使用更正式或更具描述性的动词能更好地设定基调，尤其是在描述一个过程或事件的开端时。",
+    "suggestions": [
+      {"word": "commence", "meaning": "开始 (非常正式)", "example": "The ceremony will commence at 10:00 AM sharp."},
+      {"word": "initiate", "meaning": "发起，创始", "example": "The government has initiated a new program to boost the economy."},
+      {"word": "launch", "meaning": "启动，发起 (常用于项目、产品)", "example": "The company plans to launch its new smartphone next month."},
+      {"word": "establish", "meaning": "建立，创立", "example": "The university was established in the 19th century."},
+      {"word": "embark on", "meaning": "着手，开始 (常用于旅程、事业)", "example": "After graduating, she embarked on a career in journalism."}
+    ]
+  },
+  "end / finish": {
+    "comment": "与 “start” 类似，这些词清晰常用，但其替代词能提供更复杂或更具决定性的结尾语调。",
+    "suggestions": [
+      {"word": "conclude", "meaning": "结束，总结", "example": "The report concludes that the new policy has been effective."},
+      {"word": "terminate", "meaning": "终止，终结 (常用于合同、服务)", "example": "They decided to terminate the agreement due to breach of contract."},
+      {"word": "complete", "meaning": "完成", "example": "He needs to complete the final year of his degree."},
+      {"word": "cease", "meaning": "停止 (正式)", "example": "The factory ceased operations last year."},
+      {"word": "culminate in", "meaning": "以…告终，达到…顶点", "example": "Months of hard work culminated in a successful product launch."}
+    ]
+  },
+  "because": {
+    "comment": "“because” 是表达原因最常见的方式，但容易导致简单的句式。使用替代词可以增加句式多样性和正式度。",
+    "suggestions": [
+      {"word": "due to / owing to", "meaning": "由于 (后接名词短语)", "example": "The flight was delayed due to adverse weather conditions."},
+      {"word": "as / since", "meaning": "因为，既然 (可用于句首)", "example": "As it was getting late, we decided to head back."},
+      {"word": "on the grounds that", "meaning": "理由是 (非常正式)", "example": "He was rejected on the grounds that he lacked the necessary experience."},
+      {"word": "in light of", "meaning": "鉴于，考虑到", "example": "In light of recent events, we have decided to cancel the meeting."},
+      {"word": "The reason for... is that...", "meaning": "...的原因是...", "example": "The reason for the delay is that the train's engine malfunctioned."}
+    ]
+  },
+  "reason": {
+    "comment": "“reason” 是一个核心名词，但更具体的词汇可以阐明你所描述的原因类型，例如是逻辑、动机还是因素。",
+    "suggestions": [
+      {"word": "cause", "meaning": "原因，起因 (强调直接的因果)", "example": "The main cause of the accident was driver error."},
+      {"word": "factor", "meaning": "因素 (强调是多个原因之一)", "example": "Economic factors played a significant role in the decision."},
+      {"word": "rationale / justification", "meaning": "根本原因 / 正当理由 (强调决策背后的逻辑)", "example": "What is the rationale behind this new strategy?"},
+      {"word": "motivation", "meaning": "动机 (强调内在驱动力)", "example": "His motivation for studying hard was to get into a good university."},
+      {"word": "basis", "meaning": "基础，根据", "example": "There is no scientific basis for these claims."}
+    ]
+  },
+  "effect": {
+    "comment": "“effect” 是表示结果的通用词。使用更具体的名词可以更生动地描述结果的性质、范围或重要性。",
+    "suggestions": [
+      {"word": "consequence", "meaning": "后果 (常带有重大或负面的含义)", "example": "The environmental consequences of deforestation are severe."},
+      {"word": "impact", "meaning": "影响 (通常指强大、直接的作用)", "example": "The new technology has had a huge impact on the industry."},
+      {"word": "outcome", "meaning": "结果，结局 (强调过程的最终结果)", "example": "It is still too early to predict the outcome of the election."},
+      {"word": "repercussion", "meaning": "反响，后果 (常指间接、意料之外的连锁反应)", "example": "The decision to close the factory had serious repercussions for the local community."},
+      {"word": "implication", "meaning": "可能的影响，含义", "example": "The study has profound implications for future research."}
+    ]
+  },
+  "like (for giving examples)": {
+    "comment": "在口语中用 “like” 来举例非常普遍，但对于学术和专业写作而言则过于口语化，必须替换。",
+    "suggestions": [
+      {"word": "for example / for instance", "meaning": "例如", "example": "Many countries are facing similar issues. For example, Germany is dealing with an aging population."},
+      {"word": "such as", "meaning": "例如，诸如 (用于句中)", "example": "She enjoys outdoor activities, such as hiking and cycling."},
+      {"word": "including", "meaning": "包括", "example": "The price is all-inclusive, including flights, accommodation, and meals."},
+      {"word": "namely", "meaning": "即，也就是 (用于引出具体细节)", "example": "We need to focus on the main problem, namely, the lack of funding."},
+      {"word": "a case in point", "meaning": "一个恰当的例子", "example": "Urban renewal often leads to gentrification; the downtown district is a case in point."}
+    ]
+  },
+  "try": {
+    "comment": "“try” 是一个表示尝试的通用动词。更具体的动词可以传达更多关于所涉努力和方法的信息。",
+    "suggestions": [
+      {"word": "attempt to", "meaning": "试图 (更正式)", "example": "He will attempt to break the world record tomorrow."},
+      {"word": "strive to / endeavor to", "meaning": "努力，奋斗 (强调付出了巨大努力)", "example": "We must strive to meet the highest standards."},
+      {"word": "seek to", "meaning": "寻求，力图", "example": "The organization seeks to promote cultural exchange."},
+      {"word": "undertake", "meaning": "从事，承担 (通常指较大的任务或项目)", "example": "She is about to undertake a major research project."},
+      {"word": "make an effort to", "meaning": "努力去做某事", "example": "Please make an effort to arrive on time."}
+    ]
+  },
+  "really / actually": {
+    "comment": "这两个词在口语中用于加强语气，但在正式写作中往往是冗余的。删除它们或使用更强的词汇通常是更好的选择。",
+    "suggestions": [
+      {"word": "really big -> vast / enormous", "meaning": "用更强的形容词代替", "example": "The difference in scale is vast."},
+      {"word": "actually, it is... -> It is, in fact,...", "meaning": "用更正式的短语", "example": "It is, in fact, the most effective method available."},
+      {"word": "truly / genuinely", "meaning": "真正地，确实地 (用于强调真诚)", "example": "He is a genuinely kind person."},
+      {"word": "indeed", "meaning": "确实，实际上 (用于证实或强调)", "example": "The results were very good indeed."},
+      {"word": "(Omit the word)", "meaning": "直接省略", "example": "'The movie was really good' becomes 'The movie was excellent.'"}
+    ]
+  },
+  "change": {
+    "comment": "“change” 是一个中性的通用动词。更具体的动词可以传达变化的性质、方向和幅度，使描述更加生动。",
+    "suggestions": [
+      {"word": "transform", "meaning": "彻底改变，使改观 (强调巨大、根本的变化)", "example": "The internet has transformed the way we communicate."},
+      {"word": "alter", "meaning": "(部分)改变，修改", "example": "They had to alter their plans due to the bad weather."},
+      {"word": "modify", "meaning": "修改，调整 (通常指较小的、技术性的改动)", "example": "The design was modified to improve its efficiency."},
+      {"word": "adapt", "meaning": "适应，改编", "example": "Many businesses have had to adapt to the new economic climate."},
+      {"word": "evolve", "meaning": "演变，进化", "example": "Her thinking has evolved over the years."}
+    ]
+  },
+  "improve": {
+    "comment": "“improve” 是一个积极但笼统的词。使用更具描述性的动词可以突出是哪个方面得到了改善，例如是功能、效率还是体验。",
+    "suggestions": [
+      {"word": "enhance", "meaning": "增强，提升 (价值、品质、体验)", "example": "The new features are designed to enhance the user experience."},
+      {"word": "optimize", "meaning": "优化，使…最优化", "example": "We need to optimize our workflow to reduce costs."},
+      {"word": "refine", "meaning": "完善，提炼", "example": "The author continued to refine her manuscript until it was perfect."},
+      {"word": "strengthen", "meaning": "加强，巩固", "example": "The company is taking steps to strengthen its market position."},
+      {"word": "upgrade", "meaning": "升级", "example": "It's time to upgrade our computer systems."}
+    ]
+  },
+  "find / find out": {
+    "comment": "这两个词常用于发现信息，但在正式或研究语境中，使用更精确的动词可以更好地反映发现过程的严谨性。",
+    "suggestions": [
+      {"word": "discover", "meaning": "发现 (通常是首次发现未知事物)", "example": "Scientists have discovered a new species of frog."},
+      {"word": "determine", "meaning": "确定，查明 (经过研究或计算后得出结论)", "example": "The investigation will seek to determine the cause of the accident."},
+      {"word": "ascertain", "meaning": "查明，弄清 (非常正式，强调确保真实性)", "example": "The police are trying to ascertain the man's identity."},
+      {"word": "identify", "meaning": "识别，发现", "example": "The study aims to identify the key factors behind this trend."},
+      {"word": "reveal / uncover", "meaning": "揭示 / 揭露", "example": "The documents uncovered a history of corruption."}
+    ]
+  },
+  "part": {
+    "comment": "“part” 是一个非常笼统的词，指整体中的一部分。更具体的名词可以增加清晰度和技术精确性。",
+    "suggestions": [
+      {"word": "component / element", "meaning": "组成部分 / 要素 (常指系统的核心构成)", "example": "The CPU is a crucial component of a computer."},
+      {"word": "section / segment", "meaning": "部分 / (分割的)部分", "example": "The final section of the report summarizes the findings."},
+      {"word": "aspect", "meaning": "方面 (强调问题的不同层面)", "example": "We must consider every aspect of the problem."},
+      {"word": "portion", "meaning": "一部分，一份", "example": "A significant portion of the budget was allocated to research."},
+      {"word": "module", "meaning": "模块，单元 (常用于课程、软件)", "example": "The course consists of five distinct modules."}
+    ]
+  },
+  "way / method": {
+    "comment": "这两个词常用于描述做事的方式。其替代词可以更具体地表达是策略、技术还是程序，听起来也更专业。",
+    "suggestions": [
+      {"word": "approach", "meaning": "方法，途径 (强调看问题的角度和处理方式)", "example": "The company has adopted a new approach to marketing."},
+      {"word": "technique", "meaning": "技术，技巧", "example": "The artist uses a unique painting technique."},
+      {"word": "procedure", "meaning": "程序，步骤", "example": "You must follow the standard safety procedure."},
+      {"word": "strategy", "meaning": "策略 (为实现长期目标的计划)", "example": "The government has developed a long-term strategy for economic growth."},
+      {"word": "manner", "meaning": "方式，方法 (强调行为方式)", "example": "He conducted the interview in a very professional manner."}
+    ]
+  },
+  "in conclusion": {
+    "comment": "这是一个正确但被过度使用的结论开头语。使用多样化的语言可以让你的总结段落更自然、更有力。",
+    "suggestions": [
+      {"word": "To summarize / In summary", "meaning": "总而言之", "example": "In summary, the key findings suggest a need for policy change."},
+      {"word": "In short / In brief", "meaning": "简而言之", "example": "In short, the project was a resounding success."},
+      {"word": "Ultimately / In the final analysis", "meaning": "最终，归根结底", "example": "Ultimately, the decision rests with the manager."},
+      {"word": "Taking everything into account", "meaning": "综合考虑所有因素", "example": "Taking everything into account, we believe our proposal is the most viable."},
+      {"word": "It is clear from the above that...", "meaning": "综上所述，显而易见...", "example": "It is clear from the above that a new approach is needed."}
+    ]
+  },
+  "seem": {
+    "comment": "“seem” 在表达不确定性或外观时很有用，但其他词可以提供更细微的差别或更客观、正式的语气。",
+    "suggestions": [
+      {"word": "appear to be", "meaning": "显得，好像", "example": "The results appear to be consistent with our hypothesis."},
+      {"word": "give the impression of", "meaning": "给人…的印象", "example": "His calm demeanor gives the impression of confidence."},
+      {"word": "It is apparent that...", "meaning": "很明显...", "example": "It is apparent that further research is needed."},
+      {"word": "suggest / indicate", "meaning": "表明，暗示 (用于描述证据)", "example": "The evidence suggests that he is innocent."}
+    ]
+  },
+  "give": {
+    "comment": "“give” 是一个极其常见的动词。用更具体的动词替换它，可以使动作的意图更清晰、更正式，例如是提供信息、授予机会还是贡献想法。",
+    "suggestions": [
+      {"word": "provide", "meaning": "提供 (最常用的正式替代词)", "example": "The report provides a detailed analysis of the market."},
+      {"word": "offer", "meaning": "提供 (机会、帮助、建议)", "example": "The company offered him a senior position."},
+      {"word": "present", "meaning": "呈现，陈述 (展示信息、发现)", "example": "She will present her findings at the conference."},
+      {"word": "grant", "meaning": "授予 (许可、权利、资金)", "example": "The foundation granted them $1 million for their research."},
+      {"word": "contribute", "meaning": "贡献", "example": "He contributed some valuable ideas to the discussion."}
+    ]
+  },
+  "need": {
+    "comment": "“need” 强烈地表达了必要性，但在学术或专业语境中，使用更正式或细致的语言可以更好地说明需求的性质。",
+    "suggestions": [
+      {"word": "require", "meaning": "需要，要求 (正式，强调客观条件)", "example": "This position requires at least five years of experience."},
+      {"word": "It is necessary to", "meaning": "有必要去…", "example": "It is necessary to update the software immediately."},
+      {"word": "demand / call for", "meaning": "(强烈)要求，需要", "example": "The situation demands immediate action."},
+      {"word": "entail", "meaning": "牵涉，需要 (强调作为必然结果)", "example": "A leadership role entails a great deal of responsibility."},
+      {"word": "necessitate", "meaning": "使成为必要 (非常正式)", "example": "The decline in sales will necessitate a change in strategy."}
+    ]
+  },
+  "ask": {
+    "comment": "“ask” 是一个表示询问的通用词。更具体的动词可以传达问题的语气、背景和目的，例如是正式询问、请求还是质询。",
+    "suggestions": [
+      {"word": "inquire", "meaning": "询问 (正式)", "example": "I am writing to inquire about your current job openings."},
+      {"word": "request", "meaning": "请求，要求", "example": "The user requested more information about the product."},
+      {"word": "question", "meaning": "质问，讯问", "example": "The police questioned the witness for two hours."},
+      {"word": "consult", "meaning": "咨询，请教", "example": "You should consult a financial advisor before making any investments."},
+      {"word": "query", "meaning": "查询，提问 (常用于书面或技术场景)", "example": "Our system can query the database for specific records."}
+    ]
+  },
+  "clear": {
+    "comment": "“clear” 是一个形容某事易于理解的常用词。更具描述性的词汇可以增加强调或正式感，例如是逻辑清晰还是表达明确。",
+    "suggestions": [
+      {"word": "explicit", "meaning": "明确的，清楚的", "example": "The instructions need to be explicit to avoid any confusion."},
+      {"word": "apparent / evident", "meaning": "显而易见的", "example": "It was apparent from their faces that they were disappointed."},
+      {"word": "unambiguous", "meaning": "毫不含糊的，没有歧义的", "example": "The contract language must be unambiguous."},
+      {"word": "lucid", "meaning": "清晰易懂的，明朗的 (常用于写作或解释)", "example": "He is known for his lucid writing style."},
+      {"word": "straightforward", "meaning": "简单的，易懂的", "example": "The process is surprisingly straightforward."}
+    ]
+  },
+  "tell": {
+    "comment": "和 “say” 一样，“tell” 是一个常见的转述动词。使用更具体的动词可以表明沟通的方式或目的，例如是通知、指示还是建议。",
+    "suggestions": [
+      {"word": "inform", "meaning": "通知 (正式)", "example": "Please inform us of any changes to your contact details."},
+      {"word": "notify", "meaning": "通知，告知 (常用于官方通知)", "example": "All applicants will be notified of the results by email."},
+      {"word": "advise", "meaning": "建议，劝告", "example": "His doctor advised him to rest and drink plenty of fluids."},
+      {"word": "instruct", "meaning": "指示，命令", "example": "The manager instructed the team to complete the report by Friday."},
+      {"word": "recount", "meaning": "叙述，讲述", "example": "He recounted his adventures to an eager audience."}
+    ]
+  },
+  "rich / poor": {
+    "comment": "这些是基础且有时带有感情色彩的术语。在社会、经济或学术讨论中，更中性、更精确的语言更受青睐。",
+    "suggestions": [
+      {"word": "rich -> wealthy / affluent", "meaning": "富裕的", "example": "They live in an affluent neighborhood."},
+      {"word": "rich -> prosperous", "meaning": "繁荣的", "example": "The country has become a prosperous nation."},
+      {"word": "poor -> impoverished / destitute", "meaning": "贫困的 / 赤贫的", "example": "The war left thousands of people destitute."},
+      {"word": "poor -> low-income", "meaning": "低收入的 (中性，描述性)", "example": "The policy provides tax relief for low-income families."},
+      {"word": "poor -> disadvantaged / underprivileged", "meaning": "处境不利的 / 贫困的", "example": "The program aims to help children from disadvantaged backgrounds."}
+    ]
+  },
+  "job": {
+    "comment": "“job” 是一个常用但非正式的词。在简历、求职信等专业文件中，使用更具体或正式的术语通常更好。",
+    "suggestions": [
+      {"word": "position / role", "meaning": "职位 / 角色", "example": "She has been appointed to the position of Marketing Director."},
+      {"word": "profession / career", "meaning": "职业 / 生涯", "example": "He chose teaching as his profession."},
+      {"word": "occupation", "meaning": "职业 (常用于官方表格)", "example": "Please state your name, age, and occupation."},
+      {"word": "vocation", "meaning": "(认为适合自己的)职业，使命感", "example": "For her, nursing wasn't just a job; it was a vocation."},
+      {"word": "employment", "meaning": "工作，就业", "example": "He is currently seeking full-time employment."}
+    ]
+  },
+  "live in": {
+    "comment": "这个动词短语非常普遍，但单个词的替代品听起来可以更正式或更具文学性。",
+    "suggestions": [
+      {"word": "reside in", "meaning": "居住于 (正式)", "example": "He currently resides in a suburb of Paris."},
+      {"word": "inhabit", "meaning": "栖息于，居住于", "example": "The island is inhabited by a diverse range of wildlife."},
+      {"word": "dwell", "meaning": "居住 (略带文学或古风)", "example": "They dwell in a small cottage in the countryside."},
+      {"word": "be based in", "meaning": "总部设在，常驻", "example": "Our company is based in Singapore."},
+      {"word": "occupy", "meaning": "居住，占用 (某个空间)", "example": "The tenants will occupy the apartment starting next month."}
+    ]
+  },
+  "see": {
+    "comment": "“see” 是一个基础的感知动词。更具体的动词可以澄清你的意思是物理上的“看见”、智力上的“理解”还是作为“目击者”。",
+    "suggestions": [
+      {"word": "perceive", "meaning": "感知，察觉 (强调认知过程)", "example": "She perceived a subtle change in his attitude."},
+      {"word": "witness", "meaning": "目击，见证", "example": "Several people witnessed the accident."},
+      {"word": "observe", "meaning": "观察 (带有目的性和细致性)", "example": "The scientist will observe the specimen under a microscope."},
+      {"word": "notice", "meaning": "注意到 (强调无意中的发现)", "example": "I didn't notice that he had left the room."},
+      {"word": "envision / visualize", "meaning": "设想，想象", "example": "He could not envision a future without her."}
+    ]
+  },
+  "happy": {
+    "comment": "“happy” 是一个表达积极情绪的通用词。更具描述性的词汇可以传达快乐的强度和性质，例如是满足、喜悦还是狂喜。",
+    "suggestions": [
+      {"word": "delighted / pleased", "meaning": "高兴的，愉快的", "example": "I am delighted to accept your invitation."},
+      {"word": "joyful / cheerful", "meaning": "充满喜悦的 / 开朗的", "example": "It was a joyful reunion of old friends."},
+      {"word": "content / satisfied", "meaning": "满足的，满意的", "example": "He was content with his simple life in the village."},
+      {"word": "ecstatic / elated", "meaning": "欣喜若狂的 / 兴高采烈的", "example": "She was elated to hear that she had won the scholarship."},
+      {"word": "jubilant", "meaning": "欢欣鼓舞的 (常用于庆祝胜利)", "example": "The fans were jubilant after their team's victory."}
+    ]
+  },
+  "sad": {
+    "comment": "和“happy”一样，“sad”是一个基础的情感描述词。使用更具体的词汇可以更清晰地描绘负面情绪的层次，例如是悲伤、沮丧还是忧郁。",
+    "suggestions": [
+      {"word": "sorrowful / mournful", "meaning": "悲伤的 / 哀悼的", "example": "She had a sorrowful expression on her face."},
+      {"word": "miserable / dejected", "meaning": "痛苦的 / 沮丧的", "example": "He felt miserable after failing the exam."},
+      {"word": "melancholy", "meaning": "忧郁的 (一种深沉、持久的悲伤)", "example": "A feeling of melancholy descended upon him as evening fell."},
+      {"word": "disheartened", "meaning": "灰心的，气馁的", "example": "They were disheartened by the lack of progress."},
+      {"word": "somber", "meaning": "忧郁的，严肃的 (常用于描述气氛)", "example": "The news cast a somber mood over the gathering."}
+    ]
+  },
+  "get worse": {
+    "comment": "这个动词短语在口语中非常普遍。在正式写作中，单个词的、更正式的替代品，如 'deteriorate'，更受欢迎。",
+    "suggestions": [
+      {"word": "deteriorate", "meaning": "恶化 (常指质量、健康、状况)", "example": "The patient's condition began to deteriorate overnight."},
+      {"word": "worsen", "meaning": "(使)恶化", "example": "The economic situation is expected to worsen before it improves."},
+      {"word": "decline", "meaning": "下降，衰退", "example": "The company's profits have declined in recent years."},
+      {"word": "degenerate", "meaning": "退化，堕落", "example": "The debate quickly degenerated into personal attacks."},
+      {"word": "escalate", "meaning": "(冲突、危机)升级，加剧", "example": "The protests escalated into a full-blown crisis."}
+    ]
+  },
+  "always / never": {
+    "comment": "这两个绝对副词语气非常强烈且通常不准确。在学术和分析性写作中，最好使用更严谨、更细致的频率语言，以避免以偏概全。",
+    "suggestions": [
+      {"word": "always -> usually / typically / generally", "meaning": "通常", "example": "The climate is generally warm and humid."},
+      {"word": "always -> consistently / invariably", "meaning": "一贯地，总是", "example": "She has consistently delivered high-quality work."},
+      {"word": "never -> rarely / seldom", "meaning": "很少，罕见地", "example": "Such opportunities rarely arise."},
+      {"word": "never -> unlikely / improbable", "meaning": "不太可能的", "example": "It is highly unlikely that he will agree to the terms."},
+      {"word": "Use qualifiers (almost, nearly, etc.)", "meaning": "使用限定词", "example": "There are almost never any exceptions to this rule."}
+    ]
+  },
+  "fast / slow": {
+    "comment": "这是描述速度的基础词汇。更具体或生动的语言能让你的写作更吸引人、更精确，例如是“迅速的”还是“逐渐的”。",
+    "suggestions": [
+      {"word": "fast -> rapid", "meaning": "迅速的 (常用于变化、发展)", "example": "The city has undergone rapid development."},
+      {"word": "fast -> swift / prompt", "meaning": "迅速的 / 及时的 (常用于行动、回复)", "example": "Thank you for your prompt reply."},
+      {"word": "slow -> gradual", "meaning": "逐渐的", "example": "There has been a gradual improvement in his health."},
+      {"word": "slow -> steady", "meaning": "稳步的", "example": "The project is making slow but steady progress."},
+      {"word": "slow -> leisurely", "meaning": "悠闲的，从容的", "example": "We took a leisurely stroll through the park."}
+    ]
+  },
+  "let": {
+    "comment": "“let”是表示允许的常用动词，但可能显得非正式。在专业或官方场合，通常使用更正式的替代词。",
+    "suggestions": [
+      {"word": "allow / permit", "meaning": "允许 ('permit' 更为正式)", "example": "The new rules permit employees to work from home two days a week."},
+      {"word": "enable", "meaning": "使能够", "example": "This pass enables you to access all restricted areas."},
+      {"word": "authorize", "meaning": "授权，批准", "example": "Only senior management can authorize this level of expenditure."},
+      {"word": "grant access to", "meaning": "授予…的权限", "example": "The IT department will grant you access to the server."}
+    ]
+  },
+  "have / has (to indicate features)": {
+    "comment": "当用于描述特征或内容时（如“报告有三个部分”），“have”虽然语法正确但略显简单。使用更具描述性的动词能使写作更生动、更主动。",
+    "suggestions": [
+      {"word": "contain", "meaning": "包含 (指内部所含之物)", "example": "The document contains sensitive information."},
+      {"word": "include", "meaning": "包括 (作为整体的一部分)", "example": "The tour includes a visit to the local museum."},
+      {"word": "feature", "meaning": "以…为特色", "example": "The new phone features a more powerful camera."},
+      {"word": "possess", "meaning": "拥有 (正式，常用于品质、特征)", "example": "She possesses a remarkable ability to solve complex problems."},
+      {"word": "consist of / be composed of", "meaning": "由…组成", "example": "The committee consists of ten members."}
+    ]
+  },
+  "want": {
+    "comment": "“want” 直接表达欲望，在专业或学术写作中有时可能过于口语化或直白。使用更委婉或正式的表达方式通常更受欢迎。",
+    "suggestions": [
+      {"word": "wish to / would like to", "meaning": "希望", "example": "I would like to apply for the scholarship program."},
+      {"word": "seek to", "meaning": "寻求，力图", "example": "The company seeks to expand its operations in Asia."},
+      {"word": "desire", "meaning": "渴望 (语气更强，更正式)", "example": "He desired to make a difference in the world."},
+      {"word": "intend to", "meaning": "打算", "example": "We intend to complete the project by the end of the year."},
+      {"word": "aim to", "meaning": "旨在，力求", "example": "This study aims to investigate the effects of climate change."}
+    ]
+  },
+  "choose": {
+    "comment": "“choose”是做选择的标准动词。在官方或分析性语境中，使用更正式的替代词可以暗示选择的严肃性或过程的复杂性。",
+    "suggestions": [
+      {"word": "select", "meaning": "选择 (暗示经过仔细考虑和筛选)", "example": "The committee will select the best candidate for the job."},
+      {"word": "opt for", "meaning": "选择 (常指在一系列选项中做出选择)", "example": "Many consumers opt for products with eco-friendly packaging."},
+      {"word": "decide on", "meaning": "决定", "example": "Have you decided on a color for the walls?"},
+      {"word": "elect to", "meaning": "(正式)决定做某事", "example": "She elected to continue her studies at a different university."},
+      {"word": "prefer", "meaning": "更喜欢，倾向于选择", "example": "Given the choice, I would prefer to work from home."}
+    ]
+  },
+  "different": {
+    "comment": "“different” 陈述了差异，但没有描述其性质。更精确的形容词能让你的比较更生动、信息更丰富。",
+    "suggestions": [
+      {"word": "distinct", "meaning": "截然不同的，独特的", "example": "The two concepts are distinct and should not be confused."},
+      {"word": "diverse", "meaning": "多样的", "example": "The conference attracted a diverse group of participants."},
+      {"word": "varied", "meaning": "各式各样的", "example": "His hobbies are quite varied."},
+      {"word": "dissimilar / contrasting", "meaning": "不相似的 / 对比鲜明的", "example": "Their political views are completely dissimilar."},
+      {"word": "unique to", "meaning": "…所独有的", "example": "This species of bird is unique to the island."}
+    ]
+  },
+  "same": {
+    "comment": "和“different”一样，“same”是一个基础的比较词。使用更成熟的语言可以提高你比较的质量，使其更具说服力。",
+    "suggestions": [
+      {"word": "identical", "meaning": "完全相同的", "example": "The two samples were identical in every respect."},
+      {"word": "equivalent", "meaning": "相等的，等同的 (在价值、功能上)", "example": "A degree from that college is equivalent to one from a top university."},
+      {"word": "comparable", "meaning": "可比较的，类似的", "example": "The quality of their work is comparable to ours."},
+      {"word": "uniform / consistent", "meaning": "一致的，统一的", "example": "All the rooms have a uniform style of decoration."},
+      {"word": "analogous to", "meaning": "与…类似", "example": "The structure of an atom is sometimes considered analogous to that of a solar system."}
+    ]
+  },
+  "sure": {
+    "comment": "“sure” 是表达确定性的常用方式，但听起来可能非正式。在需要表达坚定立场或高度确定性时，通常需要更正式的语言。",
+    "suggestions": [
+      {"word": "confident", "meaning": "自信的，确信的", "example": "I am confident that we will succeed."},
+      {"word": "certain", "meaning": "确定的", "example": "It is certain that prices will continue to rise."},
+      {"word": "convinced", "meaning": "确信的 (强调信念)", "example": "She is convinced of his innocence."},
+      {"word": "positive", "meaning": "确信无疑的", "example": "Are you positive you locked the door?"},
+      {"word": "undoubtedly / without a doubt", "meaning": "毫无疑问地", "example": "She is undoubtedly the best person for the job."}
+    ]
+  },
+  "picture": {
+    "comment": "“picture” 是一个通用术语。在艺术、数据分析或媒体等特定语境中，使用更精确的术语（如图表、照片、插图）是专业性的体现。",
+    "suggestions": [
+      {"word": "image", "meaning": "图像", "example": "The satellite sent back high-resolution images of the planet."},
+      {"word": "photograph", "meaning": "照片", "example": "The article was accompanied by a black-and-white photograph."},
+      {"word": "diagram / chart / graph", "meaning": "图表", "example": "This diagram illustrates how the machine works."},
+      {"word": "illustration", "meaning": "插图", "example": "The children's book has beautiful illustrations."},
+      {"word": "depiction / representation", "meaning": "描绘 / 表现", "example": "The film's depiction of historical events has been criticized."}
+    ]
+  },
+  "about (to describe a topic)": {
+    "comment": "使用“about”来介绍主题（如“a book about history”）非常普遍但可能过于简单。更正式的介词或短语可以提升你写作的学术气息。",
+    "suggestions": [
+      {"word": "regarding / concerning", "meaning": "关于 (正式)", "example": "I am writing to you regarding the recent policy change."},
+      {"word": "on the subject of", "meaning": "关于…的主题", "example": "He wrote a detailed report on the subject of urban planning."},
+      {"word": "that explores / examines", "meaning": "一个探索/审视…的", "example": "It is a documentary that explores the challenges of deep-sea diving."},
+      {"word": "a study of", "meaning": "一项关于…的研究", "example": "Her latest publication is a study of ancient Roman architecture."},
+      {"word": "pertaining to", "meaning": "与…有关的 (非常正式)", "example": "We have gathered all the documents pertaining to this case."}
+    ]
+  },
+  "understand": {
+    "comment": "“understand” 是一个清晰常用的动词。然而，更具体的词可以传达理解的深度或性质，例如是初步掌握还是彻底领会。",
+    "suggestions": [
+      {"word": "comprehend", "meaning": "理解，领会 (强调更深、更彻底的理解)", "example": "He was unable to comprehend the complexity of the issue."},
+      {"word": "grasp", "meaning": "理解，掌握 (常用于抓住要点或难懂的概念)", "example": "She quickly grasped the main principles of the theory."},
+      {"word": "recognize", "meaning": "认识到，意识到", "example": "They recognized the need for immediate action."},
+      {"word": "appreciate", "meaning": "理解，意识到 (常用于理解某事的价值、重要性或难度)", "example": "I appreciate the challenges you are facing."},
+      {"word": "fathom", "meaning": "理解，看穿 (用于非常难以理解的事物)", "example": "I can't fathom why he would do such a thing."}
+    ]
+  },
+  "hard / difficult": {
+    "comment": "这是描述困难的标准词。更具体的替代词可以解释某事困难的“原因”，例如是因其复杂、要求高还是需要巨大努力。",
+    "suggestions": [
+      {"word": "challenging", "meaning": "有挑战性的 (暗示困难但能激发人)", "example": "It was a challenging but rewarding project."},
+      {"word": "demanding / taxing", "meaning": "要求高的 / 费力的", "example": "Being a doctor is a very demanding profession."},
+      {"word": "complex / complicated", "meaning": "复杂的", "example": "The instructions were too complex to follow."},
+      {"word": "arduous / strenuous", "meaning": "艰苦的 / 费力的 (强调需要巨大努力)", "example": "He embarked on an arduous journey across the mountains."},
+      {"word": "tricky", "meaning": "棘手的，难办的 (略带非正式)", "example": "Parking in the city center can be tricky."}
+    ]
+  },
+  "go up / increase": {
+    "comment": "这两个动词很适合描述上升趋势，但更生动或具体的动词（如“飙升”或“加速”）可以增加分析的深度和画面的冲击力。",
+    "suggestions": [
+      {"word": "rise / climb", "meaning": "上升", "example": "Temperatures are expected to climb throughout the week."},
+      {"word": "soar / surge", "meaning": "猛增，飙升", "example": "Stock prices soared after the announcement."},
+      {"word": "accelerate", "meaning": "加速", "example": "Inflation has accelerated in recent months."},
+      {"word": "escalate", "meaning": "(逐步)升高，增强 (常用于冲突、危机)", "example": "The conflict has escalated into a full-scale war."},
+      {"word": "expand", "meaning": "扩大，扩张", "example": "The company plans to expand its operations overseas."}
+    ]
+  },
+  "go down / decrease": {
+    "comment": "“go up”的反义词。使用更具描述性的语言（如“暴跌”或“减弱”）可以更好地说明下降趋势的性质和速度。",
+    "suggestions": [
+      {"word": "fall / drop / decline", "meaning": "下降", "example": "The company's market share has declined significantly."},
+      {"word": "plunge / plummet", "meaning": "暴跌", "example": "The stock market plummeted following the news."},
+      {"word": "diminish", "meaning": "减少，减弱", "example": "His enthusiasm for the project has diminished over time."},
+      {"word": "subside", "meaning": "(风暴、情绪、疼痛)减弱，平息", "example": "After the storm, the winds gradually subsided."},
+      {"word": "contract / shrink", "meaning": "收缩，缩小", "example": "The market for traditional cameras has shrunk dramatically."}
+    ]
+  },
+  "wrong (as in an error)": {
+    "comment": "在描述错误时，“wrong”可能显得直白且带有指责意味。更精确的词可以在不听起来过于批判的情况下指明错误的性质。",
+    "suggestions": [
+      {"word": "incorrect / inaccurate", "meaning": "不正确的 / 不精确的", "example": "The figures in this report are inaccurate."},
+      {"word": "mistaken / in error", "meaning": "搞错了的", "example": "I'm afraid you are mistaken about the date."},
+      {"word": "flawed", "meaning": "有缺陷的 (常指逻辑、论证)", "example": "His argument is fundamentally flawed."},
+      {"word": "erroneous", "meaning": "错误的 (非常正式)", "example": "He came to an erroneous conclusion based on the limited data."},
+      {"word": "faulty", "meaning": "有错误的，有缺陷的 (常用于设备、系统)", "example": "The accident was caused by a faulty brake system."}
+    ]
+  },
+  "worker / boss": {
+    "comment": "这是职业角色的常用但非正式术语。在商务和正式写作中，使用更正式和具体的头衔（如雇员、主管）是标准做法。",
+    "suggestions": [
+      {"word": "worker -> employee / staff member", "meaning": "雇员 / 职员", "example": "The company has over 500 employees."},
+      {"word": "worker -> personnel / workforce", "meaning": "(全体)人员 / 劳动力", "example": "All personnel are required to attend the safety training."},
+      {"word": "boss -> manager / supervisor", "meaning": "经理 / 主管", "example": "Please submit your report to your immediate supervisor."},
+      {"word": "boss -> employer", "meaning": "雇主", "example": "The company is one of the largest employers in the region."},
+      {"word": "boss -> director / executive", "meaning": "总监 / 高管", "example": "The decision was made by the board of directors."}
+    ]
+  },
+  "goal / aim": {
+    "comment": "这是两个不错的标准词。替代词可以提供不同的重点，例如是可衡量的具体指标、长期的愿景还是项目的根本意图。",
+    "suggestions": [
+      {"word": "objective", "meaning": "目标，目的 (常指具体的、可衡量的)", "example": "Our primary objective is to increase sales by 10%."},
+      {"word": "target", "meaning": "指标，目标", "example": "The team successfully met its production target for the quarter."},
+      {"word": "ambition / aspiration", "meaning": "抱负，渴望", "example": "Her ambition was to become a successful entrepreneur."},
+      {"word": "vision", "meaning": "愿景 (强调长期、宏大)", "example": "The company's vision is to be a global leader in sustainable technology."},
+      {"word": "purpose", "meaning": "意图，目的", "example": "The purpose of this research is to test the new hypothesis."}
+    ]
+  },
+  "agree": {
+    "comment": "“agree” 是表达赞同的直接方式。在学术写作中，更细致的语言可以显示赞同的程度或依据，使立场更具说服力。",
+    "suggestions": [
+      {"word": "concur", "meaning": "同意，赞同 (非常正式)", "example": "The committee concurred with the reviewer's assessment."},
+      {"word": "be in accordance with", "meaning": "与…一致", "example": "The results are in accordance with our initial hypothesis."},
+      {"word": "support / endorse", "meaning": "支持 / 赞同", "example": "I fully endorse the proposal to improve public transport."},
+      {"word": "share the view that...", "meaning": "同样认为...", "example": "Many experts share the view that the policy needs to be revised."},
+      {"word": "acknowledge", "meaning": "承认 (常用于承认对方论点中的合理部分)", "example": "I acknowledge your point about the budget constraints, but I still believe we should proceed."}
+    ]
+  },
+  "disagree": {
+    "comment": "和“agree”一样，“disagree”很直接。在议论文中，更成熟的措辞能让你的反对意见听起来更理性、更具分析性，而不是简单的情绪对抗。",
+    "suggestions": [
+      {"word": "challenge / question", "meaning": "质疑", "example": "Some scientists have challenged the validity of this theory."},
+      {"word": "dispute / contest", "meaning": "辩驳，争论", "example": "He disputed the accuracy of the official report."},
+      {"word": "express reservations about", "meaning": "对…表示保留意见", "example": "While I agree in principle, I must express reservations about the implementation costs."},
+      {"word": "A counterargument is that...", "meaning": "一个反对的论点是...", "example": "A counterargument is that this approach ignores potential side effects."},
+      {"word": "It is questionable whether...", "meaning": "...是值得怀疑的", "example": "It is questionable whether this method is truly effective in the long run."}
+    ]
+  },
+  "I think... (phrase)": {
+    "comment": "用“I think”开头会使你的论点听起来过于主观和个人化，从而削弱其说服力。在正式写作中，应使用更客观、更权威的措辞。",
+    "suggestions": [
+      {"word": "It can be argued that...", "meaning": "可以说…", "example": "It can be argued that technology has a significant impact on modern society."},
+      {"word": "The evidence suggests that...", "meaning": "证据表明…", "example": "The evidence suggests that this approach is the most effective."},
+      {"word": "It is apparent that...", "meaning": "显而易见…", "example": "It is apparent that a new strategy is needed to address the issue."},
+      {"word": "This analysis indicates that...", "meaning": "本分析表明…", "example": "This analysis indicates that the market is shifting towards sustainable products."},
+      {"word": "(Simply state the point)", "meaning": "(直接陈述观点)", "example": "'I think the company should invest more' becomes 'The company should invest more to remain competitive.'"}
+    ]
+  },
+  "support (an idea or claim)": {
+    "comment": "“support”是个不错的动词，但更具体的替代词可以阐明证据是“如何”支持一个主张的，例如是通过证实、加强还是验证。",
+    "suggestions": [
+      {"word": "substantiate / corroborate", "meaning": "证实 (提供证据)", "example": "Further research is needed to substantiate these claims."},
+      {"word": "reinforce", "meaning": "加强", "example": "The latest data reinforces the initial findings."},
+      {"word": "demonstrate", "meaning": "证明，表明", "example": "The experiment demonstrates the effectiveness of the new drug."},
+      {"word": "validate", "meaning": "验证，证实", "example": "The results of the second study validate the conclusions of the first."},
+      {"word": "be consistent with", "meaning": "与…一致", "example": "This observation is consistent with the theory of evolution."}
+    ]
+  },
+  "nice": {
+    "comment": "“nice” 是一个非常弱且被滥用的积极形容词。用一个更具体、更具描述性的词来替换它，是提升写作生动性最简单有效的方法之一。",
+    "suggestions": [
+      {"word": "pleasant / agreeable", "meaning": "令人愉快的", "example": "We had a pleasant evening with our friends."},
+      {"word": "amiable / cordial", "meaning": "和蔼可亲的 / 友好的", "example": "He was an amiable host, making everyone feel welcome."},
+      {"word": "thoughtful / considerate", "meaning": "体贴的，考虑周到的", "example": "It was very thoughtful of you to bring flowers."},
+      {"word": "charming / delightful", "meaning": "迷人的 / 令人愉快的", "example": "The cottage was absolutely charming."},
+      {"word": "impressive", "meaning": "令人印象深刻的", "example": "She has an impressive command of the English language."}
+    ]
+  },
+  "stop": {
+    "comment": "“stop”是个通用动词。更具体的替代词可以表明某事是自然结束、被阻止、被官方终止还是被中断。",
+    "suggestions": [
+      {"word": "cease", "meaning": "停止 (正式)", "example": "The company has ceased trading due to financial difficulties."},
+      {"word": "halt", "meaning": "(使)停止，停住", "example": "Production was halted due to a shortage of materials."},
+      {"word": "prevent", "meaning": "阻止，预防", "example": "The new measures are intended to prevent accidents from happening."},
+      {"word": "discontinue", "meaning": "中止，停止 (服务、产品)", "example": "The airline has discontinued its direct flight to the city."},
+      {"word": "terminate", "meaning": "终止 (合同、进程)", "example": "His employment was terminated with immediate effect."}
+    ]
+  },
+  "old": {
+    "comment": "“old” 是描述年龄的基础词。更具体的词可以澄清某物是古老的、过时的、传统的，还是仅仅指经验丰富。",
+    "suggestions": [
+      {"word": "ancient / antique", "meaning": "古代的 / 古董的", "example": "We visited an ancient temple in the mountains."},
+      {"word": "outdated / obsolete", "meaning": "过时的 / 废弃的", "example": "Their computer systems are completely obsolete."},
+      {"word": "traditional / conventional", "meaning": "传统的 / 常规的", "example": "They still use traditional farming methods passed down through generations."},
+      {"word": "mature / senior / veteran", "meaning": "成熟的 / 年长的 / 资深的", "example": "He is a veteran journalist with decades of experience."},
+      {"word": "vintage", "meaning": "(指酒、汽车等)老式的，经典的", "example": "He collects vintage sports cars from the 1960s."}
+    ]
+  }
+}

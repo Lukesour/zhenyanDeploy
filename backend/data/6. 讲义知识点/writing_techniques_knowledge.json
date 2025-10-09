@@ -1,0 +1,62 @@
+{
+  "description": "IELTS Task 2写作技巧和方法",
+  "five_step_method": {
+    "description": "从无到有构建大作文的5个步骤",
+    "steps": [
+      "1. 审题 - 识别题型、关键词、指令要求",
+      "2. 立意 - 确定总观点和态度",
+      "3. 构思 - 构建分论点和论证思路",
+      "4. 写作 - 按结构完成各段落",
+      "5. 检查 - 检查语法、词汇、逻辑"
+    ]
+  },
+  "argument_chain_extension": {
+    "description": "把论证链条写长的方法",
+    "basic_logic": "因果链条：A导致B，B导致C，C导致D",
+    "enhancement_logic": [
+      "添加具体细节",
+      "使用对比论证",
+      "引入例子说明",
+      "分析深层原因",
+      "探讨广泛影响"
+    ],
+    "sentence_building": "如何写出丰满的句子 - 添加修饰成分、从句、介词短语等"
+  },
+  "example_writing": {
+    "characteristics": [
+      "客观性 - 避免使用第一人称",
+      "普遍性 - 使用people, individuals等泛指"
+    ],
+    "writing_methods": {
+      "概括性例子": "For example, there is severe air pollution in every major city",
+      "对比性例子": "For example, an engine can only be designed by experts; conversely, individuals would struggle",
+      "具体性例子": "Some businesses, for instance, hire college interns for the summer"
+    },
+    "position_relationship": [
+      "例子在论述之后 - 先论证再举例",
+      "例子在论述之前 - 先举例再分析"
+    ]
+  },
+  "common_mistakes": {
+    "审题错误": [
+      "忽略关键限定词",
+      "误解题目指令",
+      "偏离题目重心"
+    ],
+    "结构错误": [
+      "段落划分不当",
+      "缺少必要段落",
+      "段落内容混乱"
+    ],
+    "论证错误": [
+      "论点与总观点不一致",
+      "论证不充分",
+      "逻辑关系混乱"
+    ],
+    "语言错误": [
+      "词汇使用不当",
+      "语法错误频繁",
+      "句式过于单一"
+    ]
+  }
+}
