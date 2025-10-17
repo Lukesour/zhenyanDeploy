@@ -1,0 +1,17 @@
+app_name: zhenyanv2-backend
+services:
+  - name: backend
+    type: web
+    docker:
+      dockerfile: backend/Dockerfile
+      build_context: backend
+    ports:
+      - port: 8000
+        protocol: http
+    regions:
+      - sin
+      - tyo
+    instance:
+      type: nano
+    routes:
+      - path: /
