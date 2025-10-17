@@ -17,11 +17,18 @@ class OCRService:
     """OCR文字提取服务"""
     
     def __init__(self):
-        # 配置Tesseract路径（macOS Homebrew安装路径）
-        if os.path.exists('/opt/homebrew/bin/tesseract'):
+        # 配置Tesseract路径（优先使用环境变量，其次常见安装路径）
+        tess_cmd = os.getenv('TESSERACT_CMD')
+        if tess_cmd and os.path.exists(tess_cmd):
+            pytesseract.pytesseract.tesseract_cmd = tess_cmd
+        elif os.path.exists('/opt/homebrew/bin/tesseract'):
             pytesseract.pytesseract.tesseract_cmd = '/opt/homebrew/bin/tesseract'
         elif os.path.exists('/usr/local/bin/tesseract'):
             pytesseract.pytesseract.tesseract_cmd = '/usr/local/bin/tesseract'
+        elif os.path.exists('/usr/bin/tesseract'):
+            pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
+        else:
+            logger.warning("未找到 Tesseract 可执行文件，请确保在生产环境中安装并配置 Tesseract。")
         
         # 支持的图片格式
         self.supported_formats = {'.jpg', '.jpeg', '.png', '.bmp', '.tiff', '.webp'}

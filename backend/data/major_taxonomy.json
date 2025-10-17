@@ -1,0 +1,904 @@
+{
+  "version": 1,
+  "generated_from": {
+    "major_data_source": "public/data/major_data_processed.json",
+    "frontend_data_source": "src/modules/study-planner/data/frontend_data.json"
+  },
+  "groups": [
+    {
+      "id": "business",
+      "name": "商科",
+      "order": 1
+    },
+    {
+      "id": "social_sciences",
+      "name": "社科",
+      "order": 2
+    },
+    {
+      "id": "engineering",
+      "name": "工科",
+      "order": 3
+    },
+    {
+      "id": "science",
+      "name": "理科",
+      "order": 4
+    }
+  ],
+  "directions": [
+    {
+      "id": "金工金数",
+      "name": "金工金数",
+      "group_id": "business",
+      "group_name": "商科",
+      "order": 0,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 178
+      }
+    },
+    {
+      "id": "金融",
+      "name": "金融",
+      "group_id": "business",
+      "group_name": "商科",
+      "order": 1,
+      "aliases": [
+        "Finance"
+      ],
+      "keywords": [],
+      "stats": {
+        "major_count": 355
+      }
+    },
+    {
+      "id": "商业分析",
+      "name": "商业分析",
+      "group_id": "business",
+      "group_name": "商科",
+      "order": 2,
+      "aliases": [
+        "BA",
+        "Business Analytics"
+      ],
+      "keywords": [],
+      "stats": {
+        "major_count": 139
+      }
+    },
+    {
+      "id": "经济",
+      "name": "经济",
+      "group_id": "business",
+      "group_name": "商科",
+      "order": 3,
+      "aliases": [
+        "Economics"
+      ],
+      "keywords": [],
+      "stats": {
+        "major_count": 326
+      }
+    },
+    {
+      "id": "会计",
+      "name": "会计",
+      "group_id": "business",
+      "group_name": "商科",
+      "order": 4,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 152
+      }
+    },
+    {
+      "id": "市场营销",
+      "name": "市场营销",
+      "group_id": "business",
+      "group_name": "商科",
+      "order": 5,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 200
+      }
+    },
+    {
+      "id": "信息系统",
+      "name": "信息系统",
+      "group_id": "business",
+      "group_name": "商科",
+      "order": 6,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 121
+      }
+    },
+    {
+      "id": "管理",
+      "name": "管理",
+      "group_id": "business",
+      "group_name": "商科",
+      "order": 7,
+      "aliases": [
+        "Management"
+      ],
+      "keywords": [],
+      "stats": {
+        "major_count": 346
+      }
+    },
+    {
+      "id": "人力资源管理",
+      "name": "人力资源管理",
+      "group_id": "business",
+      "group_name": "商科",
+      "order": 8,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 79
+      }
+    },
+    {
+      "id": "供应链管理",
+      "name": "供应链管理",
+      "group_id": "business",
+      "group_name": "商科",
+      "order": 9,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 78
+      }
+    },
+    {
+      "id": "创业与创新",
+      "name": "创业与创新",
+      "group_id": "business",
+      "group_name": "商科",
+      "order": 10,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 129
+      }
+    },
+    {
+      "id": "房地产",
+      "name": "房地产",
+      "group_id": "business",
+      "group_name": "商科",
+      "order": 11,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 50
+      }
+    },
+    {
+      "id": "旅游酒店管理",
+      "name": "旅游酒店管理",
+      "group_id": "business",
+      "group_name": "商科",
+      "order": 12,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 47
+      }
+    },
+    {
+      "id": "工商管理",
+      "name": "工商管理",
+      "group_id": "business",
+      "group_name": "商科",
+      "order": 13,
+      "aliases": [
+        "Business Administration",
+        "MBA"
+      ],
+      "keywords": [],
+      "stats": {
+        "major_count": 176
+      }
+    },
+    {
+      "id": "其他商科",
+      "name": "其他商科",
+      "group_id": "business",
+      "group_name": "商科",
+      "order": 14,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 44
+      }
+    },
+    {
+      "id": "战略与咨询",
+      "name": "战略与咨询",
+      "group_id": "business",
+      "group_name": "商科",
+      "order": 15,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 1
+      }
+    },
+    {
+      "id": "教育",
+      "name": "教育",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 100,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 478
+      }
+    },
+    {
+      "id": "建筑",
+      "name": "建筑",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 101,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 298
+      }
+    },
+    {
+      "id": "法律",
+      "name": "法律",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 102,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 562
+      }
+    },
+    {
+      "id": "社会学与社工",
+      "name": "社会学与社工",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 103,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 344
+      }
+    },
+    {
+      "id": "国际关系",
+      "name": "国际关系",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 104,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 455
+      }
+    },
+    {
+      "id": "哲学",
+      "name": "哲学",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 105,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 71
+      }
+    },
+    {
+      "id": "历史",
+      "name": "历史",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 106,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 298
+      }
+    },
+    {
+      "id": "公共政策与事务",
+      "name": "公共政策与事务",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 107,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 287
+      }
+    },
+    {
+      "id": "艺术",
+      "name": "艺术",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 108,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 226
+      }
+    },
+    {
+      "id": "公共卫生",
+      "name": "公共卫生",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 109,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 223
+      }
+    },
+    {
+      "id": "心理学",
+      "name": "心理学",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 110,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 354
+      }
+    },
+    {
+      "id": "体育",
+      "name": "体育",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 111,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 35
+      }
+    },
+    {
+      "id": "药学",
+      "name": "药学",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 112,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 98
+      }
+    },
+    {
+      "id": "医学",
+      "name": "医学",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 113,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 519
+      }
+    },
+    {
+      "id": "新闻",
+      "name": "新闻",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 114,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 61
+      }
+    },
+    {
+      "id": "影视",
+      "name": "影视",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 115,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 95
+      }
+    },
+    {
+      "id": "文化",
+      "name": "文化",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 116,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 28
+      }
+    },
+    {
+      "id": "媒体与传播",
+      "name": "媒体与传播",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 117,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 100
+      }
+    },
+    {
+      "id": "新媒体",
+      "name": "新媒体",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 118,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 32
+      }
+    },
+    {
+      "id": "媒介与社会",
+      "name": "媒介与社会",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 119,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 22
+      }
+    },
+    {
+      "id": "科学传播",
+      "name": "科学传播",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 120,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 12
+      }
+    },
+    {
+      "id": "策略传播",
+      "name": "策略传播",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 121,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 47
+      }
+    },
+    {
+      "id": "媒体产业",
+      "name": "媒体产业",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 122,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 16
+      }
+    },
+    {
+      "id": "语言",
+      "name": "语言",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 123,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 278
+      }
+    },
+    {
+      "id": "其他社科",
+      "name": "其他社科",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 124,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 379
+      }
+    },
+    {
+      "id": "中国文化与文学",
+      "name": "中国文化与文学",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 125,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 14
+      }
+    },
+    {
+      "id": "传播",
+      "name": "传播",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 126,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 31
+      }
+    },
+    {
+      "id": "文化产业管理",
+      "name": "文化产业管理",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 127,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 85
+      }
+    },
+    {
+      "id": "文学文化研究",
+      "name": "文学文化研究",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 128,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 255
+      }
+    },
+    {
+      "id": "社会人类学",
+      "name": "社会人类学",
+      "group_id": "social_sciences",
+      "group_name": "社科",
+      "order": 129,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 1
+      }
+    },
+    {
+      "id": "计算机",
+      "name": "计算机",
+      "group_id": "engineering",
+      "group_name": "工科",
+      "order": 200,
+      "aliases": [
+        "CS",
+        "Computer Science",
+        "计算机工程",
+        "计算机科学",
+        "计算机科学与技术"
+      ],
+      "keywords": [],
+      "stats": {
+        "major_count": 698
+      }
+    },
+    {
+      "id": "电气电子",
+      "name": "电气电子",
+      "group_id": "engineering",
+      "group_name": "工科",
+      "order": 201,
+      "aliases": [
+        "EEE",
+        "Electrical and Electronic Engineering"
+      ],
+      "keywords": [],
+      "stats": {
+        "major_count": 78
+      }
+    },
+    {
+      "id": "数据科学",
+      "name": "数据科学",
+      "group_id": "engineering",
+      "group_name": "工科",
+      "order": 202,
+      "aliases": [
+        "Data Analytics",
+        "Data Science"
+      ],
+      "keywords": [],
+      "stats": {
+        "major_count": 306
+      }
+    },
+    {
+      "id": "机械工程",
+      "name": "机械工程",
+      "group_id": "engineering",
+      "group_name": "工科",
+      "order": 203,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 196
+      }
+    },
+    {
+      "id": "材料",
+      "name": "材料",
+      "group_id": "engineering",
+      "group_name": "工科",
+      "order": 204,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 126
+      }
+    },
+    {
+      "id": "化工",
+      "name": "化工",
+      "group_id": "engineering",
+      "group_name": "工科",
+      "order": 205,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 93
+      }
+    },
+    {
+      "id": "生物工程",
+      "name": "生物工程",
+      "group_id": "engineering",
+      "group_name": "工科",
+      "order": 206,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 162
+      }
+    },
+    {
+      "id": "土木工程",
+      "name": "土木工程",
+      "group_id": "engineering",
+      "group_name": "工科",
+      "order": 207,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 175
+      }
+    },
+    {
+      "id": "工程管理",
+      "name": "工程管理",
+      "group_id": "engineering",
+      "group_name": "工科",
+      "order": 208,
+      "aliases": [
+        "Engineering Management"
+      ],
+      "keywords": [],
+      "stats": {
+        "major_count": 181
+      }
+    },
+    {
+      "id": "环境工程",
+      "name": "环境工程",
+      "group_id": "engineering",
+      "group_name": "工科",
+      "order": 209,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 289
+      }
+    },
+    {
+      "id": "工业工程",
+      "name": "工业工程",
+      "group_id": "engineering",
+      "group_name": "工科",
+      "order": 210,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 67
+      }
+    },
+    {
+      "id": "能源",
+      "name": "能源",
+      "group_id": "engineering",
+      "group_name": "工科",
+      "order": 211,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 126
+      }
+    },
+    {
+      "id": "航空工程",
+      "name": "航空工程",
+      "group_id": "engineering",
+      "group_name": "工科",
+      "order": 212,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 53
+      }
+    },
+    {
+      "id": "地球科学",
+      "name": "地球科学",
+      "group_id": "engineering",
+      "group_name": "工科",
+      "order": 213,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 158
+      }
+    },
+    {
+      "id": "交通运输",
+      "name": "交通运输",
+      "group_id": "engineering",
+      "group_name": "工科",
+      "order": 214,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 54
+      }
+    },
+    {
+      "id": "海洋技术",
+      "name": "海洋技术",
+      "group_id": "engineering",
+      "group_name": "工科",
+      "order": 215,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 30
+      }
+    },
+    {
+      "id": "食品科学",
+      "name": "食品科学",
+      "group_id": "engineering",
+      "group_name": "工科",
+      "order": 216,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 74
+      }
+    },
+    {
+      "id": "其他工科",
+      "name": "其他工科",
+      "group_id": "engineering",
+      "group_name": "工科",
+      "order": 217,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 103
+      }
+    },
+    {
+      "id": "电子工程",
+      "name": "电子工程",
+      "group_id": "engineering",
+      "group_name": "工科",
+      "order": 218,
+      "aliases": [
+        "Electronic Engineering",
+        "Electronics",
+        "电子与信息工程"
+      ],
+      "keywords": [],
+      "stats": {
+        "major_count": 158
+      }
+    },
+    {
+      "id": "电气工程",
+      "name": "电气工程",
+      "group_id": "engineering",
+      "group_name": "工科",
+      "order": 219,
+      "aliases": [
+        "EE",
+        "Electrical Engineering"
+      ],
+      "keywords": [],
+      "stats": {
+        "major_count": 64
+      }
+    },
+    {
+      "id": "物理",
+      "name": "物理",
+      "group_id": "science",
+      "group_name": "理科",
+      "order": 300,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 161
+      }
+    },
+    {
+      "id": "化学",
+      "name": "化学",
+      "group_id": "science",
+      "group_name": "理科",
+      "order": 301,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 97
+      }
+    },
+    {
+      "id": "数学",
+      "name": "数学",
+      "group_id": "science",
+      "group_name": "理科",
+      "order": 302,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 339
+      }
+    },
+    {
+      "id": "生物",
+      "name": "生物",
+      "group_id": "science",
+      "group_name": "理科",
+      "order": 303,
+      "aliases": [],
+      "keywords": [],
+      "stats": {
+        "major_count": 395
+      }
+    }
+  ]
+}

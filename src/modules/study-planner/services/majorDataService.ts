@@ -1,3 +1,5 @@
+import dataLoaderService, { MajorDirectionDefinition } from './DataLoaderService';
+
 // 专业数据服务
 // 处理 major_data_processed.json 数据的加载、筛选和查询
 
@@ -174,8 +176,20 @@ class MajorDataService {
   // 获取所有专业方向
   async getMajorDirections(): Promise<string[]> {
     await this.loadData();
-    const directions = new Set(this.majorData.map(major => major.major_direction));
-    return Array.from(directions).filter(direction => direction.trim() !== '').sort();
+    const availableDirections = new Set(
+      this.majorData
+        .map(major => major.major_direction)
+        .filter(direction => direction && direction.trim() !== '')
+    );
+
+    const taxonomyDirections: MajorDirectionDefinition[] = await dataLoaderService.loadMajorDirections();
+    const filtered = taxonomyDirections.filter(direction => availableDirections.has(direction.name));
+
+    if (filtered.length === 0) {
+      return Array.from(availableDirections).sort((a, b) => a.localeCompare(b, 'zh-CN'));
+    }
+
+    return filtered.map(direction => direction.name);
   }
 
   // 获取所有地区
@@ -225,17 +239,36 @@ class MajorDataService {
   async getMajorsByDirectionGroup(): Promise<{[key: string]: MajorData[]}> {
     await this.loadData();
 
-    const groups: {[key: string]: MajorData[]} = {};
+    const groupsByDirection: Map<string, MajorData[]> = new Map();
 
     this.majorData.forEach(major => {
       const direction = major.major_direction || '其他';
-      if (!groups[direction]) {
-        groups[direction] = [];
+      if (!groupsByDirection.has(direction)) {
+        groupsByDirection.set(direction, []);
       }
-      groups[direction].push(major);
+      groupsByDirection.get(direction)!.push(major);
     });
 
-    return groups;
+    const orderedGroups: {[key: string]: MajorData[]} = {};
+    const taxonomyDirections = await dataLoaderService.loadMajorDirections();
+
+    taxonomyDirections.forEach(direction => {
+      const majors = groupsByDirection.get(direction.name);
+      if (majors && majors.length > 0) {
+        orderedGroups[`${direction.groupName}｜${direction.name}`] = majors;
+        groupsByDirection.delete(direction.name);
+      }
+    });
+
+    if (groupsByDirection.size > 0) {
+      Array.from(groupsByDirection.entries())
+        .sort((a, b) => a[0].localeCompare(b[0], 'zh-CN'))
+        .forEach(([directionName, majors]) => {
+          orderedGroups[directionName] = majors;
+        });
+    }
+
+    return orderedGroups;
   }
 
   // 按地区分组获取专业

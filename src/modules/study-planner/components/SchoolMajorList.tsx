@@ -26,12 +26,11 @@ import {
   HomeOutlined
 } from '@ant-design/icons';
 import majorDataService, { MajorData, SchoolInfo } from '../services/majorDataService';
+import dataLoaderService, { MajorDirectionDefinition } from '../services/DataLoaderService';
 import './MajorComponents.css';
 
 const { Title, Text } = Typography;
 const { Search } = Input;
-const { Option } = Select;
-
 interface SchoolMajorListProps {
   schoolName: string;
   onSelectMajor: (majorId: string) => void;
@@ -48,7 +47,7 @@ const SchoolMajorList: React.FC<SchoolMajorListProps> = ({
   const [school, setSchool] = useState<SchoolInfo | null>(null);
   const [majors, setMajors] = useState<MajorData[]>([]);
   const [filteredMajors, setFilteredMajors] = useState<MajorData[]>([]);
-  const [directions, setDirections] = useState<string[]>([]);
+  const [directions, setDirections] = useState<{ value: string; label: string }[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   
@@ -69,9 +68,10 @@ const SchoolMajorList: React.FC<SchoolMajorListProps> = ({
       setLoading(true);
       setError(null);
       
-      const [schoolData, majorsData] = await Promise.all([
+      const [schoolData, majorsData, directionDefs] = await Promise.all([
         majorDataService.getSchoolByName(schoolName),
-        majorDataService.getMajorsBySchool(schoolName)
+        majorDataService.getMajorsBySchool(schoolName),
+        dataLoaderService.loadMajorDirections()
       ]);
       
       if (!schoolData) {
@@ -84,9 +84,32 @@ const SchoolMajorList: React.FC<SchoolMajorListProps> = ({
       
       // 提取该学校的专业方向
       const directionsSet = new Set(majorsData.map(major => major.major_direction));
+      const definitionMap = new Map<string, { order: number; label: string }>();
+      directionDefs.forEach((definition, index) => {
+        definitionMap.set(definition.name, {
+          order: index,
+          label: `${definition.groupName}｜${definition.name}`
+        });
+      });
+
       const schoolDirections = Array.from(directionsSet)
         .filter(direction => direction.trim() !== '')
-        .sort();
+        .map(direction => {
+          const meta = definitionMap.get(direction);
+          return {
+            value: direction,
+            label: meta ? meta.label : direction,
+            order: meta ? meta.order : Number.MAX_SAFE_INTEGER,
+          };
+        })
+        .sort((a, b) => {
+          if (a.order !== b.order) {
+            return a.order - b.order;
+          }
+          return a.label.localeCompare(b.label, 'zh-CN');
+        })
+        .map(({ value, label }) => ({ value, label }));
+
       setDirections(schoolDirections);
       
     } catch (err) {
@@ -323,23 +346,19 @@ const SchoolMajorList: React.FC<SchoolMajorListProps> = ({
               onSearch={handleSearch}
             />
           </Col>
-          <Col xs={24} md={8}>
-            <Select
-              placeholder="选择专业方向"
-              allowClear
-              size="large"
-              style={{ width: '100%' }}
-              value={selectedDirection}
-              onChange={handleDirectionChange}
-              suffixIcon={<FilterOutlined />}
-            >
-              {directions.map(direction => (
-                <Option key={direction} value={direction}>
-                  {direction}
-                </Option>
-              ))}
-            </Select>
-          </Col>
+        <Col xs={24} md={8}>
+          <Select
+            placeholder="选择专业方向"
+            allowClear
+            size="large"
+            style={{ width: '100%' }}
+            value={selectedDirection}
+            onChange={handleDirectionChange}
+            suffixIcon={<FilterOutlined />}
+            options={directions}
+            optionFilterProp="label"
+          />
+        </Col>
           <Col xs={24} md={4}>
             <Button
               icon={<ClearOutlined />}

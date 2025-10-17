@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "箴言学习系统",
+  title: "箴言留学",
   description: "统一整合雅思作文批改与留学规划分析的智能平台",
 };
 

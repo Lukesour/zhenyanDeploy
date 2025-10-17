@@ -8,6 +8,7 @@ from backend.models.schemas import UserBackground
 from backend.services.university_scoring_service import UniversityScoringService
 from backend.services.supabase_service import SupabaseService
 from backend.services.major_classification_service import MajorClassificationService
+from backend.services.major_taxonomy_service import major_taxonomy_service
 from backend.config.settings import settings
 
 logger = logging.getLogger(__name__)
@@ -44,13 +45,29 @@ class SimilarityMatcher:
             cases_data = []
             for case in cases:
                 # Map new cases table fields to expected format
+                undergraduate_category = self.major_classification_service.classify_major(
+                    case.get('undergraduate_major', '')
+                )
+                undergraduate_category = (
+                    major_taxonomy_service.normalise_direction(undergraduate_category)
+                    or undergraduate_category
+                )
+
+                admitted_category = self.major_classification_service.classify_case_admitted_major(
+                    case.get('admitted_major', '')
+                )
+                admitted_category = (
+                    major_taxonomy_service.normalise_direction(admitted_category)
+                    or admitted_category
+                )
+
                 cases_data.append({
                     'id': case.get('id', 0),
                     'original_id': case.get('case_id', 0),  # Use case_id as original_id
                     'gpa_4_scale': case.get('gpa_4_scale', 0.0) or 0.0,
                     'undergraduate_university_tier': self._get_university_tier(case.get('graduation_school', '')),
-                    'undergraduate_major_category': self.major_classification_service.classify_major(case.get('undergraduate_major', '')),
-                    'admitted_major_category': self.major_classification_service.classify_case_admitted_major(case.get('admitted_major', '')),
+                    'undergraduate_major_category': undergraduate_category,
+                    'admitted_major_category': admitted_category,
                     'language_total_score': self._get_language_score(case),
                     'language_test_type': self._get_language_type(case),
                     'gre_total': 0,  # Not available in new table
@@ -273,11 +290,13 @@ class SimilarityMatcher:
         target_similarity = 0.0
         if user_target_majors and len(user_target_majors) > 0:
             # 用户现在只能选择一个目标专业，直接使用该专业作为大类
-            user_target_major = user_target_majors[0]  # 取第一个（也是唯一一个）目标专业
+            user_target_major = major_taxonomy_service.normalise_direction(user_target_majors[0]) or user_target_majors[0]
+
+            case_major = major_taxonomy_service.normalise_direction(case_admitted_major) or case_admitted_major
 
             # 直接使用目标专业名称作为专业大类，不需要再次分类
             target_similarity = self.major_classification_service.get_major_similarity(
-                user_target_major, case_admitted_major
+                user_target_major, case_major
             )
 
         return {
@@ -366,12 +385,19 @@ class SimilarityMatcher:
         # 强限制：目标专业必须完全匹配
         if user_background.target_majors and len(user_background.target_majors) > 0:
             # 用户现在只能选择一个目标专业，直接使用该专业作为大类
-            user_target_major = user_background.target_majors[0]
+            target_major_raw = user_background.target_majors[0]
+            user_target_major = major_taxonomy_service.normalise_direction(target_major_raw) or target_major_raw
+
             # 强限制：只保留录取专业大类与用户目标专业大类完全匹配的案例
             filtered_df = filtered_df[
                 filtered_df['admitted_major_category'] == user_target_major
             ]
-            logger.info(f"Applied strict target major filter: {user_target_major}, remaining cases: {len(filtered_df)}")
+            logger.info(
+                "Applied strict target major filter: %s (raw: %s), remaining cases: %s",
+                user_target_major,
+                target_major_raw,
+                len(filtered_df)
+            )
 
         # 强限制：应届生状态必须完全匹配
         user_is_recent_graduate = user_background.is_recent_graduate()
@@ -455,10 +481,17 @@ class SimilarityMatcher:
 
                 # 重新应用目标专业和应届生状态的强限制
                 if user_background.target_majors and len(user_background.target_majors) > 0:
-                    user_target_major = user_background.target_majors[0]
+                    target_major_raw = user_background.target_majors[0]
+                    user_target_major = major_taxonomy_service.normalise_direction(target_major_raw) or target_major_raw
                     filtered_df = filtered_df[
                         filtered_df['admitted_major_category'] == user_target_major
                     ]
+                    logger.info(
+                        "Filtered fallback cases by target major: %s (raw: %s), remaining cases: %s",
+                        user_target_major,
+                        target_major_raw,
+                        len(filtered_df)
+                    )
 
                 user_is_recent_graduate = user_background.is_recent_graduate()
                 if user_is_recent_graduate is not None:

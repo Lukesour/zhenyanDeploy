@@ -25,10 +25,12 @@ import dataLoaderService from '../services/DataLoaderService';
 const [universities, setUniversities] = useState<string[]>([]);
 const [majors, setMajors] = useState<string[]>([]);
 const [countries, setCountries] = useState<string[]>([]);
-const [targetMajors, setTargetMajors] = useState<string[]>([]);
+const [majorDirections, setMajorDirections] = useState<MajorDirectionDefinition[]>([]);
 const [dataLoading, setDataLoading] = useState(true);
 const [dataError, setDataError] = useState<string | null>(null);
 ```
+
+> `MajorDirectionDefinition` 为 `DataLoaderService.loadMajorDirections()` 提供的专业方向定义，包含学科分组、排序、别名和统计信息等字段。
 
 ### 3. 数据加载逻辑
 
@@ -40,17 +42,17 @@ useEffect(() => {
       setDataLoading(true);
       setDataError(null);
       
-      const [universitiesData, majorsData, countriesData, targetMajorsData] = await Promise.all([
+      const [universitiesData, majorsData, countriesData, majorDirectionsData] = await Promise.all([
         dataLoaderService.loadUniversities(),
         dataLoaderService.loadMajors(),
         dataLoaderService.loadCountries(),
-        dataLoaderService.loadTargetMajors(),
+        dataLoaderService.loadMajorDirections(),
       ]);
 
       setUniversities(universitiesData);
       setMajors(majorsData);
       setCountries(countriesData);
-      setTargetMajors(targetMajorsData);
+      setMajorDirections(majorDirectionsData);
     } catch (error) {
       setDataError(error instanceof Error ? error.message : '数据加载失败');
       message.error('数据加载失败，请刷新页面重试');
@@ -111,11 +113,19 @@ if (dataError) {
 
 // 目标专业选择框
 <Select
-  mode="multiple"
   placeholder="请选择目标专业方向"
-  options={targetMajors.map(major => ({ label: major, value: major }))}
+  options={majorDirectionOptions}
+  optionFilterProp="label"
   disabled={dataLoading}
+  showSearch
+  filterOption={(input, option) =>
+    (option?.label as string)?.toLowerCase().includes(input.toLowerCase())
+  }
+  notFoundContent={dataLoading ? <Spin size="small" /> : '未找到匹配的专业方向'}
+  loading={dataLoading}
 />
+
+> `majorDirectionOptions` 由 `majorDirections` 数据源按 `groupId` 分组生成，能够保持展示顺序与学科分类一致，并避免手动维护选项列表。
 ```
 
 **提交按钮状态：**
@@ -186,7 +196,3 @@ if (dataError) {
 4. **用户体验优化**
    - 骨架屏加载
    - 渐进式数据加载
-
-
-
-

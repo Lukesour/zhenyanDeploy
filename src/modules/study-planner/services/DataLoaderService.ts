@@ -8,13 +8,35 @@
  */
 
 import frontendData from '../data/frontend_data.json';
+import majorTaxonomy from '../data/major_taxonomy.json';
 
 // 数据接口
 export interface DataMetrics {
   universitiesCount: number;
   majorsCount: number;
-  targetMajorsCount: number;
+  majorDirectionsCount: number;
+  majorGroupsCount: number;
   totalDataSize: number;
+}
+
+export interface MajorGroupDefinition {
+  id: string;
+  name: string;
+  order: number;
+}
+
+export interface MajorDirectionDefinition {
+  id: string;
+  name: string;
+  groupId: string;
+  groupName: string;
+  groupOrder: number;
+  order: number;
+  aliases: string[];
+  keywords: string[];
+  stats: {
+    major_count: number;
+  };
 }
 
 /**
@@ -87,35 +109,76 @@ export class DataLoaderService {
 
   /**
    * 加载目标专业数据
-   * 注意：JSON文件中的target_majors是按类别组织的对象，需要转换为扁平数组
+   * 注意：统一使用 major_taxonomy.json 中的数据源
    */
   async loadTargetMajors(): Promise<string[]> {
+    const directions = await this.loadMajorDirections();
+    return directions.map(direction => direction.name);
+  }
+
+  /**
+   * 加载专业方向定义列表
+   */
+  async loadMajorDirections(): Promise<MajorDirectionDefinition[]> {
     try {
-      const targetMajorsObj = frontendData.target_majors;
-      
-      // 验证数据完整性
-      if (!targetMajorsObj || typeof targetMajorsObj !== 'object') {
-        throw new Error('目标专业数据结构不正确');
+      const groups = this.getMajorDirectionGroups();
+      const groupMap = new Map(groups.map(group => [group.id, group]));
+
+      if (!Array.isArray(majorTaxonomy.directions) || majorTaxonomy.directions.length === 0) {
+        throw new Error('专业方向数据为空，请检查 major_taxonomy.json');
       }
 
-      // 将按类别组织的对象转换为扁平数组
-      const targetMajors: string[] = [];
-      Object.values(targetMajorsObj).forEach(category => {
-        if (Array.isArray(category)) {
-          targetMajors.push(...category);
+      const directions = majorTaxonomy.directions.map(direction => {
+        const group = groupMap.get(direction.group_id);
+        if (!group) {
+          throw new Error(`专业方向 ${direction.name} 缺少有效的 group 定义`); 
         }
+        return {
+          id: direction.id,
+          name: direction.name,
+          groupId: direction.group_id,
+          groupName: group.name,
+          groupOrder: group.order,
+          order: direction.order,
+          aliases: direction.aliases ?? [],
+          keywords: direction.keywords ?? [],
+          stats: direction.stats ?? { major_count: 0 }
+        } as MajorDirectionDefinition;
       });
 
-      // 验证转换后的数据完整性
-      if (targetMajors.length < 50) {
-        throw new Error(`目标专业数据不完整：期望至少50个，实际${targetMajors.length}个`);
-      }
+      // 按 groupOrder -> order -> name 排序，保证展示顺序稳定
+      directions.sort((a, b) => {
+        if (a.groupOrder !== b.groupOrder) {
+          return a.groupOrder - b.groupOrder;
+        }
+        if (a.order !== b.order) {
+          return a.order - b.order;
+        }
+        return a.name.localeCompare(b.name, 'zh-CN');
+      });
 
-      return targetMajors;
+      return directions;
     } catch (error) {
-      console.error('加载目标专业数据失败:', error);
+      console.error('加载专业方向定义失败:', error);
       throw error;
     }
+  }
+
+  /**
+   * 加载专业方向分组信息
+   */
+  getMajorDirectionGroups(): MajorGroupDefinition[] {
+    const groups = majorTaxonomy.groups;
+    if (!Array.isArray(groups) || groups.length === 0) {
+      throw new Error('专业方向分组数据缺失，请检查 major_taxonomy.json');
+    }
+
+    return [...groups].sort((a, b) => {
+      if (a.order !== b.order) {
+        return a.order - b.order;
+      }
+      return a.name.localeCompare(b.name, 'zh-CN');
+    });
   }
 
   /**
@@ -126,10 +189,11 @@ export class DataLoaderService {
     try {
       const universities = frontendData.universities;
       const majors = frontendData.majors;
-      const targetMajorsObj = frontendData.target_majors;
+      const groups = majorTaxonomy.groups;
+      const directions = majorTaxonomy.directions;
 
       // 验证基本数据结构
-      if (!universities || !majors || !targetMajorsObj) {
+      if (!universities || !majors || !groups || !directions) {
         return false;
       }
 
@@ -138,8 +202,17 @@ export class DataLoaderService {
         return false;
       }
 
-      // 验证target_majors结构
-      if (typeof targetMajorsObj !== 'object') {
+      if (!Array.isArray(groups) || groups.length === 0) {
+        return false;
+      }
+
+      if (!Array.isArray(directions) || directions.length < 50) {
+        return false;
+      }
+
+      const groupIds = new Set(groups.map(group => group.id));
+      const hasInvalidDirection = directions.some(direction => !groupIds.has(direction.group_id));
+      if (hasInvalidDirection) {
         return false;
       }
 
@@ -156,22 +229,14 @@ export class DataLoaderService {
   getDataMetrics(): DataMetrics {
     const universities = frontendData.universities || [];
     const majors = frontendData.majors || [];
-    const targetMajorsObj = frontendData.target_majors || {};
-
-    // 计算target_majors的总数量
-    let targetMajorsCount = 0;
-    if (typeof targetMajorsObj === 'object') {
-      Object.values(targetMajorsObj).forEach(category => {
-        if (Array.isArray(category)) {
-          targetMajorsCount += category.length;
-        }
-      });
-    }
+    const groups = Array.isArray(majorTaxonomy.groups) ? majorTaxonomy.groups : [];
+    const directions = Array.isArray(majorTaxonomy.directions) ? majorTaxonomy.directions : [];
 
     return {
       universitiesCount: universities.length,
       majorsCount: majors.length,
-      targetMajorsCount: targetMajorsCount,
+      majorDirectionsCount: directions.length,
+      majorGroupsCount: groups.length,
       totalDataSize: JSON.stringify(frontendData).length,
     };
   }
@@ -184,6 +249,7 @@ export class DataLoaderService {
       this.loadUniversities(),
       this.loadMajors(),
       this.loadCountries(),
+      this.loadMajorDirections(),
       this.loadTargetMajors(),
     ]);
   }

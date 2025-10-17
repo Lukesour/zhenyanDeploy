@@ -477,14 +477,13 @@ export default function StudyPlannerPage() {
             {!showTestPage && !showEmailDemo && (
               <header className="text-center space-y-4">
                 <span className="inline-flex items-center rounded-full bg-indigo-100 px-4 py-1 text-sm font-medium text-indigo-600 shadow-sm">
-                  全面整合的留学规划服务
+                  海量、真实案例驱动的留学规划服务
                 </span>
                 <h1 className="text-3xl sm:text-4xl font-bold text-slate-900">
                   箴言留学规划与评估中心
                 </h1>
                 <p className="max-w-3xl mx-auto text-base sm:text-lg text-slate-600">
-                  一站式整合背景评估、院校推荐、霍兰德职业测评以及案例对比分析，
-                  结合 IELTS 模块的设计语言，提供统一而沉浸的使用体验。
+                  先让AI初步评估、再用海量数据给出院校推荐、最后专业老师，免费给出择校定位建议
                 </p>
               </header>
             )}

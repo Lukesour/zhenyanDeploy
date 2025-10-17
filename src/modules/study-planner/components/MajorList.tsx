@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import {
   Card,
   List,
@@ -29,6 +29,7 @@ import {
   EnvironmentOutlined
 } from '@ant-design/icons';
 import majorDataService, { MajorData } from '../services/majorDataService';
+import dataLoaderService, { MajorDirectionDefinition } from '../services/DataLoaderService';
 import './MajorComponents.css';
 
 const { Title, Text } = Typography;
@@ -44,7 +45,7 @@ interface MajorListProps {
 const MajorList: React.FC<MajorListProps> = ({ onSelectMajor, onBack }) => {
   const [majors, setMajors] = useState<MajorData[]>([]);
   const [filteredMajors, setFilteredMajors] = useState<MajorData[]>([]);
-  const [directions, setDirections] = useState<string[]>([]);
+  const [directionDefinitions, setDirectionDefinitions] = useState<MajorDirectionDefinition[]>([]);
   const [locations, setLocations] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -56,6 +57,40 @@ const MajorList: React.FC<MajorListProps> = ({ onSelectMajor, onBack }) => {
   const [viewMode, setViewMode] = useState<'list' | 'group'>('list');
   const [groupBy, setGroupBy] = useState<'qs_ranking' | 'direction' | 'location'>('qs_ranking');
   const [groupedMajors, setGroupedMajors] = useState<{[key: string]: MajorData[]}>({});
+  const majorDirectionOptions = useMemo(() => {
+    if (directionDefinitions.length === 0) {
+      return [];
+    }
+
+    const groupsMap = new Map<string, {
+      label: string;
+      order: number;
+      options: { label: string; value: string }[];
+    }>();
+
+    directionDefinitions.forEach(direction => {
+      if (!groupsMap.has(direction.groupId)) {
+        groupsMap.set(direction.groupId, {
+          label: direction.groupName,
+          order: direction.groupOrder,
+          options: []
+        });
+      }
+
+      const group = groupsMap.get(direction.groupId)!;
+      group.options.push({
+        label: direction.name,
+        value: direction.name
+      });
+    });
+
+    return Array.from(groupsMap.values())
+      .sort((a, b) => a.order - b.order)
+      .map(group => ({
+        label: group.label,
+        options: group.options
+      }));
+  }, [directionDefinitions]);
 
   useEffect(() => {
     loadData();
@@ -76,15 +111,15 @@ const MajorList: React.FC<MajorListProps> = ({ onSelectMajor, onBack }) => {
       setLoading(true);
       setError(null);
       
-      const [majorsData, directionsData, locationsData] = await Promise.all([
+      const [majorsData, locationsData, directionDefs] = await Promise.all([
         majorDataService.getAllMajors(),
-        majorDataService.getMajorDirections(),
-        majorDataService.getLocations()
+        majorDataService.getLocations(),
+        dataLoaderService.loadMajorDirections()
       ]);
 
       setMajors(majorsData);
-      setDirections(directionsData);
       setLocations(locationsData);
+      setDirectionDefinitions(directionDefs);
       setFilteredMajors(majorsData);
     } catch (err) {
       console.error('Error loading majors:', err);
@@ -314,7 +349,7 @@ const MajorList: React.FC<MajorListProps> = ({ onSelectMajor, onBack }) => {
           <Card>
             <Statistic
               title="专业方向"
-              value={directions.length}
+              value={directionDefinitions.length}
               suffix="种"
             />
           </Card>
@@ -344,13 +379,9 @@ const MajorList: React.FC<MajorListProps> = ({ onSelectMajor, onBack }) => {
               value={selectedDirection}
               onChange={setSelectedDirection}
               suffixIcon={<FilterOutlined />}
-            >
-              {directions.map(direction => (
-                <Option key={direction} value={direction}>
-                  {direction}
-                </Option>
-              ))}
-            </Select>
+              options={majorDirectionOptions}
+              optionFilterProp="label"
+            />
           </Col>
           <Col xs={12} lg={4}>
             <Select

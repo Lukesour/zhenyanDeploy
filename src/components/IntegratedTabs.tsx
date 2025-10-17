@@ -15,11 +15,19 @@ const tabs = [
     description: '背景分析、院校推荐与职业测评工具',
   },
   {
+    href: '/documents',
+    title: '文书生成',
+    description: '头脑风暴 / CV / PS',
+  },
+  {
     href: '/profile',
     title: '个人中心',
     description: '账户信息、分析次数与雅思设置',
   },
 ];
+
+const hiddenTabHrefs = new Set<string>(['/documents']);
+const visibleTabs = tabs.filter((tab) => !hiddenTabHrefs.has(tab.href));
 
 const isActive = (pathname: string, href: string) => {
   if (href === '/') {
@@ -36,11 +44,11 @@ export default function IntegratedTabs() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav className="flex items-center justify-between py-4">
           <div className="flex items-center space-x-2">
-            <span className="text-xl font-semibold text-indigo-600">箴言学习系统</span>
-            <span className="hidden sm:inline text-sm text-gray-400">一站式学习与留学服务</span>
+            <span className="text-xl font-semibold text-indigo-600">箴言留学</span>
+            <span className="hidden sm:inline text-sm text-gray-400">不靠营销、不靠制造焦虑，单纯靠实力</span>
           </div>
           <div className="flex flex-wrap gap-2 sm:gap-4">
-            {tabs.map((tab) => {
+            {visibleTabs.map((tab) => {
               const active = isActive(pathname, tab.href);
               return (
                 <Link

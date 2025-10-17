@@ -10,12 +10,22 @@ from typing import Dict, Optional
 from pathlib import Path
 from contextlib import asynccontextmanager
 from backend.models.schemas import UserBackground, AnalysisReport, HollandAssessmentRequest, HollandAssessmentResult
+from backend.models.document_models import (
+    BrainstormStructureRequest,
+    BrainstormStructureResponse,
+    CvGenerationRequest,
+    CvGenerationResponse,
+    PsGenerationRequest,
+    PsGenerationResponse,
+)
 from backend.models.user_models import UserInfo
 from backend.api.errors import InvalidInput, NotFound, RateLimited, Timeout, DependencyUnavailable
 from backend.api.auth import router as auth_router, get_current_user, get_user_service
 from backend.services.analysis_service import AnalysisService
 from backend.services.user_service import UserService
+from backend.services.major_taxonomy_service import major_taxonomy_service
 from backend.services.holland_service import HollandService
+from backend.services.document_service import DocumentService
 from backend.config.settings import settings
 from backend.ielts.app.core.database import create_tables as create_ielts_tables
 from backend.ielts.app.api.auth import router as ielts_auth_router
@@ -35,6 +45,7 @@ logger = logging.getLogger(__name__)
 analysis_service = None
 user_service = None
 holland_service = None
+document_service = None
 
 # 存储异步任务状态
 analysis_tasks: Dict[str, Dict] = {}
@@ -42,7 +53,7 @@ analysis_tasks: Dict[str, Dict] = {}
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Startup
-    global analysis_service, user_service, holland_service
+    global analysis_service, user_service, holland_service, document_service
     logger.info("Starting up application...")
     try:
         analysis_service = AnalysisService()
@@ -64,6 +75,13 @@ async def lifespan(app: FastAPI):
     except Exception as e:
         logger.warning(f"Failed to initialize holland service: {e}")
         holland_service = None
+
+    try:
+        document_service = DocumentService()
+        logger.info("Document service initialized successfully")
+    except Exception as e:
+        logger.warning(f"Failed to initialize document service: {e}")
+        document_service = None
 
     try:
         create_ielts_tables()
@@ -326,12 +344,30 @@ async def analyze_user_background(
                 detail="目标国家信息是必填项，请至少选择一个目标国家"
             )
 
-        if not user_background.target_majors or len(user_background.target_majors) == 0:
-            logger.warning(f"[ANALYSIS_REQUEST] 目标专业信息验证失败: target_majors={user_background.target_majors}")
+        canonical_target_majors, invalid_target_majors = major_taxonomy_service.normalise_target_majors(
+            user_background.target_majors
+        )
+
+        if invalid_target_majors:
+            logger.warning(
+                f"[ANALYSIS_REQUEST] 发现未定义的目标专业: {invalid_target_majors} (原始输入: {user_background.target_majors})"
+            )
+            raise HTTPException(
+                status_code=400,
+                detail=f"目标专业信息不受支持：{', '.join(invalid_target_majors)}"
+            )
+
+        if not canonical_target_majors:
+            logger.warning(
+                f"[ANALYSIS_REQUEST] 目标专业信息验证失败: target_majors={user_background.target_majors}"
+            )
             raise HTTPException(
                 status_code=400,
                 detail="目标专业信息是必填项，请至少选择一个目标专业"
             )
+
+        # 使用词表中的标准名称，确保后续分析一致
+        user_background.target_majors = canonical_target_majors
 
         logger.info(f"[ANALYSIS_REQUEST] 输入数据验证通过")
 
@@ -559,3 +595,63 @@ async def assess_holland(request: HollandAssessmentRequest) -> HollandAssessment
     except Exception as e:
         logger.error(f"Error in Holland assessment: {str(e)}")
         raise HTTPException(status_code=500, detail="霍兰德评估失败")
+
+
+# -----------------------------
+# Documents endpoints
+# -----------------------------
+
+
+def _ensure_document_service_available():
+    global document_service
+    if not document_service:
+        try:
+            document_service = DocumentService()
+        except Exception as exc:
+            logger.error(f"Failed to initialise document service on demand: {exc}")
+            raise HTTPException(
+                status_code=503,
+                detail="文书服务暂不可用，请稍后重试"
+            )
+
+
+@app.post(
+    "/documents/brainstorm/structure",
+    response_model=BrainstormStructureResponse,
+    response_model_exclude_none=True,
+)
+async def structure_brainstorm_endpoint(
+    payload: BrainstormStructureRequest,
+    current_user: UserInfo = Depends(get_current_user),
+):
+    _ensure_document_service_available()
+    response = document_service.structure_brainstorm(payload)
+    return response
+
+
+@app.post(
+    "/documents/cv/generate",
+    response_model=CvGenerationResponse,
+    response_model_exclude_none=True,
+)
+async def generate_cv_endpoint(
+    payload: CvGenerationRequest,
+    current_user: UserInfo = Depends(get_current_user),
+):
+    _ensure_document_service_available()
+    response = document_service.generate_cv(payload)
+    return response
+
+
+@app.post(
+    "/documents/ps/generate",
+    response_model=PsGenerationResponse,
+    response_model_exclude_none=True,
+)
+async def generate_ps_endpoint(
+    payload: PsGenerationRequest,
+    current_user: UserInfo = Depends(get_current_user),
+):
+    _ensure_document_service_available()
+    response = document_service.generate_ps(payload)
+    return response

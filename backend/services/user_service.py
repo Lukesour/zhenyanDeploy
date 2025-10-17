@@ -12,6 +12,7 @@ from backend.models.user_models import (
 )
 from backend.services.email_service import EmailService
 from backend.services.email_verification_service import email_verification_service
+from backend.services.major_taxonomy_service import major_taxonomy_service
 
 logger = logging.getLogger(__name__)
 
@@ -919,6 +920,18 @@ class UserService:
 
             update_payload = {field: getattr(profile_data, field) for field in fields_set}
 
+            if 'target_majors' in update_payload:
+                canonical_target_majors, invalid_target_majors = major_taxonomy_service.normalise_target_majors(
+                    update_payload.get('target_majors') or []
+                )
+                if invalid_target_majors:
+                    logger.warning(
+                        "用户 %s 提供的目标专业包含未定义项: %s",
+                        user_id,
+                        invalid_target_majors
+                    )
+                update_payload['target_majors'] = canonical_target_majors
+
             if self.use_local_store or not self.client:
                 existing = self._local_profiles.get(user_id)
                 base_data = existing.model_dump() if hasattr(existing, 'model_dump') else (
@@ -953,7 +966,13 @@ class UserService:
         """获取用户个人信息"""
         try:
             if self.use_local_store or not self.client:
-                return self._local_profiles.get(user_id)
+                profile = self._local_profiles.get(user_id)
+                if profile and getattr(profile, 'target_majors', None):
+                    canonical_target_majors, _ = major_taxonomy_service.normalise_target_majors(
+                        profile.target_majors
+                    )
+                    profile = profile.copy(update={'target_majors': canonical_target_majors})
+                return profile
 
             result = self.client.table('user_profiles')                .select('*')                .eq('user_id', user_id)                .execute()
 
@@ -962,6 +981,9 @@ class UserService:
                 return None
 
             profile_data = result.data[0]
+            canonical_target_majors, _ = major_taxonomy_service.normalise_target_majors(
+                profile_data.get('target_majors', [])
+            )
 
             return UserProfileData(
                 undergraduate_university=profile_data.get('undergraduate_university'),
@@ -1001,7 +1023,7 @@ class UserService:
                 gmat_target_total=profile_data.get('gmat_target_total'),
                 gmat_expected_test_date=profile_data.get('gmat_expected_test_date'),
                 target_countries=profile_data.get('target_countries', []),
-                target_majors=profile_data.get('target_majors', []),
+                target_majors=canonical_target_majors,
                 target_degree_type=profile_data.get('target_degree_type'),
                 research_experiences=profile_data.get('research_experiences', []),
                 internship_experiences=profile_data.get('internship_experiences', []),
@@ -1032,6 +1054,10 @@ class UserService:
             profile_data = result.data[0]
 
             # 转换为UserProfileData对象
+            canonical_target_majors, _ = major_taxonomy_service.normalise_target_majors(
+                profile_data.get('target_majors', [])
+            )
+
             return UserProfileData(
                 undergraduate_university=profile_data.get('undergraduate_university'),
                 undergraduate_major=profile_data.get('undergraduate_major'),
@@ -1070,7 +1096,7 @@ class UserService:
                 gmat_target_total=profile_data.get('gmat_target_total'),
                 gmat_expected_test_date=profile_data.get('gmat_expected_test_date'),
                 target_countries=profile_data.get('target_countries', []),
-                target_majors=profile_data.get('target_majors', []),
+                target_majors=canonical_target_majors,
                 target_degree_type=profile_data.get('target_degree_type'),
                 research_experiences=profile_data.get('research_experiences', []),
                 internship_experiences=profile_data.get('internship_experiences', []),

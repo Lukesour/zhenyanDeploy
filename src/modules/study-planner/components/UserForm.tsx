@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import {
   App,
   Form,
@@ -21,6 +21,7 @@ import apiService, { UserBackground } from '../services/api';
 import dataLoaderService from '../services/DataLoaderService';
 import errorHandler from '../services/ErrorHandler';
 import authService from '../services/authService';
+import type { MajorDirectionDefinition } from '../services/DataLoaderService';
 
 
 const { Option } = Select;
@@ -52,10 +53,45 @@ const UserForm: React.FC<UserFormProps> = ({ onSubmit, loading = false }) => {
   const [universities, setUniversities] = useState<string[]>([]);
   const [majors, setMajors] = useState<string[]>([]);
   const [countries, setCountries] = useState<string[]>([]);
-  const [targetMajors, setTargetMajors] = useState<string[]>([]);
+  const [majorDirections, setMajorDirections] = useState<MajorDirectionDefinition[]>([]);
   // const [majorsByCategory] = useState<Record<string, string[]>>({});
   const [dataLoading, setDataLoading] = useState(true);
   const [dataError, setDataError] = useState<string | null>(null);
+
+  const majorDirectionOptions = useMemo(() => {
+    if (majorDirections.length === 0) {
+      return [];
+    }
+
+    const groupsMap = new Map<string, {
+      label: string;
+      order: number;
+      options: { label: string; value: string }[];
+    }>();
+
+    majorDirections.forEach(direction => {
+      if (!groupsMap.has(direction.groupId)) {
+        groupsMap.set(direction.groupId, {
+          label: direction.groupName,
+          order: direction.groupOrder,
+          options: []
+        });
+      }
+
+      const group = groupsMap.get(direction.groupId)!;
+      group.options.push({
+        label: direction.name,
+        value: direction.id
+      });
+    });
+
+    return Array.from(groupsMap.values())
+      .sort((a, b) => a.order - b.order)
+      .map(group => ({
+        label: group.label,
+        options: group.options
+      }));
+  }, [majorDirections]);
 
 
 
@@ -67,17 +103,17 @@ const UserForm: React.FC<UserFormProps> = ({ onSubmit, loading = false }) => {
         setDataError(null);
 
         // 并行加载所有数据
-        const [universitiesData, majorsData, countriesData, targetMajorsData] = await Promise.all([
+        const [universitiesData, majorsData, countriesData, majorDirectionsData] = await Promise.all([
           dataLoaderService.loadUniversities(),
           dataLoaderService.loadMajors(),
           dataLoaderService.loadCountries(),
-          dataLoaderService.loadTargetMajors(),
+          dataLoaderService.loadMajorDirections(),
         ]);
 
         setUniversities(universitiesData);
         setMajors(majorsData);
         setCountries(countriesData);
-        setTargetMajors(targetMajorsData);
+        setMajorDirections(majorDirectionsData);
 
 
       } catch (error) {
@@ -214,17 +250,17 @@ const UserForm: React.FC<UserFormProps> = ({ onSubmit, loading = false }) => {
     setDataLoading(true);
     
     try {
-      const [universitiesData, majorsData, countriesData, targetMajorsData] = await Promise.all([
+      const [universitiesData, majorsData, countriesData, majorDirectionsData] = await Promise.all([
         dataLoaderService.loadUniversities(),
         dataLoaderService.loadMajors(),
         dataLoaderService.loadCountries(),
-        dataLoaderService.loadTargetMajors(),
+        dataLoaderService.loadMajorDirections(),
       ]);
 
       setUniversities(universitiesData);
       setMajors(majorsData);
       setCountries(countriesData);
-      setTargetMajors(targetMajorsData);
+      setMajorDirections(majorDirectionsData);
       
       messageApi.success('数据重新加载成功');
     } catch (error) {
@@ -1003,14 +1039,14 @@ const UserForm: React.FC<UserFormProps> = ({ onSubmit, loading = false }) => {
                 >
                   <Select
                     placeholder="请选择目标专业方向"
+                    optionFilterProp="label"
                     showSearch
                     filterOption={(input, option) =>
-                      (option?.label as string)?.toLowerCase().indexOf(input.toLowerCase()) !== -1
+                      String(option?.label ?? '')
+                        .toLowerCase()
+                        .includes(input.toLowerCase())
                     }
-                    options={targetMajors.map(major => ({
-                      label: major,
-                      value: major
-                    }))}
+                    options={majorDirectionOptions}
                     disabled={dataLoading}
                     allowClear
                     notFoundContent={dataLoading ? <Spin size="small" /> : '未找到匹配的专业方向'}

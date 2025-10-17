@@ -47,21 +47,20 @@
 **新增特性：**
 ```typescript
 <Select
-  mode="multiple"
   showSearch
+  optionFilterProp="label"
   filterOption={(input, option) =>
-    (option?.label as string)?.toLowerCase().indexOf(input.toLowerCase()) !== -1
+    (option?.label as string)?.toLowerCase().includes(input.toLowerCase())
   }
   allowClear
-  maxTagCount="responsive"
-  notFoundContent={dataLoading ? <Spin size="small" /> : '未找到匹配的国家/地区'}
+  notFoundContent={dataLoading ? <Spin size="small" /> : '未找到匹配的选项'}
   loading={dataLoading}
 />
 ```
 
 **优化特性：**
 - ✅ **搜索功能** - 内置搜索过滤
-- ✅ **响应式标签** - 自适应标签数量显示
+- ✅ **分组展示** - 目标专业按学科分组展示，顺序与词表保持一致
 - ✅ **清除功能** - 支持清除所有选择
 - ✅ **加载指示** - 数据加载时的可视化反馈
 
@@ -191,17 +190,17 @@ const retryDataLoad = useCallback(async () => {
   setDataLoading(true);
   
   try {
-    const [universitiesData, majorsData, countriesData, targetMajorsData] = await Promise.all([
+    const [universitiesData, majorsData, countriesData, majorDirectionsData] = await Promise.all([
       dataLoaderService.loadUniversities(),
       dataLoaderService.loadMajors(),
       dataLoaderService.loadCountries(),
-      dataLoaderService.loadTargetMajors(),
+      dataLoaderService.loadMajorDirections(),
     ]);
 
     setUniversities(universitiesData);
     setMajors(majorsData);
     setCountries(countriesData);
-    setTargetMajors(targetMajorsData);
+    setMajorDirections(majorDirectionsData);
     
     message.success('数据重新加载成功');
   } catch (error) {
@@ -308,7 +307,4 @@ const retryDataLoad = useCallback(async () => {
 - **性能优化** - 内存使用减少，渲染性能提升
 
 所有优化都遵循了Linus的"好品味"原则：简单、可靠、高效。
-
-
-
 
