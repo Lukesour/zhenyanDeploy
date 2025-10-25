@@ -4,6 +4,8 @@ import { getApiBaseUrl } from '../config';
 import { useAuthStore } from '@/lib/store';
 import type { User as EssayUser } from '@/lib/api';
 
+type Nullable<T> = T | null;
+
 const getStorage = () => {
   if (typeof window === 'undefined') {
     return null;
@@ -64,49 +66,49 @@ interface UserProfileData {
   gpa?: number;
   gpa_scale?: string;
   graduation_year?: number;
-  target_score?: number;
-  current_level?: number;
-  exam_date?: string;
+  target_score?: Nullable<number>;
+  current_level?: Nullable<number>;
+  exam_date?: Nullable<string>;
   // 语言考试
-  language_test_status?: string;
-  language_test_type?: string;
-  language_total_score?: number;
-  language_reading?: number;
-  language_listening?: number;
-  language_speaking?: number;
-  language_writing?: number;
+  language_test_status?: Nullable<string>;
+  language_test_type?: Nullable<string>;
+  language_total_score?: Nullable<number>;
+  language_reading?: Nullable<number>;
+  language_listening?: Nullable<number>;
+  language_speaking?: Nullable<number>;
+  language_writing?: Nullable<number>;
   // 语言考试目标分数
-  language_target_total_score?: number;
-  language_target_reading?: number;
-  language_target_listening?: number;
-  language_target_speaking?: number;
-  language_target_writing?: number;
+  language_target_total_score?: Nullable<number>;
+  language_target_reading?: Nullable<number>;
+  language_target_listening?: Nullable<number>;
+  language_target_speaking?: Nullable<number>;
+  language_target_writing?: Nullable<number>;
   // 语言考试时间
-  language_expected_test_date?: string;
+  language_expected_test_date?: Nullable<string>;
   // GRE考试
-  gre_test_status?: string;
-  gre_total?: number;
-  gre_verbal?: number;
-  gre_quantitative?: number;
-  gre_writing?: number;
+  gre_test_status?: Nullable<string>;
+  gre_total?: Nullable<number>;
+  gre_verbal?: Nullable<number>;
+  gre_quantitative?: Nullable<number>;
+  gre_writing?: Nullable<number>;
   // GRE目标分数
-  gre_target_total?: number;
-  gre_target_verbal?: number;
-  gre_target_quantitative?: number;
-  gre_target_writing?: number;
+  gre_target_total?: Nullable<number>;
+  gre_target_verbal?: Nullable<number>;
+  gre_target_quantitative?: Nullable<number>;
+  gre_target_writing?: Nullable<number>;
   // GRE考试时间
-  gre_expected_test_date?: string;
+  gre_expected_test_date?: Nullable<string>;
   // GMAT考试
-  gmat_test_status?: string;
-  gmat_total?: number;
+  gmat_test_status?: Nullable<string>;
+  gmat_total?: Nullable<number>;
   // GMAT目标分数
-  gmat_target_total?: number;
+  gmat_target_total?: Nullable<number>;
   // GMAT考试时间
-  gmat_expected_test_date?: string;
-  target_countries?: string[];
-  target_majors?: string[];
-  target_degree_type?: string;
-  application_year?: number;
+  gmat_expected_test_date?: Nullable<string>;
+  target_countries?: Nullable<string[]>;
+  target_majors?: Nullable<string[]>;
+  target_degree_type?: Nullable<string>;
+  application_year?: Nullable<number>;
   research_experiences?: any[];
   internship_experiences?: any[];
   other_experiences?: any[];
@@ -123,7 +125,7 @@ interface UserInfo {
   invited_count: number;
   created_at: string;
   last_login_at?: string;
-  profile_data?: UserProfileData;
+  profile_data?: Nullable<UserProfileData>;
 }
 
 interface LoginResponse {

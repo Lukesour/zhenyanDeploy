@@ -74,6 +74,8 @@ function isAxiosError(error: any): error is any {
   return error && typeof error === 'object' && 'isAxiosError' in error;
 }
 
+type Nullable<T> = T | null;
+
 // 任务状态类型
 export interface AnalysisTask {
   task_id: string;
@@ -94,49 +96,49 @@ export interface UserBackground {
   gpa: number;
   gpa_scale: string;
   graduation_year: number;
-  target_score?: number;
-  current_level?: number;
-  exam_date?: string;
+  target_score?: Nullable<number>;
+  current_level?: Nullable<number>;
+  exam_date?: Nullable<string>;
   // 语言考试（必选）
   language_test_status: string; // 已考试, 未报考、准备考, 准备再考, 未报考并且不准备考
-  language_test_type?: string;
-  language_total_score?: number;
-  language_reading?: number;
-  language_listening?: number;
-  language_speaking?: number;
-  language_writing?: number;
+  language_test_type?: Nullable<string>;
+  language_total_score?: Nullable<number>;
+  language_reading?: Nullable<number>;
+  language_listening?: Nullable<number>;
+  language_speaking?: Nullable<number>;
+  language_writing?: Nullable<number>;
   // 语言考试目标分数
-  language_target_total_score?: number;
-  language_target_reading?: number;
-  language_target_listening?: number;
-  language_target_speaking?: number;
-  language_target_writing?: number;
+  language_target_total_score?: Nullable<number>;
+  language_target_reading?: Nullable<number>;
+  language_target_listening?: Nullable<number>;
+  language_target_speaking?: Nullable<number>;
+  language_target_writing?: Nullable<number>;
   // 语言考试时间
-  language_expected_test_date?: string; // 预期考试时间
+  language_expected_test_date?: Nullable<string>; // 预期考试时间
   // GRE考试
-  gre_test_status?: string; // 已考试, 未报考、准备考, 准备再考, 未报考并且不准备考
-  gre_total?: number;
-  gre_verbal?: number;
-  gre_quantitative?: number;
-  gre_writing?: number;
+  gre_test_status?: Nullable<string>; // 已考试, 未报考、准备考, 准备再考, 未报考并且不准备考
+  gre_total?: Nullable<number>;
+  gre_verbal?: Nullable<number>;
+  gre_quantitative?: Nullable<number>;
+  gre_writing?: Nullable<number>;
   // GRE目标分数
-  gre_target_total?: number;
-  gre_target_verbal?: number;
-  gre_target_quantitative?: number;
-  gre_target_writing?: number;
+  gre_target_total?: Nullable<number>;
+  gre_target_verbal?: Nullable<number>;
+  gre_target_quantitative?: Nullable<number>;
+  gre_target_writing?: Nullable<number>;
   // GRE考试时间
-  gre_expected_test_date?: string; // 预期考试时间
+  gre_expected_test_date?: Nullable<string>; // 预期考试时间
   // GMAT考试
-  gmat_test_status?: string; // 已考试, 未报考、准备考, 准备再考, 未报考并且不准备考
-  gmat_total?: number;
+  gmat_test_status?: Nullable<string>; // 已考试, 未报考、准备考, 准备再考, 未报考并且不准备考
+  gmat_total?: Nullable<number>;
   // GMAT目标分数
-  gmat_target_total?: number;
+  gmat_target_total?: Nullable<number>;
   // GMAT考试时间
-  gmat_expected_test_date?: string; // 预期考试时间
+  gmat_expected_test_date?: Nullable<string>; // 预期考试时间
   target_countries: string[];
   target_majors: string[];
   target_degree_type: string;
-  application_year?: number; // 申请年份
+  application_year?: Nullable<number>; // 申请年份
   research_experiences?: Array<{
     name: string;
     role?: string;

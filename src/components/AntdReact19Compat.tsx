@@ -16,7 +16,9 @@ const AntdReact19Compat = () => {
     unstableSetRender((node, container) => {
       const root = createRoot(container);
       root.render(node);
-      return () => root.unmount();
+      return async () => {
+        root.unmount();
+      };
     });
   }, []);
 

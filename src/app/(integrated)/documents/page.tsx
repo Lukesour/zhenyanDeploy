@@ -156,6 +156,10 @@ interface CvPreview {
 type PsTone = 'sincere' | 'confident' | 'academic';
 type PsOutline = 'standard' | 'research' | 'industry';
 
+const mapPreferenceToneToServiceTone = (tone: PersonalPreference['tone']): PsTone => {
+  return tone === 'story' ? 'sincere' : tone;
+};
+
 interface PsConfig {
   outline: PsOutline;
   tone: PsTone;
@@ -1084,7 +1088,7 @@ export default function DocumentsPage() {
       return;
     }
 
-    const profile = currentUser.profile_data as Partial<UserBackground> & {
+    const profile = currentUser.profile_data as Partial<Omit<UserBackground, 'other_experiences'>> & {
       other_experiences?: Array<Record<string, any>>;
       target_schools?: string[];
     };
@@ -1256,7 +1260,7 @@ export default function DocumentsPage() {
         template_type: cvConfig.templateType,
         language: cvConfig.language,
         length: cvConfig.length,
-        tone: brainstorm.preferences.tone,
+        tone: mapPreferenceToneToServiceTone(brainstorm.preferences.tone),
         highlight_ids: cvConfig.emphasizeHighlights ? highlightIds : [],
         tag_preferences: brainstorm.tags,
         ats_friendly: cvConfig.atsFriendly,
