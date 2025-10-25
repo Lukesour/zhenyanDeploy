@@ -8,6 +8,8 @@ import remarkGfm from 'remark-gfm';
 import DetailedImprovements from '@/components/DetailedImprovements';
 import MockDetailedImprovements from '@/components/MockDetailedImprovements';
 
+export const runtime = 'edge';
+
 interface GradingResult {
   id: number;
   essay_id: number;
