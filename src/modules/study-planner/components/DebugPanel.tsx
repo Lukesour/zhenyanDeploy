@@ -197,7 +197,9 @@ const DebugPanel: React.FC<DebugPanelProps> = ({ visible = false }) => {
           <Paragraph style={{ fontSize: 12, marginTop: 8 }}>
             前端: <a href="http://localhost:3001" target="_blank" rel="noreferrer">localhost:3001</a><br/>
             后端: <a href="http://localhost:8000" target="_blank" rel="noreferrer">localhost:8000</a><br/>
-            API文档: <a href="http://localhost:8000/docs" target="_blank" rel="noreferrer">API Docs</a>
+            后端(生产): <a href="https://rigid-ysabel-zhenyan-46e67ce8.koyeb.app" target="_blank" rel="noreferrer">Koyeb 服务</a><br/>
+            API文档: <a href="http://localhost:8000/docs" target="_blank" rel="noreferrer">API Docs</a><br/>
+            API文档(生产): <a href="https://rigid-ysabel-zhenyan-46e67ce8.koyeb.app/docs" target="_blank" rel="noreferrer">Koyeb Docs</a>
           </Paragraph>
         </div>
       </Space>

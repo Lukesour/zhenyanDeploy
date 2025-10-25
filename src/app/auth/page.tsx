@@ -14,9 +14,9 @@ import type { UserBackground } from '@/modules/study-planner/services/api';
 const PENDING_BACKGROUND_KEY = 'planner:pendingBackground';
 
 const sanitizeRedirect = (redirect: string | null): string => {
-  if (!redirect) return '/';
+  if (!redirect) return '/study-planner';
   if (!redirect.startsWith('/')) {
-    return '/';
+    return '/study-planner';
   }
   return redirect;
 };

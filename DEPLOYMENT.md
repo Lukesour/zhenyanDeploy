@@ -75,7 +75,7 @@ The FastAPI app serves the OpenAPI schema at `/openapi.json`. You can use `/api/
    - **Functions directory**: `.vercel/output/functions`.
 4. Set the **Node version** to `20` (Cloudflare's default is fine).
 5. In **Environment variables**, add:
-   - `NEXT_PUBLIC_API_URL`: set to the public Koyeb backend URL (for example, `https://your-app-your-service.koyeb.app`).
+   - `NEXT_PUBLIC_API_URL`: set to the public Koyeb backend URL (currently `https://rigid-ysabel-zhenyan-46e67ce8.koyeb.app`).
    - Any other `NEXT_PUBLIC_*` variables your frontend requires (see `src/lib/api.ts` and related modules).
 6. Trigger the first deployment. Subsequent pushes to the connected branch will redeploy automatically.
 

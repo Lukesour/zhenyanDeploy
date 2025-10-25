@@ -1,6 +1,7 @@
 import axios from 'axios';
+import { getApiBaseUrl } from '@/modules/study-planner/config';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const API_BASE_URL = getApiBaseUrl();
 
 // 创建axios实例
 const api = axios.create({

@@ -5,11 +5,6 @@ import { usePathname } from 'next/navigation';
 
 const tabs = [
   {
-    href: '/ielts',
-    title: '雅思作文批改',
-    description: '完整的 AI 雅思评分与反馈工作流',
-  },
-  {
     href: '/study-planner',
     title: '留学规划助手',
     description: '背景分析、院校推荐与职业测评工具',
@@ -23,6 +18,11 @@ const tabs = [
     href: '/profile',
     title: '个人中心',
     description: '账户信息、分析次数与雅思设置',
+  },
+  {
+    href: '/ielts',
+    title: '雅思作文批改',
+    description: '完整的 AI 雅思评分与反馈工作流',
   },
 ];
 

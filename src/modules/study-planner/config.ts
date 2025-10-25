@@ -1,3 +1,6 @@
+const KOYEB_PUBLIC_URL = 'https://rigid-ysabel-zhenyan-46e67ce8.koyeb.app';
+const LOCAL_API_URL = 'http://localhost:8000';
+
 // 获取API基础URL
 export const getApiBaseUrl = (): string => {
   const envUrl =
@@ -10,17 +13,20 @@ export const getApiBaseUrl = (): string => {
     return envUrl;
   }
 
+  const defaultUrl = process.env.NODE_ENV === 'production' ? KOYEB_PUBLIC_URL : LOCAL_API_URL;
+
   if (typeof window !== 'undefined') {
     const { hostname } = window.location;
+    const isLocalhost = hostname === 'localhost' || hostname === '127.0.0.1';
 
     if (hostname === 'zhenyan.asia' || hostname === 'www.zhenyan.asia') {
-      return 'https://api.zhenyan.asia';
+      return KOYEB_PUBLIC_URL;
     }
 
-    if (hostname.includes('.pages.dev') || (hostname !== 'localhost' && hostname !== '127.0.0.1')) {
-      return 'https://zhenyan-backend.fly.dev';
+    if (hostname.includes('.pages.dev') || !isLocalhost) {
+      return KOYEB_PUBLIC_URL;
     }
   }
 
-  return 'http://localhost:8000';
+  return defaultUrl;
 };
