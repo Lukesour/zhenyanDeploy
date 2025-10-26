@@ -1,7 +1,7 @@
 {
   "version": 1,
   "generated_from": {
-    "major_data_source": "public/data/major_data_processed.json",
+    "major_data_source": "public/data/major-data-manifest.json",
     "frontend_data_source": "src/modules/study-planner/data/frontend_data.json"
   },
   "groups": [

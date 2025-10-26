@@ -1,0 +1,43 @@
+{
+  "source": "data/major_data_processed.json",
+  "generatedAt": "2025-10-26T10:49:59.551Z",
+  "totalItems": 12308,
+  "chunkSize": 2000,
+  "chunks": [
+    {
+      "file": "data/major-data/major-data-01.json",
+      "start": 0,
+      "count": 2000
+    },
+    {
+      "file": "data/major-data/major-data-02.json",
+      "start": 2000,
+      "count": 2000
+    },
+    {
+      "file": "data/major-data/major-data-03.json",
+      "start": 4000,
+      "count": 2000
+    },
+    {
+      "file": "data/major-data/major-data-04.json",
+      "start": 6000,
+      "count": 2000
+    },
+    {
+      "file": "data/major-data/major-data-05.json",
+      "start": 8000,
+      "count": 2000
+    },
+    {
+      "file": "data/major-data/major-data-06.json",
+      "start": 10000,
+      "count": 2000
+    },
+    {
+      "file": "data/major-data/major-data-07.json",
+      "start": 12000,
+      "count": 308
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import dataLoaderService, { MajorDirectionDefinition } from './DataLoaderService';
 
 // 专业数据服务
-// 处理 major_data_processed.json 数据的加载、筛选和查询
+// 处理专业数据的加载、筛选和查询
 
 export interface LanguageRequirement {
   accepted: boolean;
@@ -56,6 +56,18 @@ export interface SchoolInfo {
   majors: MajorData[];
 }
 
+interface MajorDataManifest {
+  source: string;
+  generatedAt: string;
+  totalItems: number;
+  chunkSize: number;
+  chunks: {
+    file: string;
+    start: number;
+    count: number;
+  }[];
+}
+
 class MajorDataService {
   private majorData: MajorData[] = [];
   private schoolsMap: Map<string, SchoolInfo> = new Map();
@@ -68,17 +80,31 @@ class MajorDataService {
     }
 
     try {
-      // 从public目录加载数据文件
-      const response = await fetch('/data/major_data_processed.json');
-      if (!response.ok) {
-        throw new Error(`Failed to load data: ${response.statusText}`);
+      // 从 public 目录按块读取专业数据
+      const manifestResponse = await fetch('/data/major-data-manifest.json');
+      if (!manifestResponse.ok) {
+        throw new Error(`Failed to load data manifest: ${manifestResponse.statusText}`);
       }
-      
-      this.majorData = await response.json();
+
+      const manifest: MajorDataManifest = await manifestResponse.json();
+      const chunkResponses = await Promise.all(
+        manifest.chunks.map(async (chunk) => {
+          const chunkResponse = await fetch(`/${chunk.file}`);
+          if (!chunkResponse.ok) {
+            throw new Error(`Failed to load data chunk ${chunk.file}: ${chunkResponse.statusText}`);
+          }
+          const chunkData: MajorData[] = await chunkResponse.json();
+          return chunkData;
+        }),
+      );
+
+      this.majorData = chunkResponses.flat();
       this.buildSchoolsMap();
       this.isLoaded = true;
-      
-      console.log(`Loaded ${this.majorData.length} majors from ${this.schoolsMap.size} schools`);
+
+      console.log(
+        `Loaded ${this.majorData.length} majors from ${this.schoolsMap.size} schools in ${manifest.chunks.length} chunks`,
+      );
     } catch (error) {
       console.error('Error loading major data:', error);
       throw error;
