@@ -1,4 +1,5 @@
 import asyncio
+from datetime import datetime
 
 from fastapi import FastAPI, HTTPException, BackgroundTasks, Request, Depends
 from fastapi.middleware.cors import CORSMiddleware
@@ -256,6 +257,12 @@ async def process_analysis_task(task_id: str, user_background: UserBackground, u
         # 更新任务状态为进行中
         analysis_tasks[task_id]["status"] = "processing"
         analysis_tasks[task_id]["progress"] = 0
+
+        if user_id and user_service:
+            try:
+                await user_service.set_analysis_status(task_id, "processing")
+            except Exception as status_error:
+                logger.warning("Failed to persist processing status for task %s: %s", task_id, status_error)
         
         # 调用分析服务
         logger.info(f"Processing analysis task {task_id}")
@@ -265,12 +272,13 @@ async def process_analysis_task(task_id: str, user_background: UserBackground, u
             # 任务成功完成
             analysis_tasks[task_id]["status"] = "completed"
             analysis_tasks[task_id]["progress"] = 100
-            analysis_tasks[task_id]["result"] = report
-            analysis_tasks[task_id]["completed_at"] = "2024-01-01T00:00:00Z"
+            report_payload = report.dict()
+            analysis_tasks[task_id]["result"] = report_payload
+            analysis_tasks[task_id]["completed_at"] = datetime.utcnow().isoformat()
 
             # 更新用户分析结果
             if user_id and user_service:
-                await user_service.update_analysis_result(task_id, report.dict(), "completed")
+                await user_service.update_analysis_result(task_id, report_payload, "completed")
 
             logger.info(f"Analysis task {task_id} completed successfully")
         else:
@@ -288,6 +296,11 @@ async def process_analysis_task(task_id: str, user_background: UserBackground, u
         if task_id in analysis_tasks:
             analysis_tasks[task_id]["status"] = "cancelled"
             analysis_tasks[task_id]["error"] = "任务已取消"
+        if user_service:
+            try:
+                await user_service.set_analysis_status(task_id, "cancelled", {"error": "任务已取消"})
+            except Exception as status_error:
+                logger.warning("Failed to persist cancellation for task %s: %s", task_id, status_error)
         logger.info("Analysis task %s cancellation acknowledged", task_id)
         raise
     except Exception as e:
@@ -400,10 +413,11 @@ async def analyze_user_background(
         task_id = str(uuid.uuid4())
 
         # 创建任务记录
+        created_at = datetime.utcnow().isoformat()
         analysis_tasks[task_id] = {
             "status": "pending",
             "progress": 0,
-            "created_at": "2024-01-01T00:00:00Z",
+            "created_at": created_at,
             "user_background": user_background.dict(),
             "user_id": current_user.id
         }
@@ -478,34 +492,81 @@ async def get_analysis_result(task_id: str):
     """
     获取分析任务结果
     """
-    if task_id not in analysis_tasks:
-        raise HTTPException(status_code=404, detail="任务不存在")
-    
-    task = analysis_tasks[task_id]
-    
-    if task["status"] == "completed":
+    task = analysis_tasks.get(task_id)
+
+    if task:
+        status = task.get("status", "pending")
+        if status == "completed":
+            return {
+                "task_id": task_id,
+                "status": "completed",
+                "result": task.get("result"),
+                "completed_at": task.get("completed_at")
+            }
+        if status == "failed":
+            return {
+                "task_id": task_id,
+                "status": "failed",
+                "error": task.get("error"),
+                "created_at": task.get("created_at")
+            }
+        if status == "cancelled":
+            return {
+                "task_id": task_id,
+                "status": "cancelled",
+                "message": "任务已取消",
+                "created_at": task.get("created_at")
+            }
         return {
             "task_id": task_id,
-            "status": "completed",
-            "result": task["result"],
-            "completed_at": task["completed_at"]
-        }
-    elif task["status"] == "failed":
-        return {
-            "task_id": task_id,
-            "status": "failed",
-            "error": task["error"],
-            "created_at": task["created_at"]
-        }
-    else:
-        # 任务仍在进行中
-        return {
-            "task_id": task_id,
-            "status": task["status"],
-            "progress": task["progress"],
-            "created_at": task["created_at"],
+            "status": status,
+            "progress": task.get("progress"),
+            "created_at": task.get("created_at"),
             "message": "分析进行中，请稍后查询"
         }
+
+    # Fallback to持久化记录，支持多进程/多实例部署
+    if user_service:
+        record = await user_service.get_analysis_record(task_id)
+        if record:
+            status = record.get("status", "pending")
+            analysis_result = record.get("analysis_result")
+            created_at = record.get("created_at")
+            completed_at = record.get("completed_at")
+
+            if status == "completed":
+                return {
+                    "task_id": task_id,
+                    "status": "completed",
+                    "result": analysis_result,
+                    "completed_at": completed_at
+                }
+            if status == "failed":
+                error_message = None
+                if isinstance(analysis_result, dict):
+                    error_message = analysis_result.get("error")
+                return {
+                    "task_id": task_id,
+                    "status": "failed",
+                    "error": error_message or "分析任务失败",
+                    "created_at": created_at
+                }
+            if status == "cancelled":
+                return {
+                    "task_id": task_id,
+                    "status": "cancelled",
+                    "message": "任务已取消",
+                    "created_at": created_at
+                }
+            return {
+                "task_id": task_id,
+                "status": status,
+                "progress": 0,
+                "created_at": created_at,
+                "message": "分析进行中，请稍后查询"
+            }
+
+    raise HTTPException(status_code=404, detail="任务不存在")
 
 @app.delete("/api/analyze/{task_id}")
 async def cancel_analysis_task(task_id: str):
@@ -526,6 +587,12 @@ async def cancel_analysis_task(task_id: str):
     task_handle = task.get("async_task")
     if task_handle and not task_handle.done():
         task_handle.cancel()
+
+    if user_service:
+        try:
+            await user_service.set_analysis_status(task_id, "cancelled", {"error": "任务已取消"})
+        except Exception as status_error:
+            logger.warning("Failed to persist cancellation for task %s: %s", task_id, status_error)
     
     return {"message": "任务已取消"}
 

@@ -80,6 +80,7 @@ class UserService:
         self._local_users: Dict[int, Dict[str, Any]] = {}
         self._local_profiles: Dict[int, UserProfileData] = {}
         self._local_next_user_id: int = 1
+        self._local_analysis_records: Dict[str, Dict[str, Any]] = {}
         self._initialize_client()
         if not self.use_local_store:
             self._ensure_tables_exist()
@@ -843,15 +844,19 @@ class UserService:
     async def record_analysis(self, user_id: int, task_id: str, analysis_data: dict) -> bool:
         """记录用户分析"""
         try:
-            if not self.client:
-                raise Exception("数据库连接未初始化")
-
             record_data = {
                 'user_id': user_id,
                 'task_id': task_id,
                 'analysis_data': analysis_data,
                 'status': 'pending'
             }
+
+            if self.use_local_store or not self.client:
+                record = record_data.copy()
+                record['created_at'] = datetime.utcnow()
+                self._local_analysis_records[task_id] = record
+                logger.info(f"用户 {user_id} 分析记录已保存（本地存储），任务ID: {task_id}")
+                return True
 
             self.client.table('user_analysis_records').insert(record_data).execute()
 
@@ -864,27 +869,66 @@ class UserService:
 
     async def update_analysis_result(self, task_id: str, analysis_result: dict, status: str = "completed") -> bool:
         """更新分析结果"""
-        try:
-            if not self.client:
-                raise Exception("数据库连接未初始化")
+        return await self.set_analysis_status(task_id, status, analysis_result)
 
-            update_data = {
-                'analysis_result': analysis_result,
-                'status': status,
-                'completed_at': datetime.utcnow().isoformat()
-            }
+    async def set_analysis_status(self, task_id: str, status: str, analysis_result: Optional[dict] = None) -> bool:
+        """更新分析任务状态（支持Supabase与本地存储）"""
+        try:
+            completion_statuses = {"completed", "failed", "cancelled"}
+
+            if self.use_local_store or not self.client:
+                record = self._local_analysis_records.get(task_id)
+                if not record:
+                    logger.warning(f"本地存储中未找到任务 {task_id}")
+                    return False
+
+                record['status'] = status
+                if analysis_result is not None:
+                    record['analysis_result'] = analysis_result
+                if status in completion_statuses:
+                    record['completed_at'] = datetime.utcnow()
+                logger.info(f"分析状态已更新（本地存储），任务ID: {task_id}, 状态: {status}")
+                return True
+
+            update_data: Dict[str, Any] = {'status': status}
+            if analysis_result is not None:
+                update_data['analysis_result'] = analysis_result
+            if status in completion_statuses:
+                update_data['completed_at'] = datetime.utcnow().isoformat()
 
             self.client.table('user_analysis_records')\
                 .update(update_data)\
                 .eq('task_id', task_id)\
                 .execute()
 
-            logger.info(f"分析结果已更新，任务ID: {task_id}")
+            logger.info(f"分析状态已更新，任务ID: {task_id}, 状态: {status}")
             return True
 
         except Exception as e:
-            logger.error(f"更新分析结果失败: {str(e)}")
+            logger.error(f"更新分析状态失败: {str(e)}")
             return False
+
+    async def get_analysis_record(self, task_id: str) -> Optional[Dict[str, Any]]:
+        """查询分析任务记录"""
+        try:
+            if self.use_local_store or not self.client:
+                record = self._local_analysis_records.get(task_id)
+                return record.copy() if record else None
+
+            response = self.client.table('user_analysis_records')\
+                .select('*')\
+                .eq('task_id', task_id)\
+                .limit(1)\
+                .execute()
+
+            records = response.data if hasattr(response, 'data') else response.get('data', [])
+            if not records:
+                return None
+            return records[0]
+
+        except Exception as e:
+            logger.error(f"获取分析记录失败: {str(e)}")
+            return None
 
     def test_connection(self) -> bool:
         """测试数据库连接"""
