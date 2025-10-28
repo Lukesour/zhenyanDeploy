@@ -1,3 +1,5 @@
+import asyncio
+
 from fastapi import FastAPI, HTTPException, BackgroundTasks, Request, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
@@ -247,6 +249,10 @@ async def detailed_health_check():
 async def process_analysis_task(task_id: str, user_background: UserBackground, user_id: Optional[int] = None):
     """后台处理分析任务"""
     try:
+        if task_id not in analysis_tasks:
+            logger.warning("Received process request for unknown task %s", task_id)
+            return
+
         # 更新任务状态为进行中
         analysis_tasks[task_id]["status"] = "processing"
         analysis_tasks[task_id]["progress"] = 0
@@ -278,10 +284,17 @@ async def process_analysis_task(task_id: str, user_background: UserBackground, u
 
             logger.error(f"Analysis task {task_id} failed: service returned None")
 
+    except asyncio.CancelledError:
+        if task_id in analysis_tasks:
+            analysis_tasks[task_id]["status"] = "cancelled"
+            analysis_tasks[task_id]["error"] = "任务已取消"
+        logger.info("Analysis task %s cancellation acknowledged", task_id)
+        raise
     except Exception as e:
         # 任务出错
-        analysis_tasks[task_id]["status"] = "failed"
-        analysis_tasks[task_id]["error"] = str(e)
+        if task_id in analysis_tasks:
+            analysis_tasks[task_id]["status"] = "failed"
+            analysis_tasks[task_id]["error"] = str(e)
 
         # 更新用户分析结果
         if user_id and user_service:
@@ -296,7 +309,6 @@ async def process_analysis_task(task_id: str, user_background: UserBackground, u
 async def analyze_user_background(
     request: Request,
     user_background: UserBackground,
-    background_tasks: BackgroundTasks,
     current_user: UserInfo = Depends(get_current_user),
     service: UserService = Depends(get_user_service)
 ):
@@ -398,9 +410,32 @@ async def analyze_user_background(
 
         # 记录用户分析
         await service.record_analysis(current_user.id, task_id, user_background.dict())
+        # 深拷贝一次，避免后续异步流程中引用被修改
+        background_payload = user_background.model_copy(deep=True)
 
-        # 在后台启动分析任务
-        background_tasks.add_task(process_analysis_task, task_id, user_background, current_user.id)
+        # 在事件循环中启动异步分析任务
+        async_task = asyncio.create_task(
+            process_analysis_task(task_id, background_payload, current_user.id)
+        )
+        analysis_tasks[task_id]["async_task"] = async_task
+
+        def _finalise_task(task: asyncio.Task, *, _task_id: str) -> None:
+            try:
+                task.result()
+            except asyncio.CancelledError:
+                logger.info("Analysis task %s was cancelled before completion", _task_id)
+            except Exception as exc:  # noqa: BLE001
+                logger.error("Analysis task %s raised an exception: %s", _task_id, exc)
+                task_state = analysis_tasks.get(_task_id)
+                if task_state and task_state.get("status") not in {"failed", "cancelled"}:
+                    task_state["status"] = "failed"
+                    task_state["error"] = str(exc)
+            finally:
+                task_state = analysis_tasks.get(_task_id)
+                if task_state:
+                    task_state.pop("async_task", None)
+
+        async_task.add_done_callback(lambda t, task_id=task_id: _finalise_task(t, _task_id=task_id))
 
         logger.info(f"Analysis task {task_id} started for user {current_user.id}")
 
@@ -487,6 +522,10 @@ async def cancel_analysis_task(task_id: str):
     
     # 标记任务为已取消
     analysis_tasks[task_id]["status"] = "cancelled"
+
+    task_handle = task.get("async_task")
+    if task_handle and not task_handle.done():
+        task_handle.cancel()
     
     return {"message": "任务已取消"}
 
