@@ -525,7 +525,7 @@ async def get_analysis_result(task_id: str):
             "message": "分析进行中，请稍后查询"
         }
 
-    # Fallback to持久化记录，支持多进程/多实例部署
+    # Fallback to persisted record for multi-worker/multi-instance deployments
     if user_service:
         record = await user_service.get_analysis_record(task_id)
         if record:
